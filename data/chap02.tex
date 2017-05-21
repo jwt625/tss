@@ -1,124 +1,208 @@
-\chapter{中华人民共和国}
-\label{cha:china}
-
-\section{其它例子}
-\label{sec:other}
-
-在第~\ref{cha:intro} 章中我们学习了贝叶斯公式~(\ref{equ:chap1:bayes})，这里我们复
-习一下：
-\begin{equation}
-\label{equ:chap2:bayes}
-p(y|\mathbf{x}) = \frac{p(\mathbf{x},y)}{p(\mathbf{x})}=
-\frac{p(\mathbf{x}|y)p(y)}{p(\mathbf{x})}
-\end{equation}
-
-\subsection{绘图}
-\label{sec:draw}
-
-本模板不再预先装载任何绘图包（如 \pkg{pstricks，pgf} 等），完全由用户来决定。
-个人觉得 \pkg{pgf} 不错，不依赖于 Postscript。此外还有很多针对 \LaTeX{} 的
- GUI 作图工具，如 XFig(jFig), WinFig, Tpx, Ipe, Dia, Inkscape, LaTeXPiX,
-jPicEdt, jaxdraw 等等。
-
-\subsection{插图}
-\label{sec:graphs}
-
-强烈推荐《\LaTeXe\ 插图指南》！关于子图形的使用细节请参看 \pkg{subcaption} 宏包的说明文档。
-
-\subsubsection{一个图形}
-\label{sec:onefig}
-一般图形都是处在浮动环境中。之所以称为浮动是指最终排版效果图形的位置不一定与源文
-件中的位置对应\footnote{This is not a bug, but a feature of \LaTeX!}，这也是刚使
-用 \LaTeX{} 同学可能遇到的问题。如果要强制固定浮动图形的位置，请使用 \pkg{float} 宏包，
-它提供了 \texttt{[H]} 参数，比如图~\ref{fig:xfig1}。
-\begin{figure}[H] % use float package if you want it here
-  \centering
-  \includegraphics{thu-whole-logo}
-  \caption{利用 Xfig 制图}
-  \label{fig:xfig1}
-\end{figure}
-
-大学之道，在明明德，在亲民，在止于至善。知止而后有定；定而后能静；静而后能安；安
-而后能虑；虑而后能得。物有本末，事有终始。知所先后，则近道矣。古之欲明明德于天
-下者，先治其国；欲治其国者，先齐其家；欲齐其家者，先修其身；欲修其身者，先正其心；
-欲正其心者，先诚其意；欲诚其意者，先致其知；致知在格物。物格而后知至；知至而后
-意诚；意诚而后心正；心正而后身 修；身修而后家齐；家齐而后国治；国治而后天下
-平。自天子以至于庶人，壹是皆以修身为本。其本乱而未治者 否矣。其所厚者薄，而其所
-薄者厚，未之有也！
-
-\hfill —— 《大学》
+\chapter{自旋与谐振腔耦合强度仿真}
+\label{cha:spin_simulation}
 
 
-\subsubsection{多个图形}
-\label{sec:multifig}
 
-如果多个图形相互独立，并不共用一个图形计数器，那么
-用 \texttt{minipage} 或者\texttt{parbox} 就可以。否则，请参看
-图~\ref{fig:big1-subcaptionbox}，它包含两个小图，分别是图~\ref{fig:subfig1}和
-图~\ref{fig:subfig2}。推荐使用\cs{subcaptionbox}，因为可以像
-图~\ref{fig:big1-subcaptionbox} 那样对齐子图的标题，也可以使
-用\pkg{subcaption}宏包的\cs{subcaption}（放在 minipage中，用法同\cs{caption}）
-或是 \pkg{subfigure} 、 \pkg{subtable}环境，像图~\ref{fig:big1-subfigure}，
-不要再用 \cs{subfloat}、\cs{subfigure} 和 \cs{subtable}。
+        通过文献综述我们看到，单个自旋与常见谐振腔的耦合强度较弱，因此我们希望通过利用自旋系综与谐振腔进行耦合或者尝试新的谐振腔设计来解决这个问题。对自旋系综与谐振腔进行耦合的情况，由于自旋系综在空间有分布，而谐振腔所产生的磁场在空间也有所分布，因此探究谐振腔产生的磁场的空间分布即成为估计耦合系数的强度大小极其空间分布的重要步骤。
 
-\begin{figure}[h]
-  \centering%
-  \subcaptionbox{第一个小图形\label{fig:subfig1}}[3cm] %标题的长度，超过则会换行，如下一个小图。
-    {\includegraphics[height=3cm]{thu-fig-logo}}%
-  \hspace{4em}%
-  \subcaptionbox{第二个小图形，注意这个图略矮些。如果标题很长的话，它会自动换行\label{fig:subfig2}}
-      {\includegraphics[height=2cm]{thu-text-logo}}
-  \caption{包含子图形的大图形(subcaptionbox示例)}
-  \label{fig:big1-subcaptionbox}
-\end{figure}
-\begin{figure}[h]
-  \centering%
-  \begin{subfigure}{3cm}
-    \includegraphics[height=3cm]{thu-fig-logo}
-    \caption{第一个小图形}
-  \end{subfigure}%
-  \hspace{4em}%
-  \begin{subfigure}{0.5\textwidth}
-    \includegraphics[height=2cm]{thu-text-logo}
-    \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
-  \end{subfigure}
-  \caption{包含子图形的大图形(subfigure示例)}
-  \label{fig:big1-subfigure}
-\end{figure}
+        另一方面，与平面波导谐振腔相对应，三维谐振腔的电磁场空间分布更均匀，但强度相对更弱，因此耦合强度更小。在尝试更新的谐振腔设计时，我们也考虑改良三为谐振腔使之在保持自旋系综存在空间部分电磁场仍旧相对均匀的同时尽可能增加场强，而对于平面波导谐振腔，我们从进一步增大耦合强度并与单个自旋耦合的角度出发在现有提案\cite{sarabi2017prospective}的基础上进行了仿真，改进与优化。
 
-古之学者必有师。师者，所以传道受业解惑也。人非生而知之者，孰能无惑？惑而不从师，
-其为惑也，终不解矣。生乎吾前，其闻道也固先乎吾，吾从而师之；生乎吾後，其闻道也亦
-先乎吾，吾从而师之。吾师道也，夫庸知其年之先後生於吾乎！是故无贵无贱无长无少，道
-之所存，师之所存也。
+        \section{新型3D谐振腔与自旋系综的耦合} % (fold)
+        \label{sec:新型3d谐振腔与自旋系综的耦合}
 
-嗟乎！师道之不传也久矣，欲人之无惑也难矣。古之圣人，其出人也远矣，犹且从师而问焉；
-今之众人，其下圣人也亦远矣，而耻学於师。是故圣益圣，愚益愚。圣人之所以为圣，愚
-人之所以为愚，其皆出於此乎？爱其子，择师而教之，於其身也，则耻师焉，惑焉。彼童子
-之师，授之书而习其句读者，非吾所谓传其道、解其惑者也。句读之不知，惑之不解，或师
-焉，或不焉，小学而大遗，吾未见其明也。巫医、乐师、百工之人不耻相师，  士大夫之族
-曰“师”曰“弟子”之云者，则群聚而笑之。问之，则曰：彼与彼年相若也，道相似也，位
-卑则足羞，官盛则近谀。呜呼！师道之不复，可知矣。巫医、乐师、百工之人。吾子不齿，
-今其智乃反不能及，其可怪也欤！圣人无常师。孔子师郯子、苌子、师襄、老聃。郯子之徒，
-其贤不及孔子。孔子曰：“三人行，必有我师。”是故弟子不必不如师，师不必贤於弟子。
-闻道有先後，术业有专攻，如是而已。
+        我们首先发现并重复了对优化电磁场分布均匀性的3D谐振腔的仿真\cite{Angerer2016}。这种三维谐振腔中电流与磁场分布示意图如下图所示
 
-如果要把编号的两个图形并排，那么小页就非常有用了：
-\begin{figure}
-\begin{minipage}{0.48\textwidth}
-  \centering
-  \includegraphics[height=2cm]{thu-whole-logo}
-  \caption{并排第一个图}
-  \label{fig:parallel1}
-\end{minipage}\hfill
-\begin{minipage}{0.48\textwidth}
-  \centering
-  \includegraphics[height=2cm]{thu-whole-logo}
-  \caption{并排第二个图}
-  \label{fig:parallel2}
-\end{minipage}
-\end{figure}
+        \begin{figure}
+            \includegraphics[width=4in]{3DResonator_image.png}
+            \caption{新型三维谐振腔的几何结构与电流，磁场分布示意图\cite{Angerer2016}}
+            \label{fig:3D_Resonator_image}
+        \end{figure}
+        其中这种三维谐振腔在普通密闭金属盒构成的三维谐振腔的基础上将电场与磁场局限于更小的体积当中，电场主要分布于两个扇形与盒顶之间，磁场主要分布于两扇形竖直支撑部分的两个平面之间，也为固定自旋系综的空间区域。因此这种三维谐振腔通过减小模式体积提高了零场涨落的大小，并同时仍保证自旋系综与磁场有较为均匀的耦合。
 
-李氏子蟠，年十七，好古文、六艺，经传皆通习之，不拘於时，学於余。余嘉其能行古
-道，作师说以贻之。
 
-\hfill —— 韩愈（唐）
+        \begin{figure}
+            \includegraphics[width=4in]{geo.png}
+            \caption{新型三维谐振腔仿真的几何设计(透视图)}
+            \label{fig:geo_3DResonator}
+        \end{figure}
+
+        \begin{figure}
+            \includegraphics[width=4.5in]{normB_cross_sec_mid_yz_3.13GHz_smooth.png}
+            \caption{新型三维谐振腔磁场在自旋系综所处空间横截面上的大小分布}
+            \label{fig:sim_result_BField_crossSection}
+        \end{figure}
+
+        通过对Angerer等人使用的三维谐振腔的观察，我设计了如图\ref{fig:geo_3DResonator}所示几何形状的三维谐振腔。利用COMSOL求解谐振腔中电磁场的分布，能够得到自旋系综所在的横截面上的磁场分布如图\ref{fig:sim_result_BField_crossSection}所示。谐振腔的频率响应为频率和衰减率的函数\cite{grezes2016towards}
+        \begin{equation}
+            |S_{21}|^2 = \left | \frac{i \kappa/2}{2 \pi (\delta f - \delta f_c)+i (\kappa + \kappa_L)/2 } \right|^2
+        \end{equation}
+        通过对仿真所得的谐振腔的频率响应进行拟合，能够得到谐振腔的衰减率$ \kappa, \kappa_L $，进而求出对应任意功率下的谐振腔中的光子数\cite{grezes2016towards}
+        \begin{equation}
+            n = \frac{2 \kappa}{h f_c (\kappa+ \kappa_L)^2} P
+        \end{equation}
+        谐振腔中仿真的场与功率相关，知道给定功率下的谐振腔中的电磁场分布，以及相应腔内光子数后，即可简单计算得单位光子数对应的电磁场大小与分布。通过单位光子数的磁场大小，即可计算自旋与谐振腔中该模式的耦合强度\cite{Angerer2016}
+        \begin{equation}
+            |g_0| = \sqrt{\frac{2}{3}} \frac{\mu_B g_e}{2\hbar} |\bm B_0||\bm S| \sim 100 \mathrm{mHz}
+        \end{equation}
+
+        通过仿真，拟合与计算得到的耦合强度，与Angerer等人所得到的耦合强度的数量级相符，验证了我们的仿真与计算的正确性。综合考虑后，我们认为这种方法对耦合强度的增加不明显，没有数量级的提升，并且这种三维谐振腔的制备较为复杂，我们没有继续进行这种新型三维谐振腔的制备。
+        
+        
+        
+
+
+
+
+
+        \section{2D平面波导谐振腔与自旋系综的耦合} % (fold)
+        \label{sec:2d平面波导谐振腔与自旋系综的耦合}
+
+        目前有很多工作通过将自旋系综与二维平面波导谐振腔进行耦合，达到了强耦合的效果\cite{kubo2010,Schuster2010}。对于这类耦合，谐振腔的耦合强度的大小及其分布依赖于电磁场的空间分布。因此，我对二维平面波导的电磁场的空间分布进行了仿真，并与文献进行了比较。
+
+        对于二维平面波导的仿真，空间中场的分布由金属中电流密度的分布决定，因此仿真的关键为得到可靠的电流密度分布，从而得到空间中场的分布。超导效应对金属中场的分布体现在电流穿透金属表面的深度有限，即与高频电流导致的趋肤效应十分类似，因此可通过高频电流的趋肤效应对超导电流的分布进行模拟\cite{Mark2013}。趋肤效应的深度电流频率相关：
+        \begin{equation}
+            \lambda_{skin} = \sqrt{\frac{2}{\sigma \omega \mu}}
+        \end{equation}
+        通过使趋肤效应的深度等于超导电流的穿透深度，我们估计得仿真所需采用的电流频率为$ \omega \approx 660 $GHz。这个频率并不对应实际物理系统中的任何频率，仅为仿真所采用的一个参数。零场涨落下的电磁场分布直接通过使总电流的大小为零场电流涨落的大小来得到。零场电流的大小通过计算可得\cite{PhysRevA.95.022306,Mark2013,Tosi2014}
+        \begin{eqnarray}
+            \label{eqn:ZPF_estimation}
+            \frac{\hbar \omega }{2} &=& 2\times \frac{1}{2}L (\delta i_{rms})^2\\
+            L&=& \frac{2Z_0}{\pi \omega}\\
+            \delta i_{rms } &=& \omega \sqrt{ \frac{\hbar \pi}{4Z_0} }\approx 50 \mathrm{nA}
+        \end{eqnarray}
+        
+        通过上述方法，我采用了与两篇文章中相同的器件几何尺寸对磁场进行了仿真，如图所示。
+
+
+        \begin{figure}[!h]
+            \begin{minipage}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=3in]{20161122_Bnorm_cross_659GHz.png}
+                \caption{仿真所得磁场空间分布截面图以及文献\cite{Mark2013}中所示磁场空间分布截面图}
+                \label{fig:20161122_Bnorm_cross_659GHz}
+            \end{minipage}%
+            \hspace{0.1\textwidth}%
+            \begin{minipage}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=3.5in]{Coupling-SMM-to-quantum-circuits-fig7.png}
+                % \caption{文献\cite{Mark2013}中所示磁场空间分布截面图}
+                \label{fig:Coupling-SMM-to-quantum-circuits-fig7}
+            \end{minipage}
+        \end{figure}
+        
+        \begin{figure}[!h]
+            \begin{minipage}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=3in]{20161122-2_Bxy_0.1um_below_659GHz.png}
+                \caption{仿真所得磁场在位于距金属上表面$0.1\mu m$处水平截线上的分布以及文献\cite{Bienfait2016}中所示磁场在位于距金属上表面$0.1\mu m$处水平截线上的分布}
+                \label{fig:20161122-2_Bxy_0.1um_below_659GHz}
+            \end{minipage}%
+            \hspace{0.1\textwidth}%
+            \begin{minipage}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=3.5in]{Reaching-the-quantum-limit-of-sensitivity-SI-fig3d.png}
+                % \caption{文献\cite{Mark2013}中所示磁场空间分布截面图}
+                \label{fig:Reaching-the-quantum-limit-of-sensitivity-SI-fig3d}
+            \end{minipage}
+        \end{figure}
+        
+
+        通过利用上述方法对两篇独立的文章中的几何结构进行仿真并且与文章中的结果比较，可以看出结果相符。验证上述方法的可行性后，我对我们制备的二维平面波导的常见几何尺寸进行了仿真，并绘制了距离波导金属表面不同高度处的水平截线上的磁感应强度分布，如图\ref{fig:20161122-2_Bnorm_lines_659GHz}所示。
+
+        \begin{figure}
+            \includegraphics[width=4.5in]{20161122-2_Bnorm_lines_659GHz.png}
+            \caption{基于我们制备的二维平面波导的常见几何尺寸进行仿真所得的磁感应强度分布图。}
+            \label{fig:20161122-2_Bnorm_lines_659GHz}
+        \end{figure}
+
+        通过仿真结果可以看出，磁场在金属上方$10 \mathrm{\mu m}$左右的范围内开始分布均匀，并且强度在$ 0.5\times 10^{-10} $T的范围左右，对应的耦合强度$ g \sim 2 \pi \cdot 10 $Hz，与文献中对单个自旋与二维平面波导谐振腔的耦合常数的估计值相符很好。因此，通过这种仿真方法，我们能够很快得到给定任意几何形状的二维平面波导的空间磁场分布，进而得到空间内任意一点处的自旋与基于该二维平面波导构成的谐振腔的模式的耦合强度。
+
+
+
+
+
+
+
+        \section{螺旋状电感谐振腔与2.5维谐振腔与单个自旋的耦合} % (fold)
+        \label{sec:螺旋状电感与2_5d谐振腔与单个自旋的耦合}
+
+            前面讨论了利用与自旋系综耦合来增大耦合常数。通过观察耦合常数的表达式\ref{eqn:coupling_coeff}，可以看见还可以通过提高零场涨落的大小来提高单个自旋与谐振腔模式的耦合常数。
+
+
+            \subsection{参数估计} % (fold)
+            \label{sub:参数估计}
+
+                通过对零场电流大小进行估计的\ref{eqn:ZPF_estimation}式，可以看到零场电流涨落
+                \begin{equation}
+                    \delta I = \sqrt{ \frac{\hbar \omega}{2 L} }
+                \end{equation}
+                而对于选定的自旋种类以及基于选定自旋的能级系统定义出的二能级量子比特，其能级间能量差大致固定，因此谐振腔的谐振频率也大致固定在该能量所对应的频率。而谐振腔的频率由$ \omega = 1/\sqrt{LC} $确定。通过上述讨论可以看到，通过增大零场电流涨落可以增大磁场，进而增大单个自旋与谐振腔模式的耦合常数，增大零场电流涨落可由减小谐振腔的电感$L$实现，而对于固定频率的谐振腔，减小$L$意味着增大电容$C$。如果我们想要达到的耦合强度$ g/2 \pi \sim 1 \mathrm{MHz} $，并且利用如基于金刚石色心的能量差对应频率在$3 \mathrm{GHz} $左右的自旋系统，可以估计出相应的零场电流涨落，对应的谐振腔电感与电容的数量级为
+                \begin{eqnarray}
+                    \delta I & \sim & 1 \mathrm{\mu A}\\
+                    L & \sim & 1 \mathrm{pH}\\
+                    C & \sim & 1 \mathrm{nF}
+                \end{eqnarray}
+                对于nF数量级的电容，无法通过如齿状二维电容等二维设计实现，而可使用三维平板电容实现。因此，我把这种电感为二维结构而电容为三维结构的谐振腔称为2.5维谐振腔。已有研究人员提出基于这种思路设计的2.5维谐振腔\cite{sarabi2017prospective}，我基于他们的谐振腔设计进行了仿真与优化。
+                
+
+                
+            \subsection{设计与优化} % (fold)
+            \label{sub:设计与优化}
+
+                Sarabi等人提出的设计如图\ref{fig:spiral_proposal_1}所示
+
+
+            \begin{figure}[!h]
+                \begin{minipage}[b]{0.4\textwidth}
+                    \centering
+                    \includegraphics[width=3in]{spiral_proposal_1.jpg}
+                    \caption{来自参考文献\cite{sarabi2017prospective}的2.5维谐振腔的设计。其中左图为右图中红色虚线部分的放大图。}
+                    \label{fig:spiral_proposal_1}
+                \end{minipage}%
+                \hspace{0.1\textwidth}%
+                \begin{minipage}[b]{0.5\textwidth}
+                    \centering
+                    \includegraphics[width=3.5in]{spiral_proposal_2.jpg}
+                    % \caption{文献\cite{Mark2013}中所示磁场空间分布截面图}
+                    \label{fig:spiral_proposal_2}
+                \end{minipage}
+            \end{figure}
+            其中主要图示均为俯视图，左图的下方的小图为横截面示意图。右图中蓝色的部分即为层状电容的俯视图。通过根据相关几何参数进行仿真，我得到了这种谐振腔的电感部分的磁场分布图，如图\ref{fig:res_spiral_normB_xy_20170314}所示。通过分析我们发现，耦合系数能够得到数量级上的提升的根本原因是选取了很小的电感$L$，从而得到了较大的零场磁场涨落，并且自旋距离电感部分导线的距离较近，为$~10$nm的数量级。而与之相对的，螺旋状电感的螺旋圈数则相对不那么重要，不会对耦合强度产生数量级上的影响，反而加大了微纳加工制备的难度。因此，我们进一步对螺旋状电感进行了分析，改良与仿真。
+
+            \begin{figure}
+                \includegraphics[width=4in]{res_spiral_normB_xy_20170314.png}
+                \caption{2.5维谐振腔的螺旋状电感处水平截面上的磁感应强度分布。}
+                \label{fig:res_spiral_normB_xy_20170314}
+            \end{figure}
+
+            \begin{figure}
+                \includegraphics[width=3in]{res_UInd_normB_20170317.png}
+                \caption{第一次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布。}
+                \label{fig:res_UInd_normB_20170317}
+            \end{figure}
+
+
+            \begin{figure}
+                \includegraphics[width=3in]{res_UIndV3_normB_20170321.png}
+                \caption{第二次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，电感部分的电感大小得到了降低。}
+                \label{fig:res_UIndV3_normB_20170321}
+            \end{figure}
+
+            
+
+            \begin{figure}
+                \includegraphics[width=3in]{res_UIndV4_50nm_normB_20170406.png}
+                \caption{第三次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，通过加厚材料并加粗宽度提升了临界电流大小，并在不影响磁场较强区域的强度的基础上改进了设计以提高制备的成功率。}
+                \label{fig:res_UIndV4_50nm_normB_20170406}
+            \end{figure}
+
+
+            首先，我简化了螺旋状的电感结构，直接采用一根细导线作为电感，并通过磁场仿真来估算电感的数量级，仿真结果如图\ref{fig:res_UInd_normB_20170317}所示。通过仿真估算得到的电感值为$L\approx 2\times 10^{-12} \mathrm{H} $，比理想的电感值多出一倍左右。考虑到所需的强磁场区域并不需要分布于整个电感导线，而只需要在圆弧附近即可，而强磁场存在的区域更大自然会增大导线的自感。基于这个想法，我进一步改进了电感的几何设计，仅保留电感中间的圆弧部位较细，这样电流密度增大，磁场相应增大，而对于电流流入与流出圆弧部位的部分，使导线变宽，如图\ref{fig:res_UIndV3_normB_20170321}所示，即可减小大部分区域的磁场大小。通过仿真得出，电感大小的确减小到$L \approx 7\times 10^{-13} \mathrm{H} $，减小超过50\%。
+
+            通过进一步讨论并考虑到测量系统的温度下限对应的噪声大小，我们希望谐振腔中能有远多于100个光子的信号。通过简单估计我们发现对于图\ref{fig:res_UIndV3_normB_20170321}以及其之前的结构，达到理想的光子数会使电流密度超过所用材料的超导临界电流密度，这样极有可能使器件损耗大大增加，并且因非超导态的电阻发热使电感部分的细导线烧断，导致器件损毁，因此需要进一步改进设计使同样临界电流密度的材料能够承载更多的电流。另一方面，图\ref{fig:res_UIndV3_normB_20170321}的设计由于电感环状结构的前后为尽可能增大导线宽度使输入与输出导线中部距离十分靠近，为$\sim 10 \mathrm{nm} $的数量级，在微纳加工过程中极易连接起来，在实际测试中也出现输入与输出两部分连接起来的现象。考虑上述两个因素后，我进一步改进了电感的设计，通过加厚材料并加宽导线圆弧部分，提高了可承载总电流的大小，并使导线的输入与输出部分分离更远距离，提高了制备的成功率。最终的电感设计如图\ref{fig:res_UIndV4_50nm_normB_20170406}所示。
+
+            
+
+
+
+    

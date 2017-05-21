@@ -1,143 +1,172 @@
 \begin{thebibliography}{10}
 
-\bibitem{tex}
-Knuth D~E.
-\newblock The {\TeX} Book.
-\newblock 15th ed., Reading, MA: Addison-Wesley Publishing Company, 1989
+\bibitem{feynman1982simulating}
+Feynman R~P.
+\newblock Simulating physics with computers.
+\newblock International journal of theoretical physics, 1982, 21(6):467--488
 \thudot
 
-\bibitem{companion}
-Goosens M, Mittelbach F, Samarin A.
-\newblock The {\LaTeX} Companion.
-\newblock Reading, MA: Addison-Wesley Publishing Company, 1994: 112--125
+\bibitem{nielsen2002quantum}
+Nielsen M~A, Chuang I.
+\newblock Quantum computation and quantum information, 2002
 \thudot
 
-\bibitem{ColdSources}
-Gr{\"o}ning P, Nilsson L, Ruffieux P, et~al.
-\newblock Encyclopedia of Nanoscience and Nanotechnology, volume~1.
-\newblock American Scientific Publishers, 2004: 547--579
+\bibitem{bennett1984quantum}
+Bennett C.
+\newblock Quantum cryptography: Public key distribution and coin tossing.
+\newblock  Proc. of IEEE Int. Conf. on Computers, Systems and Signal
+  Processing, 1984, 1984
 \thudot
 
-\bibitem{Krasnogor2004e}
-Krasnogor N.
-\newblock Towards robust memetic algorithms.
-\newblock In: Hart W, Krasnogor N, Smith J, (eds.). Recent Advances in Memetic
-  Algorithms. New York: Springer Berlin Heidelberg, 2004: 185--207
+\bibitem{grover1996fast}
+Grover L~K.
+\newblock A fast quantum mechanical algorithm for database search.
+\newblock  Proceedings of the twenty-eighth annual ACM symposium on Theory of
+  computing. ACM, 1996.
+\newblock  212--219
 \thudot
 
-\bibitem{clzs}
-阎真.
-\newblock 沧浪之水.
-\newblock 人民文学出版社, 2001: 185--207
+\bibitem{shor1994algorithms}
+Shor P~W.
+\newblock Algorithms for quantum computation: Discrete logarithms and
+  factoring.
+\newblock  Foundations of Computer Science, 1994 Proceedings., 35th Annual
+  Symposium on. IEEE, 1994.
+\newblock  124--134
 \thudot
 
-\bibitem{zjsw}
-班固.
-\newblock 苏武传.
-\newblock 见: 郑在瀛, 汪超宏, 周文复, 编. 传记散文英华.
-  武汉: 湖北人民出版社, 1998: 65--69
+\bibitem{divincenzo2000physical}
+DiVincenzo D~P, et~al.
+\newblock The physical implementation of quantum computation.
+\newblock arXiv preprint quant-ph/0002077, 2000.
 \thudot
 
-\bibitem{ELIDRISSI94}
-{Chafik El Idrissi} M, {Roney} A, {Frigon} C, et~al.
-\newblock Measurements of total kinetic-energy released to the {$N=2$}
-  dissociation limit of {H}$_2$ --- evidence of the dissociation of very high
-  vibrational {R}ydberg states of {H}$_2$ by doubly-excited states.
-\newblock Chemical Physics Letters, 1994, 224(10):260--266
+\bibitem{loss1998quantum}
+Loss D, DiVincenzo D~P.
+\newblock Quantum computation with quantum dots.
+\newblock Physical Review A, 1998, 57(1):120
 \thudot
 
-\bibitem{MELLINGER96}
-Mellinger A, Vidal C~R, Jungen C.
-\newblock Laser reduced fluorescence study of the carbon-monoxide nd triplet
-  {R}ydberg series-experimental results and multichannel quantum-defect
-  analysis.
-\newblock J. Chem. Phys., 1996, 104(5):8913--8921
+\bibitem{haffner2008quantum}
+H{\"a}ffner H, Roos C~F, Blatt R.
+\newblock Quantum computing with trapped ions.
+\newblock Physics reports, 2008, 469(4):155--203
 \thudot
 
-\bibitem{SHELL02}
-Shell M.
-\newblock How to use the {IEEEtran \LaTeX} class.
-\newblock Journal of {\LaTeX} Class Files, 2002, 12(4):100--120
+\bibitem{gershenfeld1997bulk}
+Gershenfeld N~A, Chuang I~L.
+\newblock Bulk spin-resonance quantum computation.
+\newblock science, 1997, 275(5298):350--356
 \thudot
 
-\bibitem{zhubajie}
-猪八戒.
-\newblock 论流体食物的持久保存\thumasterbib.
-\newblock 北京: 广寒宫大学, 2005
+\bibitem{devoret2013superconducting}
+Devoret M~H, Schoelkopf R~J.
+\newblock Superconducting circuits for quantum information: an outlook.
+\newblock Science, 2013, 339(6124):1169--1174
 \thudot
 
-\bibitem{metamori2004}
-Jeyakumar A~R.
-\newblock Metamori: A library for incremental file checkpointing[D].
-\newblock Blacksburg: Virgina Tech, June~21, 2004
+\bibitem{kok2007linear}
+Kok P, Munro W~J, Nemoto K, et~al.
+\newblock Linear optical quantum computing with photonic qubits.
+\newblock Reviews of Modern Physics, 2007, 79(1):135
 \thudot
 
-\bibitem{shaheshang}
-沙和尚.
-\newblock 论流沙河的综合治理\thuphdbib.
-\newblock 北京: 清华大学, 2005
+\bibitem{koch2007charge}
+Koch J, Terri M~Y, Gambetta J, et~al.
+\newblock Charge-insensitive qubit design derived from the cooper pair box.
+\newblock Physical Review A, 2007, 76(4):042319
 \thudot
 
-\bibitem{FistSystem01}
-Zadok E.
-\newblock {FiST: A System for Stackable File System Code Generation}[D].
-\newblock USA: Computer Science Department, Columbia University, May, 2001
+\bibitem{grezes2016towards}
+Gr{\`e}zes C, Kubo Y, Julsgaard B, et~al.
+\newblock Towards a spin-ensemble quantum memory for superconducting qubits.
+\newblock Comptes Rendus Physique, 2016, 17(7):693--704
 \thudot
 
-\bibitem{IEEE-1363}
-{IEEE Std 1363-2000}.
-\newblock {IEEE} Standard Specifications for Public-Key Cryptography.
-\newblock New York: IEEE, 2000
+\bibitem{tavis1968exact}
+Tavis M, Cummings F~W.
+\newblock Exact solution for an n-molecule-radiation-field hamiltonian.
+\newblock Physical Review, 1968, 170(2):379
 \thudot
 
-\bibitem{DPMG}
-Kim S, Woo N, Yeom H~Y, et~al.
-\newblock Design and {I}mplementation of {D}ynamic {P}rocess {M}anagement for
-  {G}rid-enabled {MPICH}.
-\newblock  the 10th European PVM/MPI Users' Group Conference, Venice, Italy,
-  2003
+\bibitem{schuster2007circuit}
+Schuster D~I.
+\newblock Circuit quantum electrodynamics.
+\newblock 2007
 \thudot
 
-\bibitem{kocher99}
-Kocher C, Jaffe J, Jun B.
-\newblock Differential power analysis.
-\newblock In: Wiener M, (eds.). Advances in Cryptology ({CRYPTO}~'99), volume
-  1666 of {\em Lecture Notes in Computer Science}. Springer-Verlag, 1999.
-\newblock  388--397
+\bibitem{krantz2010investigation}
+Krantz P.
+\newblock Investigation of transmon qubit designs: a study of plasma frequency
+  predictability.
+\newblock Chalmers University of Technology, 2010
 \thudot
 
-\bibitem{NPB2}
-Woo A, Bailey D, Yarrow M, et~al.
-\newblock The {NAS} parallel benchmarks 2.0.
-\newblock Technical report, The Pennsylvania State University CiteSeer
-  Archives, December~05, 1995.
-\newblock  {\url{http://www.nasa.org/}}
+\bibitem{kelly2015fault}
+Kelly J~S.
+\newblock Fault-tolerant superconducting qubits.
+\newblock 2015
 \thudot
 
-\bibitem{chuban2001}
-萧钰.
-\newblock 出版业信息化迈入快车道[EB/OL].
-\newblock (2001-12-19)[2002-04-15].
-\newblock  {\url{http://www.creader.com/news/200112190019.htm}}
+\bibitem{weber2016quantum}
+Weber S~J, Murch K~W, Kimchi-Schwartz M~E, et~al.
+\newblock Quantum trajectories of superconducting qubits.
+\newblock Comptes Rendus Physique, 2016, 17(7):766--777
 \thudot
 
-\bibitem{oclc2000}
-{Online Computer Library Center, Inc}.
-\newblock History of {OCLC}[EB/OL].
-\newblock [2000-01-08].
-\newblock  {\url{http://www.oclc.org/about/history/default.htm}}
+\bibitem{sarabi2017prospective}
+Sarabi B, Huang P, Zimmerman N~M.
+\newblock Prospective two orders of magnitude enhancement in direct magnetic
+  coupling of a single-atom spin to a circuit resonator.
+\newblock arXiv preprint arXiv:1702.02210, 2017.
 \thudot
 
-\bibitem{cnarticle}
-贾宝玉, 林黛玉, 薛宝钗, 等.
-\newblock 论刘姥姥食量大如牛之现实意义.
-\newblock 红楼梦杂谈, 1800, 224:260--266
+\bibitem{Angerer2016}
+Angerer A, Astner T, Wirtitsch D, et~al.
+\newblock Collective strong coupling with homogeneous rabi frequencies using a
+  3d lumped element microwave resonator.
+\newblock Applied Physics Letters, 2016, 109(3):033508
 \thudot
 
-\bibitem{cnproceed}
-王重阳, 黄药师, 欧阳峰, 等.
-\newblock 武林高手从入门到精通.
-\newblock  第~$N$~次华山论剑, 西安, 中国, 2006
+\bibitem{kubo2010}
+Kubo Y, Ong F~R, Bertet P, et~al.
+\newblock Strong coupling of a spin ensemble to a superconducting resonator.
+\newblock Physical Review Letters, 2010, 105(14):140502.
+\newblock PRL
+\thudot
+
+\bibitem{Schuster2010}
+Schuster D~I, Sears A~P, Ginossar E, et~al.
+\newblock High-cooperativity coupling of electron-spin ensembles to
+  superconducting cavities.
+\newblock Physical Review Letters, 2010, 105(14):140501.
+\newblock PRL
+\thudot
+
+\bibitem{Mark2013}
+Mark J, Thomas H, María~José M~P, et~al.
+\newblock Coupling single-molecule magnets to quantum circuits.
+\newblock New Journal of Physics, 2013, 15(9):095007
+\thudot
+
+\bibitem{PhysRevA.95.022306}
+Haikka P, Kubo Y, Bienfait A, et~al.
+\newblock Proposal for detecting a single electron spin in a microwave
+  resonator.
+\newblock Phys. Rev. A, 2017, 95:022306
+\thudot
+
+\bibitem{Tosi2014}
+Tosi G, Mohiyaddin F~A, Huebl H, et~al.
+\newblock Circuit-quantum electrodynamics with direct magnetic coupling to
+  single-atom spin qubits in isotopically enriched 28si.
+\newblock AIP Advances, 2014, 4(8):087122
+\thudot
+
+\bibitem{Bienfait2016}
+BienfaitA, Pla J~J, KuboY, et~al.
+\newblock Reaching the quantum limit of sensitivity in electron spin resonance.
+\newblock Nat Nano, 2016, 11(3):253--257
 \thudot
 
 \end{thebibliography}
