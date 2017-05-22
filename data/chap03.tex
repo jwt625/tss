@@ -1,62 +1,64 @@
-\chapter{2.5维谐振腔的制备与测量} % (fold)
-\label{cha:2_5维谐振腔的制备与测量}
-	
 
 
-        \section{制备工艺概述} % (fold)
-        \label{sec:制备工艺概述}
+        \chapter{PPMS测量系统} % (fold)
+        \label{cha:PPMS测量系统}
+            器件的测量在PPMS（Physical Proerty Measurement System）中进行，为基础的二端微波测量。在PPMS中器件被冷却到2K左右，此时金属Nb进入超导态。通过网络分析仪直接测量二维平面波导的透射信号，即可在谐振腔的谐振频率处看到透射信号被吸收形成的凹陷。我利用现有的其他类型谐振腔对测量系统进行了测试，并通过拟合可得到谐振腔的相关参数。在测量系统搭建较为完善的基础上，进一步进行2.5维LC谐振腔的测量。
 
-            由于2.5维谐振腔的电容部分由上下两层金属以及中间的介电层组成，工艺较为复杂，需要至少三步光刻来完成。而细小的电感部分则需要电子束曝光来定义形状，再由蒸发镀膜完成。因此，总的制备工艺大致如下：
-            \begin{enumerate}
-                \item Photolithography to make transmission line, bottom layer of the 3D capacitor
-                \item ALD SiO2 or Al2O3, currently Al2O3
-                \item Photolithography and ICP (or wet) etching of Al2O3 (alignment: 10 um)
-                    \begin{enumerate}
-                        \item remaining SiO2 only covers the lower capacitor layer
-                    \end{enumerate}
-                \item Photolithography to make the top Nblayer (alignment 1-2 um)
-                \item EBL to make the other half of the 2D capacitor and the inductor
-                    \begin{enumerate}
-                        \item 2D capacitor connecting to the top layer of the 3D capacitor
-                        \item alignment 100-1000 nm
-                    \end{enumerate}
-            \end{enumerate}
-            
-        % subsection 制备工艺概述 (end)
+            \section{测量系统概述} % (fold)
+            \label{sec:测量系统概述}
 
-        \section{光刻板的设计} % (fold)
-        \label{sec:光刻板的设计}
+            实验中使用的网络分析仪为Agilent Technologies E5071C ENA series network analyzer，输出频率范围为300kHz至20GHz，下文中将简称其为VNA。
 
-            由于制备工艺需要三步光刻，对于完整制备一个器件来说，需要的光刻板的图案为一组三个，分别对应\ref{sec:制备工艺概述}制备工艺概述中的前三步。第一步完成二维平面波导以及接地平面的制作，以及三维电容的第一层金属。第二步在生长介电材料后通过光刻制作掩膜覆盖住需要保留的电容的第二层介电层部分，并刻蚀掉没有被覆盖掉的电介质。第三部制作出电容最上层的金属。最后一步通过电子束曝光与蒸镀制作微小的电感部分，并各自与三维电容的上、下两层连接起来。光刻的三个步骤所需的模板作图如图所示
-            
 
-            \begin{figure}
-                \includegraphics[width=3in]{one_group.png}
-                \caption{制备一个器件所需的三个光刻步骤对应的一组三个模板图案}
-                \label{fig:one_group}
-            \end{figure}
+            实验中所用的PPMS为QuantumDesign公司的DynaCool，本文中都将简称它为PPMS。该PPMS可降温至1.8 K，加磁场最大为9T或14T，取决于磁体的型号。PPMS本体如图？？所示，
+                
+            % section 测量系统概述 (end)
 
-            \begin{figure}
-                \includegraphics[width=5in]{LC.png}
-                \caption{完整的光刻板图案}
-                \label{fig:LC}
-            \end{figure}
+            \section{测量系统的程序编写} % (fold)
+            \label{sec:测量系统}
+            通过VNA测量谐振腔的频率响应时，需要调整VNA的输出功率，IFBW，扫描频率范围，平均次数等一系列参数。这些调整步骤既可通过仪器前面板的按钮进行，也可通过远程通讯来控制。考虑到测量的便捷性，我希望通过GPIB线与VNA进行通讯并取得数据。通过Agilent提供的GPIB-USB转接头建立硬件连接，并安装Keysight Instrument Control Bundle软件后，转接头上的工作指示灯正常。Keysight Instrument Control Bundle软件提供了Keysight IO Libraries Suite软件的安装与Command Expert软件的安装。前者能够方便地查看仪器的连接状态，后者则提供仪器的SCPI指令集并可测试通过指令控制仪器。
 
-            由于没有这类谐振腔的制备经验，对于其频率的估算并没有太多把握，因此我们希望有尽可能多的谐振频率与设计相对应的数据，来辅助下一步对仿真结果的修正与器件制备的改进。由于对电容和电感估值的准确度均有待确认，我们需要至少两组不同的器件设计的组合，一组固定$L$变化$C$的大小，另一组固定$C$变化$L$的大小，这样可以通过拟合确定出每个器件的$L$与$C$的值。因此，一个二维平面波导可以与多个谐振腔耦合，可方便测量。另一方面，考虑到电子束曝光难度与耗时均较大，我们打算先尝试中等数值的电容与电感组合，使电感的尺寸能够通过光刻制备，这样即可在三层电容制备的最后一步同时制作出电感，省去了电子束曝光制备电感的步骤，大大加快样品制备与测试速度。解决三层电容的制备后，再通过电子束曝光制作电感。
+            通过电脑与VNA建立通讯后，我以MATLAB提供的visa类为基础，通过Command Expert对VNA的相关控制指令进行了测试后，编写了通过MATLAB控制VNA的代码，具体代码可在附录\ref{cha:measurement_code}中查看。对于能够简单进行更改与询问的参数，重载了MATLAB的get与set方法。对于大范围的精细的扫描，编写了manualSweep方法，可自动将扫描范围分段进行，并返回最终扫描结果。对于数据处理环节，我将拟合相关的代码也整合进入测量阶段，进而能够节省重新导入数据的过程直接快速得到你和结果。使用MATLAB代码进行谐振腔的测量，在1个小时内即可完成大范围搜索谐振腔的共振频率位置，对不同频率的谐振腔进行细扫并拟合得到品质因子这一系列实验步骤。以下为一部分示例代码。大部分代码采用了inputParser处理输入参数，使程序规范且易于理解。
 
-            综合上述讨论，我们总共设计了若干种不同的模板几何形状，如图\ref{fig:LC}所示，覆盖了较大范围的电容与电感值，为第一次摸索器件制备工艺以及尝试性测量提供较大的频率变化区间，尽可能保证能够测到谐振腔的共振频率。
-
-            目前器件制备已经进行到了\ref{sec:制备工艺概述}制备工艺概述中的第三步，我们需要对刻蚀介电层的速率进行测试与标定。刻蚀介电层成功后即可进行第三步光刻，从而获得第一批待测器件。
-            
+            \begin{lstlisting}
+% Example of using class E5071C
+vna = E5071C('address',6);	% initialize the instrument object with GPIB address 6
+vna.plotTrace;				% fetch current trace on VNA and plot in a figure
+vna.freqCenter				% query and display the center frequency
+vna.freqSpan = 10e6;		% set the frequency span to 10MHz
+[freqs, trace] = vna.manualSweep('start',1e9,'stop',10e9,'res',1e5);	% manual sweep from 1GHz to 10GHz with 0.1MHz resolution
+vna.freqCenter = 3.021e9;	% set frequency center
+vna.freqSpan = 1e6;			% set frequency span
+vna.plotTrace('issavedata',true,'avg',10);	% wait for 10 averages and save data while fetching the trace
+vna.fit('fitall',true);		% fit the data in the current figure
+            \end{lstlisting}
 
 
 
-        \section{测量系统与数据处理概述} % (fold)
-        \label{sec:测量系统与数据处理概述}
-            器件的测量在PPMS（Physical Proerty Measurement System）中进行，为基础的二端微波测量。在PPMS中器件被冷却到2K左右，此时作为金属的Nb进入超导态。通过网络分析仪直接测量二维平面波导的透射信号，即可在谐振腔的谐振频率处看到投射信号被吸收形成的凹陷。我利用现有的其他类型谐振腔对测量系统进行了测试，并通过拟合可得到谐振腔的相关参数\cite{Khalil2012}。
+            对于PPMS的控制，仪器商为这台仪器提供了配套的LabVIEW程序，可以通过.NET网络协议远程控制PPMS。仪器商所提供的LabVIEW程序基于一个动态链接库文件QDInstrument.dll实现控制功能。为了通过MATLAB控制PPMS，我尝试将LabVIEW程序的VI封装成dll文件，再通过MATLAB加载与调用其中的函数。但由于LabVIEW的单个VI都会首先与PPMS建立连接，因此导致MATLAB中每调用一次PPMS的状态查看或是设置函数，就会重新建立一次连接，使程序运行缓慢，并且导致多个client同时与PPMS控制电脑上的server保持连接，可能导致潜在的问题。综合考虑后，我决定直接调用仪器商编写LabVIEW程序所调用的dll文件。
+
+            由于不清楚QDInstrument.dll文件中程序的构成与相关接口，而这些信息是调用其中的函数所必需的。通过查询，我使用了ILSpy对该dll文件进行了反编译，结合LabVIEW程序对该dll的使用方法，确定了在MATLAB中正确调用该dll文件的方法，并以它为基础编写了通过MATLAB控制PPMS程序的代码。需要注意的是，在MATLAB中的PPMS代码的构造函数中我一添加了加载该动态链接库的MATLAB指令，但每次重启MATLAB后初始化一个PPMS实例时总是会遇到MATLAB无法找到或识别dll中应有的命名空间的错误。目前较为确定的解决办法是每次重新启动MATLAB时，需在命令行（Command Line）中手动通过NET.addAssembly方法加载dll文件，随后初始化PPMS实例。这时MATLAB仍然会报错，但此时尝试手动在命令行中输入相关内容，通过使用TAB键能够发现MATLAB已经能够识别出dll中的内容。这时再初始化PPMS实例仍然会得到报错，必须在命令行中输入调用dll中的任意对象，比如输入\mcode{QuantumDesign.QDInstrument.QDInstrumentType.DynaCool}后回车，随后再初始化PPMS实例即可成功。以下为加载dll与控制PPMS的代码示例，完整的PPMS控制代码附在\ref{sec:ppms控制代码}中。
+
+            \begin{lstlisting}
+% Example of using class PPMS
+NET.addAssembly('path\to\the\file.dll');	% load the dll
+ppms = PPMS;				% This will get error message. See the constructor for more parameters
+QuantumDesign.QDInstrument.QDInstrumentType.DynaCool; % nothing happened, but required
+ppms = PPMS;				% This time it should work
+ppms.temp					% query and print the temperature
+ppms.field					% query and print the magnetic field
+ppms.tempStatus				% query the temperature status. It will return a QuantumDesign.QDInstrument.TemperatureStatus object
+ppms.tempStatusStr			% query the temperature status. It returns a string, such as 'Chasing', 'Stable', etc.
+ppms.fieldStatus
+ppms.fieldStatusStr			% similar as for temperature status
+ppms.setTemp(300,'tempRate',10,'tempApproach','FastSettle');		% set temperature
+ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
+            \end{lstlisting}
 
 
-
-
+            \section{样品托的设计与优化} % (fold)
+            \label{sec:样品托的设计与优化}
+            	
+            % subsection 样品托的设计与优化 (end)
 
 

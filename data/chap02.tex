@@ -12,7 +12,8 @@
 
         我们首先发现并重复了对优化电磁场分布均匀性的3D谐振腔的仿真\cite{Angerer2016}。这种三维谐振腔中电流与磁场分布示意图如下图所示
 
-        \begin{figure}
+        \begin{figure}[h]
+                \centering
             \includegraphics[width=4in]{3DResonator_image.png}
             \caption{新型三维谐振腔的几何结构与电流，磁场分布示意图\cite{Angerer2016}}
             \label{fig:3D_Resonator_image}
@@ -20,13 +21,15 @@
         其中这种三维谐振腔在普通密闭金属盒构成的三维谐振腔的基础上将电场与磁场局限于更小的体积当中，电场主要分布于两个扇形与盒顶之间，磁场主要分布于两扇形竖直支撑部分的两个平面之间，也为固定自旋系综的空间区域。因此这种三维谐振腔通过减小模式体积提高了零场涨落的大小，并同时仍保证自旋系综与磁场有较为均匀的耦合。
 
 
-        \begin{figure}
+        \begin{figure}[h]
+                \centering
             \includegraphics[width=4in]{geo.png}
             \caption{新型三维谐振腔仿真的几何设计(透视图)}
             \label{fig:geo_3DResonator}
         \end{figure}
 
-        \begin{figure}
+        \begin{figure}[h]
+                \centering
             \includegraphics[width=4.5in]{normB_cross_sec_mid_yz_3.13GHz_smooth.png}
             \caption{新型三维谐振腔磁场在自旋系综所处空间横截面上的大小分布}
             \label{fig:sim_result_BField_crossSection}
@@ -74,34 +77,36 @@
         通过上述方法，我采用了与两篇文章中相同的器件几何尺寸对磁场进行了仿真，如图所示。
 
 
-        \begin{figure}[!h]
+        \begin{figure}
             \begin{minipage}[b]{0.4\textwidth}
                 \centering
                 \includegraphics[width=3in]{20161122_Bnorm_cross_659GHz.png}
-                \caption{仿真所得磁场空间分布截面图以及文献\cite{Mark2013}中所示磁场空间分布截面图}
+                \caption{仿真所得磁场空间分布截面图}
                 \label{fig:20161122_Bnorm_cross_659GHz}
             \end{minipage}%
-            \hspace{0.1\textwidth}%
+            % \hspace{0.1\textwidth}%
+            \hfill
             \begin{minipage}[b]{0.5\textwidth}
                 \centering
                 \includegraphics[width=3.5in]{Coupling-SMM-to-quantum-circuits-fig7.png}
-                % \caption{文献\cite{Mark2013}中所示磁场空间分布截面图}
+                \caption{文献\cite{Mark2013}中所示磁场空间分布截面图}
                 \label{fig:Coupling-SMM-to-quantum-circuits-fig7}
             \end{minipage}
         \end{figure}
         
-        \begin{figure}[!h]
+        \begin{figure}
             \begin{minipage}[b]{0.4\textwidth}
                 \centering
                 \includegraphics[width=3in]{20161122-2_Bxy_0.1um_below_659GHz.png}
-                \caption{仿真所得磁场在位于距金属上表面$0.1\mu m$处水平截线上的分布以及文献\cite{Bienfait2016}中所示磁场在位于距金属上表面$0.1\mu m$处水平截线上的分布}
+                \caption{仿真所得磁场在位于距金属上表面$0.1\mu m$处水平截线上的分布}
                 \label{fig:20161122-2_Bxy_0.1um_below_659GHz}
             \end{minipage}%
-            \hspace{0.1\textwidth}%
+            % \hspace{0.1\textwidth}%
+            \hfill
             \begin{minipage}[b]{0.5\textwidth}
                 \centering
                 \includegraphics[width=3.5in]{Reaching-the-quantum-limit-of-sensitivity-SI-fig3d.png}
-                % \caption{文献\cite{Mark2013}中所示磁场空间分布截面图}
+                \caption{文献\cite{Bienfait2016}中所示磁场在位于距金属上表面$0.1\mu m$处水平截线上的分布}
                 \label{fig:Reaching-the-quantum-limit-of-sensitivity-SI-fig3d}
             \end{minipage}
         \end{figure}
@@ -109,7 +114,8 @@
 
         通过利用上述方法对两篇独立的文章中的几何结构进行仿真并且与文章中的结果比较，可以看出结果相符。验证上述方法的可行性后，我对我们制备的二维平面波导的常见几何尺寸进行了仿真，并绘制了距离波导金属表面不同高度处的水平截线上的磁感应强度分布，如图\ref{fig:20161122-2_Bnorm_lines_659GHz}所示。
 
-        \begin{figure}
+        \begin{figure}[h]
+                \centering
             \includegraphics[width=4.5in]{20161122-2_Bnorm_lines_659GHz.png}
             \caption{基于我们制备的二维平面波导的常见几何尺寸进行仿真所得的磁感应强度分布图。}
             \label{fig:20161122-2_Bnorm_lines_659GHz}
@@ -152,37 +158,41 @@
                 Sarabi等人提出的设计如图\ref{fig:spiral_proposal_1}所示
 
 
-            \begin{figure}[!h]
+            \begin{figure}
                 \begin{minipage}[b]{0.4\textwidth}
                     \centering
                     \includegraphics[width=3in]{spiral_proposal_1.jpg}
-                    \caption{来自参考文献\cite{sarabi2017prospective}的2.5维谐振腔的设计。其中左图为右图中红色虚线部分的放大图。}
+                    \caption{来自参考文献~\inlinecite{sarabi2017prospective}的2.5维谐振腔的设计（右图中红色虚线部分的局部放大图）。}
                     \label{fig:spiral_proposal_1}
                 \end{minipage}%
-                \hspace{0.1\textwidth}%
+                % \hspace{0.1\textwidth}%
+                \hfill
                 \begin{minipage}[b]{0.5\textwidth}
                     \centering
                     \includegraphics[width=3.5in]{spiral_proposal_2.jpg}
-                    % \caption{文献\cite{Mark2013}中所示磁场空间分布截面图}
+                    \caption{来自参考文献~\inlinecite{sarabi2017prospective}的2.5维谐振腔的设计（整体）。}
                     \label{fig:spiral_proposal_2}
                 \end{minipage}
             \end{figure}
             其中主要图示均为俯视图，左图的下方的小图为横截面示意图。右图中蓝色的部分即为层状电容的俯视图。通过根据相关几何参数进行仿真，我得到了这种谐振腔的电感部分的磁场分布图，如图\ref{fig:res_spiral_normB_xy_20170314}所示。通过分析我们发现，耦合系数能够得到数量级上的提升的根本原因是选取了很小的电感$L$，从而得到了较大的零场磁场涨落，并且自旋距离电感部分导线的距离较近，为$~10$nm的数量级。而与之相对的，螺旋状电感的螺旋圈数则相对不那么重要，不会对耦合强度产生数量级上的影响，反而加大了微纳加工制备的难度。因此，我们进一步对螺旋状电感进行了分析，改良与仿真。
 
-            \begin{figure}
+            \begin{figure}[h]
+                \centering
                 \includegraphics[width=4in]{res_spiral_normB_xy_20170314.png}
                 \caption{2.5维谐振腔的螺旋状电感处水平截面上的磁感应强度分布。}
                 \label{fig:res_spiral_normB_xy_20170314}
             \end{figure}
 
-            \begin{figure}
+            \begin{figure}[h]
+                \centering
                 \includegraphics[width=3in]{res_UInd_normB_20170317.png}
                 \caption{第一次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布。}
                 \label{fig:res_UInd_normB_20170317}
             \end{figure}
 
 
-            \begin{figure}
+            \begin{figure}[h]
+                \centering
                 \includegraphics[width=3in]{res_UIndV3_normB_20170321.png}
                 \caption{第二次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，电感部分的电感大小得到了降低。}
                 \label{fig:res_UIndV3_normB_20170321}
@@ -190,7 +200,8 @@
 
             
 
-            \begin{figure}
+            \begin{figure}[h]
+                \centering
                 \includegraphics[width=3in]{res_UIndV4_50nm_normB_20170406.png}
                 \caption{第三次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，通过加厚材料并加粗宽度提升了临界电流大小，并在不影响磁场较强区域的强度的基础上改进了设计以提高制备的成功率。}
                 \label{fig:res_UIndV4_50nm_normB_20170406}
