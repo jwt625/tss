@@ -1,38 +1,36 @@
 \contentsline {chapter}{目\hspace {\ccwd }录}{III}{chapter*.6}
-\contentsline {chapter}{\numberline {第1章}引言：混合量子系统简介}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}混合量子系统的重要性}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}超导量子系统与常见固态自旋系统}{1}{section.1.2}
+\contentsline {chapter}{\numberline {第1章}引言：基于超导量子比特与固态自旋的混合量子系统简介}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}混合量子系统的重要性与现有研究状况}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}超导量子系统与常见固态自旋系统}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}超导量子系统与自旋系综的耦合}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}超导量子比特的制备与测量}{5}{section.1.4}
-\contentsline {chapter}{\numberline {第2章}自旋与谐振腔耦合强度仿真}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}新型3D谐振腔与自旋系综的耦合}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}2D平面波导谐振腔与自旋系综的耦合}{8}{section.2.2}
-\contentsline {section}{\numberline {2.3}螺旋状电感谐振腔与2.5维谐振腔与单个自旋的耦合}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}参数估计}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}设计与优化}{11}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {第3章}PPMS测量系统}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}测量系统概述}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}测量系统的程序编写}{15}{section.3.2}
-\contentsline {section}{\numberline {3.3}样品托的设计与优化}{17}{section.3.3}
-\contentsline {chapter}{\numberline {第4章}2.5维谐振腔的制备与测量}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}器件测量与制备工艺概述}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}光刻板的设计}{18}{section.4.2}
-\contentsline {section}{\numberline {4.3}谐振腔响应信号的拟合}{20}{section.4.3}
-\contentsline {chapter}{插图索引}{21}{chapter*.25}
-\contentsline {chapter}{表格索引}{23}{chapter*.26}
-\contentsline {chapter}{公式索引}{24}{section*.27}
-\contentsline {chapter}{参考文献}{26}{section*.29}
-\contentsline {chapter}{致\hspace {1em}谢}{28}{section*.31}
-\contentsline {chapter}{声\hspace {1em}明}{29}{section*.33}
-\contentsline {chapter}{\numberline {附录 A}超导量子比特的原理}{30}{appendix.A}
-\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{31}{appendix.B}
-\contentsline {chapter}{\numberline {附录 C}测量系统MATLAB代码}{32}{appendix.C}
-\contentsline {section}{\numberline {C.1}VNA控制代码}{32}{section.C.1}
-\contentsline {section}{\numberline {C.2}PPMS控制代码}{47}{section.C.2}
-\contentsline {section}{\numberline {C.3}扫描温度与磁场实验的代码}{53}{section.C.3}
-\contentsline {subsection}{\numberline {C.3.1}扫描温度}{53}{subsection.C.3.1}
-\contentsline {subsection}{\numberline {C.3.2}扫描磁场}{56}{subsection.C.3.2}
-\contentsline {chapter}{\numberline {附录 D}外文资料原文}{60}{appendix.D}
-\contentsline {chapter}{\numberline {附录 E}外文资料的调研阅读报告或书面翻译}{61}{appendix.E}
-\contentsline {chapter}{\numberline {附录 F}其它附录}{62}{appendix.F}
+\contentsline {section}{\numberline {1.4}超导量子比特的制备与测量}{6}{section.1.4}
+\contentsline {chapter}{\numberline {第2章}自旋与谐振腔耦合强度仿真}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}新型3D谐振腔与自旋系综的耦合}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}2D平面波导谐振腔与自旋系综的耦合}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}螺旋状电感谐振腔与2.5维谐振腔与单个自旋的耦合}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}参数估计}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}设计与优化}{12}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {第3章}PPMS测量系统}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}测量系统概述}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}测量系统的程序编写}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}样品托的设计与优化}{18}{section.3.3}
+\contentsline {chapter}{\numberline {第4章}2.5维谐振腔的制备与测量}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}器件测量与制备工艺概述}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}光刻板的设计}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}谐振腔响应信号的拟合}{21}{section.4.3}
+\contentsline {chapter}{插图索引}{22}{chapter*.25}
+\contentsline {chapter}{表格索引}{24}{chapter*.26}
+\contentsline {chapter}{公式索引}{25}{section*.27}
+\contentsline {chapter}{参考文献}{27}{section*.29}
+\contentsline {chapter}{致\hspace {1em}谢}{30}{section*.31}
+\contentsline {chapter}{声\hspace {1em}明}{31}{section*.33}
+\contentsline {chapter}{\numberline {附录 A}超导量子比特的原理}{32}{appendix.A}
+\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{33}{appendix.B}
+\contentsline {chapter}{\numberline {附录 C}测量系统MATLAB代码}{34}{appendix.C}
+\contentsline {section}{\numberline {C.1}VNA控制代码}{34}{section.C.1}
+\contentsline {section}{\numberline {C.2}PPMS控制代码}{49}{section.C.2}
+\contentsline {section}{\numberline {C.3}扫描温度与磁场实验的代码}{55}{section.C.3}
+\contentsline {subsection}{\numberline {C.3.1}扫描温度}{55}{subsection.C.3.1}
+\contentsline {subsection}{\numberline {C.3.2}扫描磁场}{58}{subsection.C.3.2}
+\contentsline {chapter}{\numberline {附录 D}外文资料调研阅读报告}{62}{appendix.D}
 \contentsline {chapter}{在学期间参加课题的研究成果}{63}{section*.35}

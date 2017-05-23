@@ -1,4 +1,4 @@
-
+%!TEX root = ../main.tex
 
         \chapter{PPMS测量系统} % (fold)
         \label{cha:PPMS测量系统}
@@ -18,7 +18,7 @@
             \label{sec:测量系统}
             通过VNA测量谐振腔的频率响应时，需要调整VNA的输出功率，IFBW，扫描频率范围，平均次数等一系列参数。这些调整步骤既可通过仪器前面板的按钮进行，也可通过远程通讯来控制。考虑到测量的便捷性，我希望通过GPIB线与VNA进行通讯并取得数据。通过Agilent提供的GPIB-USB转接头建立硬件连接，并安装Keysight Instrument Control Bundle软件后，转接头上的工作指示灯正常。Keysight Instrument Control Bundle软件提供了Keysight IO Libraries Suite软件的安装与Command Expert软件的安装。前者能够方便地查看仪器的连接状态，后者则提供仪器的SCPI指令集并可测试通过指令控制仪器。
 
-            通过电脑与VNA建立通讯后，我以MATLAB提供的visa类为基础，通过Command Expert对VNA的相关控制指令进行了测试后，编写了通过MATLAB控制VNA的代码，具体代码可在附录\ref{cha:measurement_code}中查看。对于能够简单进行更改与询问的参数，重载了MATLAB的get与set方法。对于大范围的精细的扫描，编写了manualSweep方法，可自动将扫描范围分段进行，并返回最终扫描结果。对于数据处理环节，我将拟合相关的代码也整合进入测量阶段，进而能够节省重新导入数据的过程直接快速得到你和结果。使用MATLAB代码进行谐振腔的测量，在1个小时内即可完成大范围搜索谐振腔的共振频率位置，对不同频率的谐振腔进行细扫并拟合得到品质因子这一系列实验步骤。以下为一部分示例代码。大部分代码采用了inputParser处理输入参数，使程序规范且易于理解。
+            通过电脑与VNA建立通讯后，我以MATLAB提供的visa类为基础，通过Command Expert对VNA的相关控制指令进行了测试后，编写了通过MATLAB控制VNA的代码，具体代码可在附录\ref{cha:measurement_code}中查看。对于能够简单进行更改与询问的参数，重载了MATLAB的get与set方法。对于大范围的精细的扫描，编写了manualSweep方法，可自动将扫描范围分段进行，并返回最终扫描结果。对于数据处理环节，我将拟合相关的代码也整合进入测量阶段，进而能够节省重新导入数据的过程直接快速得到拟合结果。使用MATLAB代码进行谐振腔的测量，在1个小时内即可完成大范围搜索谐振腔的共振频率位置，对不同频率的谐振腔进行细扫并拟合得到品质因子这一系列实验步骤。以下为一部分示例代码。大部分代码采用了inputParser处理输入参数，使程序规范且易于理解。
 
             \begin{lstlisting}
 % Example of using class E5071C
