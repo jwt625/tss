@@ -7,25 +7,29 @@
         \section{器件测量与制备工艺概述} % (fold)
         \label{sec:制备工艺概述}
 
-            由于2.5维谐振腔的电容部分由上下两层金属以及中间的介电层组成，工艺较为复杂，需要至少三步光刻来完成。而细小的电感部分则需要电子束曝光来定义形状，再由蒸发镀膜完成。因此，总的制备工艺大致如下：
+            由于2.5维谐振腔的电容部分由上下两层金属以及中间的介电层组成，工艺较为复杂，需要至少三步光刻来完成。而细小的电感部分则需要电子束曝光（EBL）来定义形状，再由蒸发镀膜完成。因此，总的制备工艺大致如下：
+
             \begin{enumerate}
-                \item Photolithography to make transmission line, bottom layer of the 3D capacitor
-                \item ALD SiO2 or Al2O3, currently Al2O3
-                \item Photolithography and ICP (or wet) etching of Al2O3 (alignment: 10 um)
+                \item 通过光刻，磁控溅射蒸镀金属Nb，Lift off三步制作平面波导与三层电容的第一层
+                \item 通过ALD生长Al$_2$O$_3$，或通过PECVD生长SiO$_2$或SiN$_x$作为三层电容的介电层
+                \item 光刻定义掩膜后通过ICP刻蚀或湿法刻蚀介电层
                     \begin{enumerate}
-                        \item remaining SiO2 only covers the lower capacitor layer
+                        \item 剩余的介电层仅遮盖住三层电容的底层
                     \end{enumerate}
-                \item Photolithography to make the top Nblayer (alignment 1-2 um)
-                \item EBL to make the other half of the 2D capacitor and the inductor
+                \item 利用光刻制作出三层电容的顶层图案并蒸镀金属，对准精度约1微米，Lift off
+                \item 利用EBL制作微小电感图案
                     \begin{enumerate}
-                        \item 2D capacitor connecting to the top layer of the 3D capacitor
-                        \item alignment 100-1000 nm
+                        \item 电感图案将与三层电容的上下级板相连
+                        \item 对准精度 100-1000 nm
                     \end{enumerate}
             \end{enumerate}
+
+
+            每一步制备工艺的具体步骤与相关参数均在附录\ref{cha:fabrication}中给出。
             
         % subsection 制备工艺概述 (end)
 
-        \section{光刻板的设计} % (fold)
+        \section{光刻板的设计与改进} % (fold)
         \label{sec:光刻板的设计}
 
             由于制备工艺需要三步光刻，对于完整制备一个器件来说，需要的光刻板的图案为一组三个，分别对应\ref{sec:制备工艺概述}制备工艺概述中的前三步。第一步完成二维平面波导以及接地平面的制作，以及三维电容的第一层金属。第二步在生长介电材料后通过光刻制作掩膜覆盖住需要保留的电容的第二层介电层部分，并刻蚀掉没有被覆盖掉的电介质。第三部制作出电容最上层的金属。最后一步通过电子束曝光与蒸镀制作微小的电感部分，并各自与三维电容的上、下两层连接起来。光刻的三个步骤所需的模板作图如图所示
@@ -49,7 +53,13 @@
 
             综合上述讨论，我们总共设计了若干种不同的模板几何形状，如图\ref{fig:LC}所示，覆盖了较大范围的电容与电感值，为第一次摸索器件制备工艺以及尝试性测量提供较大的频率变化区间，尽可能保证能够测到谐振腔的共振频率。
 
-            目前器件制备已经进行到了\ref{sec:制备工艺概述}制备工艺概述中的第三步，我们需要对刻蚀介电层的速率进行测试与标定。刻蚀介电层成功后即可进行第三步光刻，从而获得第一批待测器件。
+
+            \section{器件制备情况与讨论} % (fold)
+            \label{sec:器件制备情况与讨论}
+                按照上述计划，我进行了器件制备的工作，目前已完成了完整的器件制备流程。
+
+                
+            % section 器件制备 (end)
             
 
 

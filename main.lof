@@ -1,7 +1,7 @@
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces 金刚石色心结构示意图，其中碳空位由V表示，氮掺杂由N表示\cite {grezes2016towards}。\relax }}{3}{figure.caption.9}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces 金刚石色心在考虑零场劈裂与外加磁场后的能级示意图。其中$D$为零场劈裂导致的能级分裂，$m_S = \pm 1$的两个态之间的能量差来源于应力与局域电场。不同核自旋量子数$m_I$的态之间的能级分裂来源于超精细相互作用\cite {grezes2016towards}。\relax }}{3}{figure.caption.10}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces N个金刚石自旋构成的自旋系综的能级示意图\cite {grezes2016towards}。可以看见$\mathcal S \neq N/2 $的态均为高度简并态。\relax }}{5}{figure.caption.11}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces 金刚石色心在考虑零场劈裂与外加磁场后的能级示意图。其中$D$为零场劈裂导致的能级分裂，$m_S = \pm 1$的两个态之间的能量差来源于应力与局域电场。不同核自旋量子数$m_I$的态之间的能级分裂来源于超精细相互作用\cite {grezes2016towards}。\relax }}{4}{figure.caption.10}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces N个金刚石自旋构成的自旋系综的能级示意图\cite {grezes2016towards}。可以看见$\mathcal S \neq N/2 $的态均为高度简并态。\relax }}{6}{figure.caption.11}
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces 新型三维谐振腔的几何结构与电流，磁场分布示意图\cite {Angerer2016}\relax }}{7}{figure.caption.12}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 新型三维谐振腔仿真的几何设计(透视图)\relax }}{8}{figure.caption.13}
@@ -18,9 +18,17 @@
 \contentsline {figure}{\numberline {2.13}{\ignorespaces 第二次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，电感部分的电感大小得到了降低。\relax }}{14}{figure.caption.21}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces 第三次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，通过加厚材料并加粗宽度提升了临界电流大小，并在不影响磁场较强区域的强度的基础上改进了设计以提高制备的成功率。\relax }}{15}{figure.caption.22}
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces PPMS DynaCool测量设备实物图\cite {QDDynaCool}\relax }}{16}{figure.caption.23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces PPMS DynaCool腔体内部结构\cite {QDDynaCool}\relax }}{17}{figure.caption.24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 样品杆与样品盒。其中红色矩形部分为样品杆末端微波信号的输入与输出端，黄色矩形部分为样品盒所处位置，蓝色矩形为样品盒以及拆卸后的样品盒。\relax }}{18}{figure.caption.25}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 原有样品盒盖子与底座设计\relax }}{21}{figure.caption.26}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 改进后样品盒盖子与底座设计\relax }}{22}{figure.caption.27}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 为竖直放样品所所设计的样品盒底座拆分出的盖子与底座设计\relax }}{22}{figure.caption.28}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 为新的竖直放置样品的样品盒所设计的PCB板\relax }}{23}{figure.caption.29}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 制备一个器件所需的三个光刻步骤对应的一组三个模板图案\relax }}{20}{figure.caption.23}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 完整的光刻板图案\relax }}{21}{figure.caption.24}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 制备一个器件所需的三个光刻步骤对应的一组三个模板图案\relax }}{25}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 完整的光刻板图案\relax }}{26}{figure.caption.31}
+\addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

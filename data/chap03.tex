@@ -10,7 +10,38 @@
             实验中使用的网络分析仪为Agilent Technologies E5071C ENA series network analyzer，输出频率范围为300kHz至20GHz，下文中将简称其为VNA。
 
 
-            实验中所用的PPMS为QuantumDesign公司的DynaCool，本文中都将简称它为PPMS。该PPMS可降温至1.8 K，加磁场最大为9T或14T，取决于磁体的型号。PPMS本体如图？？所示，
+        \begin{figure}[h]
+                \centering
+            \includegraphics[width=4in]{DynaCool.jpg}
+            \caption{PPMS DynaCool测量设备实物图\cite{QDDynaCool}}
+            \label{fig:DynaCool}
+        \end{figure}
+
+            实验中所用的PPMS为QuantumDesign公司的DynaCool\cite{QDDynaCool}，本文中都将简称它为PPMS。该PPMS可降温至1.8 K，加磁场最大为9T或14T，取决于磁体的型号。PPMS本体如图\ref{fig:DynaCool}所示，主要由控制电脑与仪器腔体两部分组成。仪器腔体的内部结构由图\ref{fig:DynaCoolStructure}所示。该图为仪器腔体在竖直平面内的横截面，可以看见样品室为被制冷环境包围住的一个立体圆柱形结构，直径不到一分米，有效的温度与磁场区域的高度大概在一分米左右。
+
+
+        \begin{figure}[h]
+                \centering
+            \includegraphics[width=4in]{PPMSStructure.jpg}
+            \caption{PPMS DynaCool腔体内部结构\cite{QDDynaCool}}
+            \label{fig:DynaCoolStructure}
+        \end{figure}
+
+            由于测量样品所在区域较小，因此无法进行需要很多端口的微波测量，但对于测量谐振腔性质所需的两个端口甚至一个端口来说较为合适。通过减小样品空间所取得的优点即在于，该PPMS系统的制冷系统长时间处于4K的低温，样品位于相对独立的样品室中，通过样品架与制冷系统的物理接触达到降温的效果，因此样品室可以较快地升温降温，而不需要对整个制冷系统进行升温降温。实际使用过程中，升温过程与降温过程所需时间均仅为30分钟左右，使得更换样品极为便捷。
+
+
+
+            在开始本文的测量相关项目之前，该PPMS系统多用于直流测量，没有微波测量所需的设备。该部分设备的改造由交叉信息研究院孙麓岩研究组的郭星翰同学完成。改装后的样品通过样品托固定于样品杆上，进而通过样品杆插入PPMS的样品室中。由郭星翰设计的样品托如图\ref{fig:samplerodHolder}中蓝色矩形部分所示，由底座与盖子两部分组成。更换器件时，首先使PPMS样品室回到常温常压，取出样品杆，将样品托底座从盖子上拆下，再将旧样品从底座上取下，新样品安装上底座后将底座装回，插回样品杆即可。如图\ref{fig:samplerodHolder}所示，所测量的器件大小为4mm~x~7mm，放置于样品盒底座上的PCB板中央，通过点焊与PCB板相连。PCB板上焊接有两个SMP接头，与样品杆上的微波线相连并接入VNA的输入与输出端口。
+
+
+\begin{figure}[h]
+  \centering%
+  \includegraphics[width=5in]{SampleRodAndHolder.png}
+  \caption{样品杆与样品盒。其中红色矩形部分为样品杆末端微波信号的输入与输出端，黄色矩形部分为样品盒所处位置，蓝色矩形为样品盒以及拆卸后的样品盒。}
+  \label{fig:samplerodHolder}
+\end{figure}
+
+            在实验进行过程中，我们考虑到将来进行自旋与谐振腔耦合的相关实验时需要加入竖直方向的磁场以改变自旋能级间距，而现有设计下磁场垂直与器件表面，对超导态下的器件的性质影响较大。因此，我在现有样品托的基础上改进了样品托底座与盖子以及PCB板的设计，具体在第\ref{sec:样品托的设计与优化}节中详细进行描述。
                 
             % section 测量系统概述 (end)
 
@@ -55,10 +86,99 @@ ppms.setTemp(300,'tempRate',10,'tempApproach','FastSettle');		% set temperature
 ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
             \end{lstlisting}
 
+            有了以上测量程序的编写，即可完全通过测量电脑询问与控制PPMS的温度与磁场，以及调节VNA的相关参数并取得VNA的扫描数据。更进一步的，通过Windows的远程桌面可以远程连接到测量电脑，从而使测量变得更为便捷。实际中我们只需要在取出和放入样品时到PPMS设备附近，其余时间均远程进行控制与测量。
+
 
             \section{样品托的设计与优化} % (fold)
             \label{sec:样品托的设计与优化}
-            	
+
+
+
+\begin{figure}[h]
+  \centering%
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=2.2in,angle=270]{Smallbox1.pdf}
+    % \caption{第一个小图形}
+  \end{subfigure}%
+  % \hspace{4em}%
+  \hfill
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=2.2in,angle=270]{Smallbox2.pdf}
+    % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
+  \end{subfigure}
+  \caption{原有样品盒盖子与底座设计}
+  \label{fig:oldSampleBox}
+\end{figure}
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[h]
+  \centering%
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=2.2in,angle=270]{SmallboxCover.pdf}
+    % \caption{第一个小图形}
+  \end{subfigure}%
+  % \hspace{4em}%
+  \hfill
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=2.2in,angle=270]{SmallboxHolderHori.pdf}
+    % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
+  \end{subfigure}
+  \caption{改进后样品盒盖子与底座设计}
+  \label{fig:newSampleBox}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[h]
+  \centering%
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=2.2in,angle=270]{SmallboxHolderVertTotalHolder.pdf}
+    % \caption{第一个小图形}
+  \end{subfigure}%
+  % \hspace{4em}%
+  \hfill
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=2.2in,angle=270]{SmallboxHolderVertTotalCover.pdf}
+    % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
+  \end{subfigure}
+  \caption{为竖直放样品所所设计的样品盒底座拆分出的盖子与底座设计}
+  \label{fig:newVertiSampleBox}
+\end{figure}
+
+                  
+
+
+\begin{figure}[h]
+  \centering%
+  \includegraphics[width=5in,angle=270]{SmallboxHolderVertTotalHolderPCBV2.pdf}
+  \caption{为新的竖直放置样品的样品盒所设计的PCB板}
+  \label{fig:SmallboxHolderVertTotalHolderPCBV2}
+\end{figure}
+
+
+
+
+
+
             % subsection 样品托的设计与优化 (end)
 
 

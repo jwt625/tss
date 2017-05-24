@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210) (preloaded format=xelatex 2017.3.9)  24 MAY 2017 01:07
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210) (preloaded format=xelatex 2017.3.9)  24 MAY 2017 23:35
 entering extended mode
 **C:/Users/jwt/Documents/GitHub/tss/main.tex
 (C:/Users/jwt/Documents/GitHub/tss/main.tex
@@ -2477,33 +2477,33 @@ LaTeX Info: Redefining \nameref on input line 41.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -2.00792pt
-(hyperref)                removed on input line 50.
+(hyperref)                removed on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lower' on input line 50.
+(hyperref)                removing `\lower' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 50.
+(hyperref)                removing `\hbox' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -1.50562pt
-(hyperref)                removed on input line 50.
+(hyperref)                removed on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\spacefactor' on input line 50.
+(hyperref)                removing `\spacefactor' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@m' on input line 50.
+(hyperref)                removing `\@m' on input line 49.
 
 File: figures/tsinghua.pdf Graphic file (type QTm)
 <use  "figures/tsinghua.pdf" >
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 36.135pt on input line 51.
+(Font)              scaled to size 36.135pt on input line 50.
 \g__fontspec_family_SimHei_int=\count343
 .................................................
 . fontspec info: "no-font-shape"
@@ -2533,9 +2533,9 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 51.
+(Font)              scaled to size 18.06749pt on input line 50.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 26.09749pt on input line 51.
+(Font)              scaled to size 26.09749pt on input line 50.
 \g__fontspec_family_FangSong_int=\count344
 .................................................
 . fontspec info: "no-font-shape"
@@ -2565,52 +2565,52 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 51.
+(Font)              scaled to size 16.06pt on input line 50.
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 5
-1.
+0.
  (C:\CTEX\UserData\tex\latex\newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.06pt on input line 51.
+(Font)              scaled to size 16.06pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 51.
+(Font)              scaled to size 14.05249pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 51.
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 51.
+(Font)              scaled to size 10.53937pt on input line 50.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 50.
 
 
 (C:\CTEX\UserData\tex\latex\newtx\untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 51.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 50.
 
 
 (C:\CTEX\UserData\tex\latex\newtx\untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 51.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 50.
 
 
 (C:\CTEX\UserData\tex\latex\newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.06pt on input line 51.
+(Font)              scaled to size 16.06pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 51.
+(Font)              scaled to size 14.05249pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 51.
+(Font)              scaled to size 10.53937pt on input line 50.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -2645,26 +2645,26 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 22.08249pt on input line 51.
+(Font)              scaled to size 22.08249pt on input line 50.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 51.
+(Font)              scaled to size 12.045pt on input line 50.
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 51.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 50.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 51.
+(Font)              scaled to size 12.045pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 51.
+(Font)              scaled to size 6.0pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 51.
+(Font)              scaled to size 12.045pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.0pt on input line 51.
+(Font)              scaled to size 6.0pt on input line 50.
 [2
 
 ]
@@ -2679,12 +2679,12 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 . 
 . Could not resolve font "Microsoft YaHei/I" (it probably doesn't exist).
 .................................................
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 51.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 50.
  (C:\CTEX\MiKTeX\tex\latex\tex-gyre\t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 51.
+(Font)              scaled to size 10.84042pt on input line 50.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2704,21 +2704,21 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 . - 'bold italic small caps'  (b/itsc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 13.55052pt on input line 51.
+(Font)              scaled to size 13.55052pt on input line 50.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.045pt on input line 51.
+(Font)              scaled to size 12.045pt on input line 50.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 5
-1.
+0.
 
 (C:\CTEX\UserData\tex\latex\newtx\ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.045pt on input line 51.
+(Font)              scaled to size 12.045pt on input line 50.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 51.
+(Font)              scaled to size 9.03374pt on input line 50.
  [1
 
 
@@ -2749,39 +2749,36 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 
 ]
 Package hyperref Info: bookmark level for unknown equation defaults to 0 on inp
-ut line 29.
+ut line 33.
+ [2]
 File: figures/NV.png Graphic file (type QTm)
  <use  "figures/NV.png" >
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 41.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 41
+(Font)              scaled to size 11.04124pt on input line 45.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 45
 .
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.04124pt on input line 41.
+(Font)              scaled to size 11.04124pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 41.
+(Font)              scaled to size 8.06006pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.07271pt on input line 41.
+(Font)              scaled to size 6.07271pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.04124pt on input line 41.
+(Font)              scaled to size 11.04124pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.06006pt on input line 41.
+(Font)              scaled to size 8.06006pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.07271pt on input line 41.
+(Font)              scaled to size 6.07271pt on input line 45.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.06006pt on input line 41.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+(Font)              scaled to size 8.06006pt on input line 45.
 File: figures/NV_levels.png Graphic file (type QTm)
-<use  "figures/NV_levels.png" >
+ <use  "figures/NV_levels.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] [3] [4]
+[3] [4] [5]
 File: figures/NV_ensemble_levels.png Graphic file (type QTm)
- <use  "figures/NV_ensemble_levels.png" > [5]) [6]
+ <use  "figures/NV_ensemble_levels.png" >) [6]
 \openout2 = `data/chap02.aux'.
 
  (data/chap02.tex
@@ -2866,17 +2863,77 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (data/chap03.tex
 第3章
-[16
+File: figures/DynaCool.jpg Graphic file (type QTm)
+<use  "figures/DynaCool.jpg" > [16
 
 
 
 ]
+File: figures/PPMSStructure.jpg Graphic file (type QTm)
+ <use  "figures/PPMSStructure.jpg" >
+[17]
+File: figures/SampleRodAndHolder.png Graphic file (type QTm)
+ <use  "figures/SampleRodAndHolder.png" > [18]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.52437pt on input line 24.
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 25.
- (C:\CTEX\MiKTeX\tex\latex\psnfss\ts1pcr.fd
+(Font)              scaled to size 6.52437pt on input line 55.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 56.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [17]) [18]
+) [19] [20]
+File: figures/Smallbox1.pdf Graphic file (type QTm)
+
+<use  "figures/Smallbox1.pdf" >
+Overfull \hbox (58.88412pt too wide) in paragraph at lines 100--102
+[][] 
+ []
+
+File: figures/Smallbox2.pdf Graphic file (type QTm)
+<use  "figures/Smallbox2.pdf" >
+Overfull \hbox (58.88412pt too wide) in paragraph at lines 106--108
+[][] 
+ []
+
+File: figures/SmallboxCover.pdf Graphic file (type QTm)
+<use  "figures/SmallboxCover.pdf" >
+Overfull \hbox (58.88412pt too wide) in paragraph at lines 128--130
+[][] 
+ []
+
+File: figures/SmallboxHolderHori.pdf Graphic file (type QTm)
+<use  "figures/SmallboxHolderHori.pdf" >
+Overfull \hbox (58.88412pt too wide) in paragraph at lines 134--136
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/SmallboxHolderVertTotalHolder.pdf Graphic file (type QTm)
+<use  "figures/SmallboxHolderVertTotalHolder.pdf" >
+Overfull \hbox (58.88412pt too wide) in paragraph at lines 154--156
+[][] 
+ []
+
+File: figures/SmallboxHolderVertTotalCover.pdf Graphic file (type QTm)
+<use  "figures/SmallboxHolderVertTotalCover.pdf" >
+Overfull \hbox (58.88412pt too wide) in paragraph at lines 160--162
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/SmallboxHolderVertTotalHolderPCBV2.pdf Graphic file (type QTm)
+<use  "figures/SmallboxHolderVertTotalHolderPCBV2.pdf" >
+Overfull \hbox (96.06776pt too wide) in paragraph at lines 172--173
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [21] [22] [23]
 \openout2 = `data/chap04.aux'.
 
  (data/chap04.tex
@@ -2891,11 +2948,11 @@ File: figures/LC.png Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19
+[24
 
 
 
-]) [20] [21] (main.lof [22
+] [25]) [26] (main.lof [27
 
 
 
@@ -2903,13 +2960,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [23] (main.lot)
+ [28] (main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [24
+ [29
 
-] (main.loe [25
+] (main.loe [30
 
 
 ])
@@ -2917,74 +2974,78 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 \openout7 = `main.loe'.
 
  (main.bbl
-[26]
+[31]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.53937pt on input line 1.
- [27
+ [32
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 221.
+(Font)              scaled to size 7.0pt on input line 172.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 221.
+(Font)              scaled to size 5.0pt on input line 172.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.0pt on input line 221.
+(Font)              scaled to size 7.0pt on input line 172.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.0pt on input line 221.
- [28]) [29]
+(Font)              scaled to size 5.0pt on input line 172.
+ [33]) [34]
 \openout2 = `data/ack.aux'.
 
- (data/ack.tex [30
+ (data/ack.tex [35
 
 
 
-]) [31
+]) [36
 
 
 ] (data/appendix01.tex
 附录 A
-[32
+[37
 
 
 ]
 附录 B
-[33
+[38
 
 ]
 附录 C
-[34
+[39
 
-] [35] [36] [37] [38] [39]
+]
+附录 D
+[40
+
+] [41] [42] [43] [44] [45]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 307.
+(Font)              scaled to size 9.03374pt on input line 372.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 307.
- [40]
-Overfull \hbox (169.11049pt too wide) in paragraph at lines 330--331
+(Font)              scaled to size 9.03374pt on input line 372.
+ [46]
+Overfull \hbox (169.11049pt too wide) in paragraph at lines 395--396
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[41]
+[47]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.52437pt on input line 364.
+(Font)              scaled to size 6.52437pt on input line 429.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.52437pt on input line 364.
- [42]
-Overfull \hbox (60.70473pt too wide) in paragraph at lines 392--393
+(Font)              scaled to size 6.52437pt on input line 429.
+ [48]
+Overfull \hbox (60.70473pt too wide) in paragraph at lines 457--458
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][]  
  []
 
 
-Overfull \hbox (71.5453pt too wide) in paragraph at lines 415--416
+Overfull \hbox (71.5453pt too wide) in paragraph at lines 480--481
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][]  
  []
 
-[43] [44] [45] [46]
-Overfull \hbox (413.02332pt too wide) in paragraph at lines 576--577
+[49] [50] [51] [52]
+Overfull \hbox (413.02332pt too wide) in paragraph at lines 641--642
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -2994,7 +3055,7 @@ Overfull \hbox (413.02332pt too wide) in paragraph at lines 576--577
  []
 
 
-Overfull \hbox (429.28418pt too wide) in paragraph at lines 576--577
+Overfull \hbox (429.28418pt too wide) in paragraph at lines 641--642
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -3004,7 +3065,7 @@ Overfull \hbox (429.28418pt too wide) in paragraph at lines 576--577
  []
 
 
-Overfull \hbox (147.42934pt too wide) in paragraph at lines 576--577
+Overfull \hbox (147.42934pt too wide) in paragraph at lines 641--642
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -3012,176 +3073,176 @@ Overfull \hbox (147.42934pt too wide) in paragraph at lines 576--577
  []
 
 
-Overfull \hbox (358.82043pt too wide) in paragraph at lines 578--579
+Overfull \hbox (358.82043pt too wide) in paragraph at lines 643--644
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (429.28418pt too wide) in paragraph at lines 578--579
+Overfull \hbox (429.28418pt too wide) in paragraph at lines 643--644
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [] 
  []
 
 
-Overfull \hbox (17.34242pt too wide) in paragraph at lines 578--579
+Overfull \hbox (17.34242pt too wide) in paragraph at lines 643--644
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[47]
-Overfull \hbox (73.22646pt too wide) in paragraph at lines 587--588
+[53]
+Overfull \hbox (73.22646pt too wide) in paragraph at lines 652--653
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (46.12502pt too wide) in paragraph at lines 609--610
+Overfull \hbox (46.12502pt too wide) in paragraph at lines 674--675
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (116.58876pt too wide) in paragraph at lines 616--617
+Overfull \hbox (116.58876pt too wide) in paragraph at lines 681--682
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ]  
  []
 
 
-Overfull \hbox (2.76271pt too wide) in paragraph at lines 619--620
+Overfull \hbox (2.76271pt too wide) in paragraph at lines 684--685
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (2.76271pt too wide) in paragraph at lines 620--621
+Overfull \hbox (2.76271pt too wide) in paragraph at lines 685--686
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[48] [49]
-Overfull \hbox (272.09596pt too wide) in paragraph at lines 673--674
+[54] [55]
+Overfull \hbox (272.09596pt too wide) in paragraph at lines 738--739
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][]  
  []
 
-[50] [51]
-Overfull \hbox (149.11049pt too wide) in paragraph at lines 755--756
+[56] [57]
+Overfull \hbox (149.11049pt too wide) in paragraph at lines 820--821
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (11.92213pt too wide) in paragraph at lines 775--776
+Overfull \hbox (11.92213pt too wide) in paragraph at lines 840--841
 [][][]  
  []
 
 
-Overfull \hbox (22.76271pt too wide) in paragraph at lines 779--780
+Overfull \hbox (22.76271pt too wide) in paragraph at lines 844--845
 [][][][][][]  
  []
 
 
-Overfull \hbox (73.22646pt too wide) in paragraph at lines 780--781
+Overfull \hbox (73.22646pt too wide) in paragraph at lines 845--846
 [][][][][][][][][][][][][]  
  []
 
-[52]
-Overfull \hbox (8.183pt too wide) in paragraph at lines 802--803
+[58]
+Overfull \hbox (8.183pt too wide) in paragraph at lines 867--868
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (73.22646pt too wide) in paragraph at lines 810--813
+Overfull \hbox (73.22646pt too wide) in paragraph at lines 875--878
 [][][][][][][][][][][]  
  []
 
-[53]
-Overfull \hbox (56.96559pt too wide) in paragraph at lines 841--842
+[59]
+Overfull \hbox (56.96559pt too wide) in paragraph at lines 906--907
 [][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (2.76271pt too wide) in paragraph at lines 842--844
+Overfull \hbox (2.76271pt too wide) in paragraph at lines 907--909
 [][][][][][][][][][][]  
  []
 
-[54] [55]
-Overfull \hbox (22.76257pt too wide) in paragraph at lines 925--926
+[60] [61]
+Overfull \hbox (22.76257pt too wide) in paragraph at lines 990--991
 [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (24.44386pt too wide) in paragraph at lines 944--945
+Overfull \hbox (24.44386pt too wide) in paragraph at lines 1009--1010
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (13.60329pt too wide) in paragraph at lines 951--952
+Overfull \hbox (13.60329pt too wide) in paragraph at lines 1016--1017
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][]  
  []
 
 
-Overfull \hbox (46.12488pt too wide) in paragraph at lines 952--954
+Overfull \hbox (46.12488pt too wide) in paragraph at lines 1017--1019
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
  []
 
 
-Overfull \hbox (84.0669pt too wide) in paragraph at lines 954--955
+Overfull \hbox (84.0669pt too wide) in paragraph at lines 1019--1020
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[56]
-Overfull \hbox (201.63222pt too wide) in paragraph at lines 1004--1005
+[62]
+Overfull \hbox (201.63222pt too wide) in paragraph at lines 1069--1070
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (40.70473pt too wide) in paragraph at lines 1005--1006
+Overfull \hbox (40.70473pt too wide) in paragraph at lines 1070--1071
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[57] [58]
-Overfull \hbox (22.76257pt too wide) in paragraph at lines 1071--1072
+[63] [64]
+Overfull \hbox (22.76257pt too wide) in paragraph at lines 1136--1137
 [][][][][][][][][][][][][][] 
  []
 
-[59]
-Overfull \hbox (24.44386pt too wide) in paragraph at lines 1090--1091
+[65]
+Overfull \hbox (24.44386pt too wide) in paragraph at lines 1155--1156
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (8.183pt too wide) in paragraph at lines 1097--1098
+Overfull \hbox (8.183pt too wide) in paragraph at lines 1162--1163
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][]  
  []
 
 
-Overfull \hbox (56.96545pt too wide) in paragraph at lines 1098--1100
+Overfull \hbox (56.96545pt too wide) in paragraph at lines 1163--1165
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
  []
 
-[60]
-Overfull \hbox (207.0525pt too wide) in paragraph at lines 1151--1152
+[66]
+Overfull \hbox (207.0525pt too wide) in paragraph at lines 1216--1217
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (46.12502pt too wide) in paragraph at lines 1152--1153
+Overfull \hbox (46.12502pt too wide) in paragraph at lines 1217--1218
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[61]
-附录 D
-) [62
+[67]
+附录 E
+) [68
 
 ]
 \openout2 = `data/resume.aux'.
@@ -3189,7 +3250,7 @@ Overfull \hbox (46.12502pt too wide) in paragraph at lines 1152--1153
  (data/resume.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.05249pt on input line 3.
-) [63
+) [69
 
 
 
@@ -3197,24 +3258,24 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 \tf@thm=\write8
 \openout8 = `main.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
  (main.aux (data/chap01.aux) (data/chap02.aux)
 (data/chap03.aux) (data/chap04.aux) (data/ack.aux) (data/resume.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 96.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 97.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36797 strings out of 427916
- 660744 string characters out of 3155831
- 825966 words of memory out of 3000000
- 40123 multiletter control sequences out of 15000+200000
+ 36832 strings out of 427916
+ 660854 string characters out of 3155831
+ 826809 words of memory out of 3000000
+ 40148 multiletter control sequences out of 15000+200000
  139924 words of font info for 248 fonts, out of 3000000 for 9000
  1315 hyphenation exceptions out of 8191
- 66i,12n,96p,10471b,2017s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,12n,96p,10471b,2033s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (70 pages).
+Output written on main.pdf (76 pages).

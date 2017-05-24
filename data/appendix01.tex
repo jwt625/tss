@@ -1,3 +1,4 @@
+%!TEX root = ../main.tex
 
 \chapter{超导量子比特的原理} % (fold)
 \label{cha:SCQubitPrinciple}
@@ -7,8 +8,72 @@
 
 \chapter{微纳加工工艺} % (fold)
 \label{cha:fabrication}
+
+\section{光刻} % (fold)
+\label{sec:光刻}
+    \begin{enumerate}
+        \item Spin coating S1805, 500 nm
+        \item Bake at 115 degree C for 1 min
+        \item Align mask
+        \item Expose with 405 nm UV light for 9.5s
+        \item Develop with MF-319 for 45s， power 350W
+        \item Clean in DI-water and blow dry
+    \end{enumerate}
+% section 光刻 (end)
+
+\section{介电层生长} % (fold)
+\label{sec:介电层生长}
+    \begin{enumerate}
+        \item PECVD生长SiO$_2$速率：
+        \item PECVD生长SiN$_x$速率：
+        \item ALD生长Al$_2$O$_3$速率：
+    \end{enumerate}
+% section 介电层生长 (end)
+
+\section{磁控溅射镀膜} % (fold)
+\label{sec:磁控溅射镀膜}
+    
+% section 磁控溅射镀膜 (end)
+
+\section{Argon milling去除氧化层} % (fold)
+\label{sec:argon_milling去除氧化层}
+
+% section argon_milling去除氧化层 (end)
+
+\section{点焊} % (fold)
+\label{sec:点焊}
+    \begin{enumerate}
+        \item 一焊由于PCB上的SMP接头的空间位置原因需位于器件上，焊接使用铝线
+        \item 一焊参数：功率220，时间30ms，力19
+        \item 二焊参数：功率330，时间40ms，力19
+        \item 点焊时应使焊线尽可能地短而密
+    \end{enumerate}
+% section 点焊 (end)
   
 % chapter fabrication (end)
+
+\chapter{PPMS系统的常用操作} % (fold)
+\label{cha:ppms系统的常用操作}
+    对于PPMS的详细介绍可参阅PPMS的用户手册，本附录在读者熟悉PPMS相关术语与参数（如Chamber Pressure等）的前提下，为使用者提供一个方便参考的操作流程。
+    在正常的测量状态下，Chamber Pressure与样品室温度有关，样品温度为2K左右时一般为300至400mTorr，chamber state应该为Purged，意为样品室已用He气清洗并抽真空。在非远程控制PPMS时，一般通过与PPMS相连的电脑上的MultiVu程序控制PPMS。该程序主面板下方有若干小面板，点击这些小面板可调出设定温度，磁场与样品室状态的分面板。常用的分面板也即前文提到的Temperature，Chamber，Field面板。
+
+    \section{调节温度与磁场} % (fold)
+    \label{sec:调节温度}
+        在Temperature面板中，status显示当前样品温度。通过Control一栏即可设置目标温度（set point）以及调温的速率（Rate）。Mode选项有Fast settle和No overshoot两种，也即快速和非振荡的平稳到达目标温度两种模式。
+
+        升温时最大速率不应超过20K/min，降温时最大速率不应超过10K/min。
+
+
+        调节磁场与调节温度十分类似。
+    % section 调节温度 (end)
+
+    \section{更换样品} % (fold)
+    \label{sec:更换样品}
+        首先升温至室温，300K，从2K开始升温则需约30分钟。样品室升至常温后，样品室气压约为20~40Torr。点击Chamber分面板的Vent/Seal，此时样品室气压将快速升至常压，约790Torr，此后即可取出样品杆。若取出样品杆时间较长，应插入空样品杆并点击Chamber分面板的Purge/Seal以使样品室处于较好的密封环境。
+
+        更换完样品并插入封好样品杆后，点击Chamber分面板的Purge/Seal，此时state变为Purging。样品室气压将在常压与~30Torr间来回反复若干次，约5分钟后state变为Purged，此时即可开始制冷。
+    % section 更换样品 (end)
+% chapter ppms系统的常用操作流程 (end)
 
 \chapter{测量系统MATLAB代码} % (fold)
 \label{cha:measurement_code}

@@ -1,11 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{divincenzo2000physical}
-DiVincenzo D~P, et~al.
-\newblock The physical implementation of quantum computation.
-\newblock arXiv preprint quant-ph/0002077, 2000.
-\thudot
-
 \bibitem{feynman1982simulating}
 Feynman R~P.
 \newblock Simulating physics with computers.
@@ -17,13 +11,11 @@ Nielsen M~A, Chuang I.
 \newblock Quantum computation and quantum information, 2002
 \thudot
 
-\bibitem{shor1994algorithms}
-Shor P~W.
-\newblock Algorithms for quantum computation: Discrete logarithms and
-  factoring.
-\newblock  Foundations of Computer Science, 1994 Proceedings., 35th Annual
-  Symposium on. IEEE, 1994.
-\newblock  124--134
+\bibitem{bennett1984quantum}
+Bennett C.
+\newblock Quantum cryptography: Public key distribution and coin tossing.
+\newblock  Proc. of IEEE Int. Conf. on Computers, Systems and Signal
+  Processing, 1984, 1984
 \thudot
 
 \bibitem{grover1996fast}
@@ -34,23 +26,31 @@ Grover L~K.
 \newblock  212--219
 \thudot
 
-\bibitem{bennett1984quantum}
-Bennett C.
-\newblock Quantum cryptography: Public key distribution and coin tossing.
-\newblock  Proc. of IEEE Int. Conf. on Computers, Systems and Signal
-  Processing, 1984, 1984
+\bibitem{shor1994algorithms}
+Shor P~W.
+\newblock Algorithms for quantum computation: Discrete logarithms and
+  factoring.
+\newblock  Foundations of Computer Science, 1994 Proceedings., 35th Annual
+  Symposium on. IEEE, 1994.
+\newblock  124--134
 \thudot
 
-\bibitem{haffner2008quantum}
-H{\"a}ffner H, Roos C~F, Blatt R.
-\newblock Quantum computing with trapped ions.
-\newblock Physics reports, 2008, 469(4):155--203
+\bibitem{divincenzo2000physical}
+DiVincenzo D~P, et~al.
+\newblock The physical implementation of quantum computation.
+\newblock arXiv preprint quant-ph/0002077, 2000.
 \thudot
 
 \bibitem{loss1998quantum}
 Loss D, DiVincenzo D~P.
 \newblock Quantum computation with quantum dots.
 \newblock Physical Review A, 1998, 57(1):120
+\thudot
+
+\bibitem{haffner2008quantum}
+H{\"a}ffner H, Roos C~F, Blatt R.
+\newblock Quantum computing with trapped ions.
+\newblock Physics reports, 2008, 469(4):155--203
 \thudot
 
 \bibitem{gershenfeld1997bulk}
@@ -71,10 +71,115 @@ Kok P, Munro W~J, Nemoto K, et~al.
 \newblock Reviews of Modern Physics, 2007, 79(1):135
 \thudot
 
-\bibitem{schuster2007circuit}
-Schuster D~I.
-\newblock Circuit quantum electrodynamics.
-\newblock 2007
+\bibitem{Dutt2007}
+Dutt M~V~G, Childress L, Jiang L, et~al.
+\newblock Quantum register based on individual electronic and nuclear spin
+  qubits in diamond.
+\newblock Science, 2007, 316(5829):1312
+\thudot
+
+\bibitem{Imamoglu2009}
+Imamo{\v{g}}lu A.
+\newblock Cavity qed based on collective magnetic dipole coupling: Spin
+  ensembles as hybrid two-level systems.
+\newblock Physical Review Letters, 2009, 102(8):083602.
+\newblock PRL
+\thudot
+
+\bibitem{Wesenberg2009}
+Wesenberg J~H, Ardavan A, Briggs G~A~D, et~al.
+\newblock Quantum computing with an electron spin ensemble.
+\newblock Physical Review Letters, 2009, 103(7):070502.
+\newblock PRL
+\thudot
+
+\bibitem{Schuster2010}
+Schuster D~I, Sears A~P, Ginossar E, et~al.
+\newblock High-cooperativity coupling of electron-spin ensembles to
+  superconducting cavities.
+\newblock Physical Review Letters, 2010, 105(14):140501.
+\newblock PRL
+\thudot
+
+\bibitem{kubo2010}
+Kubo Y, Ong F~R, Bertet P, et~al.
+\newblock Strong coupling of a spin ensemble to a superconducting resonator.
+\newblock Physical Review Letters, 2010, 105(14):140502.
+\newblock PRL
+\thudot
+
+\bibitem{Marcos2010}
+Marcos D, Wubs M, Taylor J~M, et~al.
+\newblock Coupling nitrogen-vacancy centers in diamond to superconducting flux
+  qubits.
+\newblock Physical Review Letters, 2010, 105(21):210501.
+\newblock PRL
+\thudot
+
+\bibitem{Zhu2011}
+Zhu X, Saito S, Kemp A, et~al.
+\newblock Coherent coupling of a superconducting flux qubit to an electron spin
+  ensemble in diamond.
+\newblock Nature, 2011, 478(7368):221--224
+\thudot
+
+\bibitem{Mark2013}
+Mark J, Thomas H, Mar{\'i}a~Jos{\'e} M~P, et~al.
+\newblock Coupling single-molecule magnets to quantum circuits.
+\newblock New Journal of Physics, 2013, 15(9):095007
+\thudot
+
+\bibitem{Bienfait2016a}
+Bienfait A, Pla J~J, Kubo Y, et~al.
+\newblock Reaching the quantum limit of sensitivity in electron spin resonance.
+\newblock Nat Nano, 2016, 11(3):253--257
+\thudot
+
+\bibitem{Bienfait2016b}
+Bienfait A, Pla J~J, Kubo Y, et~al.
+\newblock Controlling spin relaxation with a cavity.
+\newblock Nature, 2016, 531(7592):74--77
+\thudot
+
+\bibitem{Benningshof2013}
+Benningshof O~W~B, Mohebbi H~R, Taminiau I~A~J, et~al.
+\newblock Superconducting microstrip resonator for pulsed esr of thin films.
+\newblock Journal of Magnetic Resonance, 2013, 230:84--87
+\thudot
+
+\bibitem{Mohebbi2014}
+Mohebbi H~R, Benningshof O~W~B, Taminiau I~A~J, et~al.
+\newblock Composite arrays of superconducting microstrip line resonators.
+\newblock Journal of Applied Physics, 2014, 115(9):094502
+\thudot
+
+\bibitem{Angerer2016}
+Angerer A, Astner T, Wirtitsch D, et~al.
+\newblock Collective strong coupling with homogeneous rabi frequencies using a
+  3d lumped element microwave resonator.
+\newblock Applied Physics Letters, 2016, 109(3):033508
+\thudot
+
+\bibitem{Jenkins2014}
+Jenkins M~D, Naether U, Ciria M, et~al.
+\newblock Nanoscale constrictions in superconducting coplanar waveguide
+  resonators.
+\newblock Applied Physics Letters, 2014, 105(16):162601
+\thudot
+
+\bibitem{Eichler2017}
+Eichler C, Sigillito A~J, Lyon S~A, et~al.
+\newblock Electron spin resonance at the level of $1{0}^{4}$ spins using low
+  impedance superconducting resonators.
+\newblock Physical Review Letters, 2017, 118(3):037701.
+\newblock PRL
+\thudot
+
+\bibitem{sarabi2017prospective}
+Sarabi B, Huang P, Zimmerman N~M.
+\newblock Prospective two orders of magnitude enhancement in direct magnetic
+  coupling of a single-atom spin to a circuit resonator.
+\newblock arXiv preprint arXiv:1702.02210, 2017.
 \thudot
 
 \bibitem{koch2007charge}
@@ -89,10 +194,16 @@ Gr{\`e}zes C, Kubo Y, Julsgaard B, et~al.
 \newblock Comptes Rendus Physique, 2016, 17(7):693--704
 \thudot
 
-\bibitem{kelly2015fault}
-Kelly J~S.
-\newblock Fault-tolerant superconducting qubits.
-\newblock 2015
+\bibitem{tavis1968exact}
+Tavis M, Cummings F~W.
+\newblock Exact solution for an n-molecule-radiation-field hamiltonian.
+\newblock Physical Review, 1968, 170(2):379
+\thudot
+
+\bibitem{schuster2007circuit}
+Schuster D~I.
+\newblock Circuit quantum electrodynamics[D].
+\newblock 2007
 \thudot
 
 \bibitem{krantz2010investigation}
@@ -102,30 +213,16 @@ Krantz P.
 \newblock Chalmers University of Technology, 2010
 \thudot
 
+\bibitem{kelly2015fault}
+Kelly J~S.
+\newblock Fault-tolerant superconducting qubits.
+\newblock 2015
+\thudot
+
 \bibitem{weber2016quantum}
 Weber S~J, Murch K~W, Kimchi-Schwartz M~E, et~al.
 \newblock Quantum trajectories of superconducting qubits.
 \newblock Comptes Rendus Physique, 2016, 17(7):766--777
-\thudot
-
-\bibitem{tavis1968exact}
-Tavis M, Cummings F~W.
-\newblock Exact solution for an n-molecule-radiation-field hamiltonian.
-\newblock Physical Review, 1968, 170(2):379
-\thudot
-
-\bibitem{sarabi2017prospective}
-Sarabi B, Huang P, Zimmerman N~M.
-\newblock Prospective two orders of magnitude enhancement in direct magnetic
-  coupling of a single-atom spin to a circuit resonator.
-\newblock arXiv preprint arXiv:1702.02210, 2017.
-\thudot
-
-\bibitem{Angerer2016}
-Angerer A, Astner T, Wirtitsch D, et~al.
-\newblock Collective strong coupling with homogeneous rabi frequencies using a
-  3d lumped element microwave resonator.
-\newblock Applied Physics Letters, 2016, 109(3):033508
 \thudot
 
 \bibitem{PhysRevA.95.022306}
@@ -135,27 +232,6 @@ Haikka P, Kubo Y, Bienfait A, et~al.
 \newblock Phys. Rev. A, 2017, 95:022306
 \thudot
 
-\bibitem{kubo2010}
-Kubo Y, Ong F~R, Bertet P, et~al.
-\newblock Strong coupling of a spin ensemble to a superconducting resonator.
-\newblock Physical Review Letters, 2010, 105(14):140502.
-\newblock PRL
-\thudot
-
-\bibitem{Schuster2010}
-Schuster D~I, Sears A~P, Ginossar E, et~al.
-\newblock High-cooperativity coupling of electron-spin ensembles to
-  superconducting cavities.
-\newblock Physical Review Letters, 2010, 105(14):140501.
-\newblock PRL
-\thudot
-
-\bibitem{Mark2013}
-Mark J, Thomas H, Mar{\'i}a~Jos{\'e} M~P, et~al.
-\newblock Coupling single-molecule magnets to quantum circuits.
-\newblock New Journal of Physics, 2013, 15(9):095007
-\thudot
-
 \bibitem{Tosi2014}
 Tosi G, Mohiyaddin F~A, Huebl H, et~al.
 \newblock Circuit-quantum electrodynamics with direct magnetic coupling to
@@ -163,10 +239,11 @@ Tosi G, Mohiyaddin F~A, Huebl H, et~al.
 \newblock AIP Advances, 2014, 4(8):087122
 \thudot
 
-\bibitem{Bienfait2016a}
-Bienfait A, Pla J~J, Kubo Y, et~al.
-\newblock Reaching the quantum limit of sensitivity in electron spin resonance.
-\newblock Nat Nano, 2016, 11(3):253--257
+\bibitem{QDDynaCool}
+{Quantum Design, Inc}.
+\newblock Ppms dynacool[EB/OL].
+\newblock [2017-5-24].
+\newblock  {\url{http://www.qd-china.com/products2.aspx?id=45}}
 \thudot
 
 \bibitem{Khalil2012}
@@ -197,81 +274,11 @@ Astner T, Nevlacsil S, Peterschofsky N, et~al.
 \newblock PRL
 \thudot
 
-\bibitem{Benningshof2013}
-Benningshof O~W~B, Mohebbi H~R, Taminiau I~A~J, et~al.
-\newblock Superconducting microstrip resonator for pulsed esr of thin films.
-\newblock Journal of Magnetic Resonance, 2013, 230:84--87
-\thudot
-
-\bibitem{Bienfait2016b}
-Bienfait A, Pla J~J, Kubo Y, et~al.
-\newblock Controlling spin relaxation with a cavity.
-\newblock Nature, 2016, 531(7592):74--77
-\thudot
-
-\bibitem{Dutt2007}
-Dutt M~V~G, Childress L, Jiang L, et~al.
-\newblock Quantum register based on individual electronic and nuclear spin
-  qubits in diamond.
-\newblock Science, 2007, 316(5829):1312
-\thudot
-
-\bibitem{Eichler2017}
-Eichler C, Sigillito A~J, Lyon S~A, et~al.
-\newblock Electron spin resonance at the level of $1{0}^{4}$ spins using low
-  impedance superconducting resonators.
-\newblock Physical Review Letters, 2017, 118(3):037701.
-\newblock PRL
-\thudot
-
-\bibitem{Jenkins2014}
-Jenkins M~D, Naether U, Ciria M, et~al.
-\newblock Nanoscale constrictions in superconducting coplanar waveguide
-  resonators.
-\newblock Applied Physics Letters, 2014, 105(16):162601
-\thudot
-
 \bibitem{Kubo2012}
 Kubo Y, Diniz I, Dewes A, et~al.
 \newblock Storage and retrieval of a microwave field in a spin ensemble.
 \newblock Physical Review A, 2012, 85(1):012333.
 \newblock PRA
-\thudot
-
-\bibitem{Imamoglu2009}
-Imamo{\v{g}}lu A.
-\newblock Cavity qed based on collective magnetic dipole coupling: Spin
-  ensembles as hybrid two-level systems.
-\newblock Physical Review Letters, 2009, 102(8):083602.
-\newblock PRL
-\thudot
-
-\bibitem{Marcos2010}
-Marcos D, Wubs M, Taylor J~M, et~al.
-\newblock Coupling nitrogen-vacancy centers in diamond to superconducting flux
-  qubits.
-\newblock Physical Review Letters, 2010, 105(21):210501.
-\newblock PRL
-\thudot
-
-\bibitem{Mohebbi2014}
-Mohebbi H~R, Benningshof O~W~B, Taminiau I~A~J, et~al.
-\newblock Composite arrays of superconducting microstrip line resonators.
-\newblock Journal of Applied Physics, 2014, 115(9):094502
-\thudot
-
-\bibitem{Zhu2011}
-Zhu X, Saito S, Kemp A, et~al.
-\newblock Coherent coupling of a superconducting flux qubit to an electron spin
-  ensemble in diamond.
-\newblock Nature, 2011, 478(7368):221--224
-\thudot
-
-\bibitem{Wesenberg2009}
-Wesenberg J~H, Ardavan A, Briggs G~A~D, et~al.
-\newblock Quantum computing with an electron spin ensemble.
-\newblock Physical Review Letters, 2009, 103(7):070502.
-\newblock PRL
 \thudot
 
 \bibitem{Wu2010}
