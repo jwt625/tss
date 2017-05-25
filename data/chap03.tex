@@ -37,7 +37,7 @@
 \begin{figure}[h]
   \centering%
   \includegraphics[width=5in]{SampleRodAndHolder.png}
-  \caption{样品杆与样品盒。其中红色矩形部分为样品杆末端微波信号的输入与输出端，黄色矩形部分为样品盒所处位置，蓝色矩形为样品盒以及拆卸后的样品盒。}
+  \caption{样品杆与样品盒。其中红色矩形部分为样品杆末端微波信号的输入与输出端，黄色矩形部分为样品盒所处位置，蓝色矩形为样品盒以及拆卸后的样品盒。绿色矩形内为样品盒底座上的PCB板，SMP接头以及器件及其放大图}
   \label{fig:samplerodHolder}
 \end{figure}
 
@@ -87,6 +87,27 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
             \end{lstlisting}
 
             有了以上测量程序的编写，即可完全通过测量电脑询问与控制PPMS的温度与磁场，以及调节VNA的相关参数并取得VNA的扫描数据。更进一步的，通过Windows的远程桌面可以远程连接到测量电脑，从而使测量变得更为便捷。实际中我们只需要在取出和放入样品时到PPMS设备附近，其余时间均远程进行控制与测量。
+
+            \section{测量系统测试} % (fold)
+            \label{sec:测量系统测试}
+                  对于上述PPMS测量系统，我利用自己编写的测量程序利用现有常见的CPW谐振腔进行了一系列测量测试，说明测量系统工作良好。
+
+                  \subsection{频率扫描} % (fold)
+                  \label{sub:频率扫描}
+                        
+                  % subsection 频率扫描 (end)
+
+                  \subsection{温度扫描} % (fold)
+                  \label{sub:温度扫描}
+                        
+                  % subsection 温度扫描 (end)
+
+                  \subsection{磁场扫描} % (fold)
+                  \label{sub:磁场扫描}
+                        
+                  % subsection 磁场扫描 (end)
+            % section 测量系统测试 (end)
+
 
 
             \section{样品托的设计与优化} % (fold)
@@ -179,6 +200,8 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
 
 
 
-            % subsection 样品托的设计与优化 (end)
+            % section 样品托的设计与优化 (end)
+
+
 
 

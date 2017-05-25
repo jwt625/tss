@@ -6,6 +6,17 @@
 % chapter SCQubitPrinciple (end)
 
 
+
+
+
+
+
+
+
+
+
+
+
 \chapter{微纳加工工艺} % (fold)
 \label{cha:fabrication}
 
@@ -13,48 +24,133 @@
 \label{sec:光刻}
     \begin{enumerate}
         \item Spin coating S1805, 500 nm
+        \begin{enumerate}
+            \item 500rpm, 10s, 100rpm/s
+            \item 4000rpm, 45s, 2000rpm/s
+            \item 0rpm, 5s, 2000rpm/s
+        \end{enumerate}
         \item Bake at 115 degree C for 1 min
         \item Align mask
-        \item Expose with 405 nm UV light for 9.5s
-        \item Develop with MF-319 for 45s， power 350W
-        \item Clean in DI-water and blow dry
+        \item Expose with 405 nm UV light for 9.5s, power 350W
+        \item Develop in MF-319 for 45s
+        \item Clean in DI-water for 1min and blow dry
     \end{enumerate}
 % section 光刻 (end)
 
-\section{介电层生长} % (fold)
-\label{sec:介电层生长}
+\section{介电层生长与刻蚀} % (fold)
+\label{sec:介电层生长与刻蚀}
     \begin{enumerate}
-        \item PECVD生长SiO$_2$速率：
-        \item PECVD生长SiN$_x$速率：
+        \item PECVD生长SiO$_2$速率：70nm/min
+        \item PECVD生长SiN$_x$速率：16nm/min
         \item ALD生长Al$_2$O$_3$速率：
+        \item MF-319刻蚀Al$_2$O$_3$速率：
+        \item MF-319刻蚀光刻胶速率：
+        \item ICP刻蚀SiO$_2$速率：43.3nm/min
+        \item ICP刻蚀SiN$_x$速率：50nm/min
     \end{enumerate}
+    \subsection{刻蚀介电层后去除光刻胶} % (fold)
+    \label{sub:刻蚀介电层后去除光刻胶}
+        \begin{enumerate}
+            \item 置于PG Remover中加热至85摄氏度，将烧杯口用铝箔纸盖住，保持85度30分钟
+            \item 用丙酮，IPA清洗，氮气枪吹干
+        \end{enumerate}
+    % subsection 刻蚀介电层后的lift_off (end)
 % section 介电层生长 (end)
+
+\section{光刻胶Lift off} % (fold)
+\label{sec:光刻胶lift_off}
+        \begin{enumerate}
+            \item 于NMP去胶液或丙酮中浸泡一晚，用铝箔纸盖住烧杯口
+            \item 加热至85摄氏度15至30分钟，用铝箔纸盖住烧杯口
+            \item 用镊子夹住片子后用胶头滴管于去胶液中吹洗
+            \item 对于难以去除的区域，可尝试超声
+            \item 对于生长了介电层后的器件，超声时应小心勿将介电层超声至脱落。对于30nm的SiO$_2$或30nm的SiN$_x$，可用60\% 功率，45kHz超声10秒，重复三次，即可去除对2.5维谐振腔样品可能出现的lift off不完全的情况，并保证介电层完整
+            \item 目前尝试过用100\%功率，45kHz超声15秒，仍可保证介电层完整
+            \item 从去胶液中取出后迅速放入丙酮中清洗，随后再放入IPA中清洗，最后用氮气枪吹干
+        \end{enumerate}
+    % section lift_off (end)
 
 \section{磁控溅射镀膜} % (fold)
 \label{sec:磁控溅射镀膜}
-    
+    \begin{enumerate}        
+        \item Transfer to sputter chamber
+        \item chamber -> Process
+        \item open Ar valve, 100 sccm
+        \item set DC parameter, I = 100mA
+        \item DC -> on. If error, try with shutter open
+        \item set I = 400mA
+        \item set Ar to 6sccm
+        \item set chrono end action to DC \& RF off and sputter shutters off
+        \item Holder motion: Rotate
+        \item open shutter and timing with chrono
+        \item 25nm/min for sputtering Nb, hence 4min total time for 100nm Nb
+        \item wait until end
+        \item set Ar to 0sccm, close Ar valve
+        \item Stop rotation, Chamber -> pump
+        \item Holder motion -> transfer, start
+        \item Transfer after pressure stable and chip cool
+    \end{enumerate}
 % section 磁控溅射镀膜 (end)
 
 \section{Argon milling去除氧化层} % (fold)
 \label{sec:argon_milling去除氧化层}
+
+
+\begin{enumerate}
+    \item transfer to oxid chamber
+    \item Process-> IonGun
+    \item Holder motion -> Target -> IonGun, start. Might error, start again
+    \item Open Ar valve, set to 6sccm
+    \item set Vbeam = 250V, Ibeam = 10mA, Vacc = 60V. Input parameters again even if they are already correct
+    \item Discharge on, wait stable
+    \item Beam on, wait 2min
+    \item set Vbeam = 400V, Ibeam = 20mA, Discharge 40V, Vacc = 60V, Iacc = 1.1mA, wait stable
+    \item ordinary status: pressure 1.2e-4Torr, cathode 7.1V, 6.22A, 40V/0.23A, 399V/20.1mA, 60V/1.1mA
+    \item Set chrono end action to IonGun off
+    \item open shutter and timing with chrono, 3min30s
+    \item wait until end
+    \item close shutter
+    \item Ar off, Ar valve off
+    \item oxid chamber -> pump
+    \item Holder motions -> Transfer, start
+    \item transfer after pressure stable
+\end{enumerate}
 
 % section argon_milling去除氧化层 (end)
 
 \section{点焊} % (fold)
 \label{sec:点焊}
     \begin{enumerate}
-        \item 一焊由于PCB上的SMP接头的空间位置原因需位于器件上，焊接使用铝线
+        \item 一焊由于PCB上的SMP接头的空间位置原因需位于器件上，二焊位于PCB板上，焊接使用铝线
         \item 一焊参数：功率220，时间30ms，力19
         \item 二焊参数：功率330，时间40ms，力19
         \item 点焊时应使焊线尽可能地短而密
     \end{enumerate}
 % section 点焊 (end)
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 % chapter fabrication (end)
 
 \chapter{PPMS系统的常用操作} % (fold)
 \label{cha:ppms系统的常用操作}
     对于PPMS的详细介绍可参阅PPMS的用户手册，本附录在读者熟悉PPMS相关术语与参数（如Chamber Pressure等）的前提下，为使用者提供一个方便参考的操作流程。
+
     在正常的测量状态下，Chamber Pressure与样品室温度有关，样品温度为2K左右时一般为300至400mTorr，chamber state应该为Purged，意为样品室已用He气清洗并抽真空。在非远程控制PPMS时，一般通过与PPMS相连的电脑上的MultiVu程序控制PPMS。该程序主面板下方有若干小面板，点击这些小面板可调出设定温度，磁场与样品室状态的分面板。常用的分面板也即前文提到的Temperature，Chamber，Field面板。
 
     \section{调节温度与磁场} % (fold)
@@ -74,6 +170,20 @@
         更换完样品并插入封好样品杆后，点击Chamber分面板的Purge/Seal，此时state变为Purging。样品室气压将在常压与~30Torr间来回反复若干次，约5分钟后state变为Purged，此时即可开始制冷。
     % section 更换样品 (end)
 % chapter ppms系统的常用操作流程 (end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \chapter{测量系统MATLAB代码} % (fold)
 \label{cha:measurement_code}

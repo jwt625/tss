@@ -13,33 +13,39 @@
 \contentsline {chapter}{\numberline {第3章}PPMS测量系统}{16}{chapter.3}
 \contentsline {section}{\numberline {3.1}测量系统概述}{16}{section.3.1}
 \contentsline {section}{\numberline {3.2}测量系统的程序编写}{19}{section.3.2}
-\contentsline {section}{\numberline {3.3}样品托的设计与优化}{21}{section.3.3}
+\contentsline {section}{\numberline {3.3}测量系统测试}{21}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}频率扫描}{21}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}温度扫描}{21}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}磁场扫描}{21}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}样品托的设计与优化}{21}{section.3.4}
 \contentsline {chapter}{\numberline {第4章}2.5维谐振腔的制备与测量}{24}{chapter.4}
 \contentsline {section}{\numberline {4.1}器件测量与制备工艺概述}{24}{section.4.1}
 \contentsline {section}{\numberline {4.2}光刻板的设计与改进}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}器件制备情况与讨论}{26}{section.4.3}
-\contentsline {section}{\numberline {4.4}谐振腔响应信号的拟合}{26}{section.4.4}
-\contentsline {chapter}{插图索引}{27}{chapter*.32}
-\contentsline {chapter}{表格索引}{29}{chapter*.33}
-\contentsline {chapter}{公式索引}{30}{section*.34}
-\contentsline {chapter}{参考文献}{32}{section*.36}
-\contentsline {chapter}{致\hspace {1em}谢}{35}{section*.38}
-\contentsline {chapter}{声\hspace {1em}明}{36}{section*.40}
-\contentsline {chapter}{\numberline {附录 A}超导量子比特的原理}{37}{appendix.A}
-\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{38}{appendix.B}
-\contentsline {section}{\numberline {B.1}光刻}{38}{section.B.1}
-\contentsline {section}{\numberline {B.2}介电层生长}{38}{section.B.2}
-\contentsline {section}{\numberline {B.3}磁控溅射镀膜}{38}{section.B.3}
-\contentsline {section}{\numberline {B.4}Argon milling去除氧化层}{38}{section.B.4}
-\contentsline {section}{\numberline {B.5}点焊}{38}{section.B.5}
-\contentsline {chapter}{\numberline {附录 C}PPMS系统的常用操作}{39}{appendix.C}
-\contentsline {section}{\numberline {C.1}调节温度与磁场}{39}{section.C.1}
-\contentsline {section}{\numberline {C.2}更换样品}{39}{section.C.2}
-\contentsline {chapter}{\numberline {附录 D}测量系统MATLAB代码}{40}{appendix.D}
-\contentsline {section}{\numberline {D.1}VNA控制代码}{40}{section.D.1}
-\contentsline {section}{\numberline {D.2}PPMS控制代码}{55}{section.D.2}
-\contentsline {section}{\numberline {D.3}扫描温度与磁场实验的代码}{61}{section.D.3}
-\contentsline {subsection}{\numberline {D.3.1}扫描温度}{61}{subsection.D.3.1}
-\contentsline {subsection}{\numberline {D.3.2}扫描磁场}{64}{subsection.D.3.2}
-\contentsline {chapter}{\numberline {附录 E}外文资料调研阅读报告}{68}{appendix.E}
-\contentsline {chapter}{在学期间参加课题的研究成果}{69}{section*.42}
+\contentsline {section}{\numberline {4.3}器件制备情况与改进}{26}{section.4.3}
+\contentsline {section}{\numberline {4.4}谐振腔响应信号的拟合}{29}{section.4.4}
+\contentsline {chapter}{插图索引}{30}{chapter*.33}
+\contentsline {chapter}{表格索引}{32}{chapter*.34}
+\contentsline {chapter}{公式索引}{33}{section*.35}
+\contentsline {chapter}{参考文献}{35}{section*.37}
+\contentsline {chapter}{致\hspace {1em}谢}{38}{section*.39}
+\contentsline {chapter}{声\hspace {1em}明}{39}{section*.41}
+\contentsline {chapter}{\numberline {附录 A}超导量子比特的原理}{40}{appendix.A}
+\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{41}{appendix.B}
+\contentsline {section}{\numberline {B.1}光刻}{41}{section.B.1}
+\contentsline {section}{\numberline {B.2}介电层生长与刻蚀}{41}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}刻蚀介电层后去除光刻胶}{41}{subsection.B.2.1}
+\contentsline {section}{\numberline {B.3}光刻胶Lift off}{42}{section.B.3}
+\contentsline {section}{\numberline {B.4}磁控溅射镀膜}{42}{section.B.4}
+\contentsline {section}{\numberline {B.5}Argon milling去除氧化层}{43}{section.B.5}
+\contentsline {section}{\numberline {B.6}点焊}{43}{section.B.6}
+\contentsline {chapter}{\numberline {附录 C}PPMS系统的常用操作}{44}{appendix.C}
+\contentsline {section}{\numberline {C.1}调节温度与磁场}{44}{section.C.1}
+\contentsline {section}{\numberline {C.2}更换样品}{44}{section.C.2}
+\contentsline {chapter}{\numberline {附录 D}测量系统MATLAB代码}{45}{appendix.D}
+\contentsline {section}{\numberline {D.1}VNA控制代码}{45}{section.D.1}
+\contentsline {section}{\numberline {D.2}PPMS控制代码}{60}{section.D.2}
+\contentsline {section}{\numberline {D.3}扫描温度与磁场实验的代码}{66}{section.D.3}
+\contentsline {subsection}{\numberline {D.3.1}扫描温度}{66}{subsection.D.3.1}
+\contentsline {subsection}{\numberline {D.3.2}扫描磁场}{69}{subsection.D.3.2}
+\contentsline {chapter}{\numberline {附录 E}外文资料调研阅读报告}{73}{appendix.E}
+\contentsline {chapter}{在学期间参加课题的研究成果}{74}{section*.43}
