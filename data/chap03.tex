@@ -36,12 +36,12 @@
 
 \begin{figure}[h]
   \centering%
-  \includegraphics[width=5in]{SampleRodAndHolder.png}
+  \includegraphics[width=\textwidth]{SampleRodAndHolder.png}
   \caption{样品杆与样品盒。其中红色矩形部分为样品杆末端微波信号的输入与输出端，黄色矩形部分为样品盒所处位置，蓝色矩形为样品盒以及拆卸后的样品盒。绿色矩形内为样品盒底座上的PCB板，SMP接头以及器件及其放大图}
   \label{fig:samplerodHolder}
 \end{figure}
 
-            在实验进行过程中，我们考虑到将来进行自旋与谐振腔耦合的相关实验时需要加入竖直方向的磁场以改变自旋能级间距，而现有设计下磁场垂直与器件表面，对超导态下的器件的性质影响较大。因此，我在现有样品托的基础上改进了样品托底座与盖子以及PCB板的设计，具体在第\ref{sec:样品托的设计与优化}节中详细进行描述。
+            在实验进行过程中，我们考虑到将来进行自旋与谐振腔耦合的相关实验时需要加入竖直方向的磁场以改变自旋能级间距，而现有设计下磁场垂直与器件表面，对超导态下的器件的性质影响较大。因此，我在现有样品托的基础上改进了样品托底座与盖子以及PCB板的设计，具体在第\ref{sec:样品托的设计与改进}节中详细进行描述。
                 
             % section 测量系统概述 (end)
 
@@ -88,30 +88,150 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
 
             有了以上测量程序的编写，即可完全通过测量电脑询问与控制PPMS的温度与磁场，以及调节VNA的相关参数并取得VNA的扫描数据。更进一步的，通过Windows的远程桌面可以远程连接到测量电脑，从而使测量变得更为便捷。实际中我们只需要在取出和放入样品时到PPMS设备附近，其余时间均远程进行控制与测量。
 
+
+
+
+
+
+
             \section{测量系统测试} % (fold)
             \label{sec:测量系统测试}
-                  对于上述PPMS测量系统，我利用自己编写的测量程序利用现有常见的CPW谐振腔进行了一系列测量测试，说明测量系统工作良好。
+                  对于上述PPMS测量系统，我利用自己编写的测量程序利用现有常见的CPW谐振腔进行了一系列测量测试，说明测量系统工作良好。测试所用的器件为用于制备超导量子比特所需的平面传输线谐振腔，如图\ref{fig:PPMSSetupTestChip}所示。
+
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=\textwidth]{figures/PPMSTestChip.png}
+                \caption{PPMS测量系统测试器件}
+                \label{fig:PPMSSetupTestChip}
+            \end{figure}
+
+                  对于这种类型的平面波导谐振腔，已有较为详尽的研究\cite{Day2003,Wallraff2004Nature,schuster2007circuit,Gao2008Thesis,Barends2010APL,Geerlings2013}，适合用于测量系统的测试。图\ref{fig:PPMSSetupTestChip}中左侧图即为样品底座的PCB板以及样品本身，红色矩形部分即为样品上的平面波导传输线以及从侧面与传输线耦合的平面波导谐振腔，即图\ref{fig:PPMSSetupTestChip}中部图片的S型部分。图\ref{fig:PPMSSetupTestChip}中部图片的深色区域为器件衬底，浅亮色区域为金属结构。黄色矩形区域即为超导量子比特关键的约瑟夫森节(J-J)所在区域，关于超导量子比特的基础知识将在附录\ref{cha:SCQubitPrinciple}中进行大致介绍。用于PPMS测量系统的测试仅需要谐振腔本身，因此超导节的区域并不需要制作J-J。最后，器件通过点焊与PCB相连，再通过PCB上的SMP接头接入PPMS测量系统。
+
+                  利用超导量子比特系统所用的谐振腔，我对PPMS测量系统进行了基础的频率响应扫描，VNA输出功率的扫描，以及基于对PPMS系统的控制进行的温度与磁场的扫描。
+
+
+
 
                   \subsection{频率扫描} % (fold)
                   \label{sub:频率扫描}
+
+                  频率扫描是测量谐振腔性质的基本方法。对于位于传输线内的电容耦合类型的谐振腔，其透射谱为谐振频率处透射增大的透射峰\cite{Wallraff2004Nature,schuster2007circuit}，而对于挂在传输线侧面的谐振腔，也常被称为Hanger类型的谐振腔，传输线的透射谱在谐振频率出现透射降低的吸收峰\cite{Day2003,Gao2008Thesis,Geerlings2013}。在考虑最简单的忽略实际中可能出现的阻抗不匹配的情况下，测试所用的Hanger形式的谐振腔具有洛伦兹线型的吸收峰：
+
+                  \begin{equation}
+                  \label{eqn:simpleLorentzian}
+                        |S_{21}|^2 = 1 - \frac{1/Q_r^2 - 1/Q_i^2}{1/Q_r^2 + 4 (f - f_r)^2/f_r^2} 
+                  \end{equation}
+                  其中$1/Q_r = 1/Q_c + 1/Q_i$为总品质因子，$Q_c$为耦合的品质因子，耦合越小其值越大，$Q_i$为本质的品质因子。对于更为复杂的情况，在第\ref{sec:谐振腔响应信号的拟合}节中进行了简要综述。
+
+                  对于实际测量，往往需要进行大范围扫描找到谐振频率后再在谐振频率附近细扫。由于VNA频率采样点数有最大值，因此我编写了测量程序，在给定扫频范围与精确度下自动控制VNA分段扫描，并最后汇总数据，使大范围的精细扫描十分便捷。找到谐振模式后，在模式附近进行了细扫，并基于复杂情况的谐振腔响应公式，对测量所得的信号进行了拟合。测试过程中测得的典型数据如图\ref{fig:PPMSSetupTestFreqSweep}所示。
+                  
                         
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=\textwidth]{PPMSSetupTestFreqSweep.png}
+                \caption{VNA频率扫描与拟合}
+                \label{fig:PPMSSetupTestFreqSweep}
+            \end{figure}
+
+            通过大范围的扫描能够十分容易地确定谐振频率的位置，并获得测量系统的透射背景。通过根据所估计的器件谐振腔的$Q$值来调整大范围扫描的精度，可以避免因为精度过差而漏掉谐振模式的情况。图\ref{fig:PPMSSetupTestFreqSweep}(b)与(c)为(a)中红色箭头所示的谐振模式的透射曲线的拟合结果图。拟合的具体方法在第\ref{sec:谐振腔响应信号的拟合}节中进行了简述。通过拟合能够得到该模式的$Q_i$，$Q_c$，谐振频率$f_r$等一系列参数。通过曲线可以看出，拟合得到的理论曲线（绿色实现）与实际数据（蓝色数据点）符合很好。对于如图\ref{fig:PPMSSetupTestFreqSweep}(c)中由于阻抗不匹配导致的非对称的响应线型，复杂情况下的通用公式也能拟合得到很好的结果。
+
                   % subsection 频率扫描 (end)
+
+
+                  \subsection{VNA功率扫描} % (fold)
+                  \label{sub:vna功率扫描}
+
+                  在频率扫描的基础上，我继续编写了VNA的功率扫描的程序。通过以不同的功率测量谐振腔，能够观察谐振腔相关参数随功率的变化\cite{Day2003,Gao2008Thesis}，对于用于读取超导量子比特状态的谐振腔而言，扫描功率的测量也是获得谐振腔本征频率与谐振腔和超导量子比特耦合强度参数的必要方法\cite{Blais2004,Blais2007,schuster2007circuit}。功率扫描的测量结果如图\ref{fig:PPMSTestPowerSweep}所示。
+
+
+\begin{figure}[h]
+  \centering%
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=3.2in]{figures/meas/Test_PowerSweep_start_4.2152GHz_stop_4.2162GHz_min_-85dBm_max_0dBm.png}
+    % \caption{第一个小图形}
+  \end{subfigure}%
+  % \hspace{4em}%
+  \hspace*{\fill}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=3.2in]{figures/meas/Test_PowerSweep_freq_Q_vs_power_20170526T104027.png}
+    % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
+  \end{subfigure}
+  \caption{VNA频率与功率扫描扫描}
+  \label{fig:PPMSTestPowerSweep}
+\end{figure}
+
+                  
+                  图\ref{fig:PPMSTestPowerSweep}中左图为透射率关于频率和磁场的关系图，透射率的大小通过颜色表示。能够明显看出功率较小时由于噪声较大，无法看出明显的吸收峰。随着功率的增大，逐渐能够看出谐振腔的吸收峰，并在功率较大时能够肉眼可见地看到频率与线宽的变化。图\ref{fig:PPMSTestPowerSweep}的右图为通过拟合后得到的谐振腔频率与品质因子随功率的变化。对于谐振腔的频率，在功率小于-20dBm时均没有明显变化，在功率很小时由于拟合的原因有所波动。在同样的功率区间内，$Q_i$随功率的增加而增加，其原因为更大的功率使谐振腔中引起耗散的杂质系统达到饱和，从而耗散减小，使得谐振腔的本征品质因子上升，与文献相符\cite{Barends2010APL,Megrant2012,Bruno2015}。当功率进一步增加时，谐振腔的频率发生红移，并且本征品质因子开始下降，导致这种现象的原因为功率进一步增加时激发了非超导态的准粒子，将对谐振腔的等效电感与电阻产生影响，相应地影响谐振腔的频率与耗散大小\cite{Day2003}。温度的升高也会激发更多的准粒子，因此在随后扫描温度的实验中我们也能观察到类似的现象。$Q_c$由耦合导致，手工率关系影响较小，与物理图像相符，而总的品质因子也由于主要受$Q_c$的限制而随功率变化不大。
+                        
+                  % subsection vna功率扫描 (end)
 
                   \subsection{温度扫描} % (fold)
                   \label{sub:温度扫描}
+
+                  通过控制PPMS的温度，我们能够在不同温度下探究所测系统的特性。图\ref{fig:PPMSTestTempSweep}为对测试器件进行温度与频率扫描的结果。
+
+
+\begin{figure}[h]
+  \centering%
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=3.2in]{figures/meas/Test_TempSweep20170513v2.png}
+    % \caption{第一个小图形}
+  \end{subfigure}%
+  % \hspace{4em}%
+  \hspace*{\fill}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=3.2in]{figures/meas/Test_S_vs_T.png}
+    % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
+  \end{subfigure}
+  \caption{PPMS温度与VNA频率扫描}
+  \label{fig:PPMSTestTempSweep}
+\end{figure}
+                 
+                 图\ref{fig:PPMSTestTempSweep}的左图为透射率关于频率与温度的变化图，透射率的单位为dB。频率在一个共振模式的附近扫描，而温度的扫描为从2K逐渐升高至10K再逐渐降低至2K，由于MATLAB画图的限制，纵轴的后半段为10K至18K，对应实际温度的由10K降低至2K。通过扫描温度的实验结果，能够明显看到两个现象。首先谐振腔的频率随温度的上升而红移，并且线宽变宽，峰的大小变浅，与功率较大时进一步增大功率时观察到的现象相符，同样说明了这种变化趋势可通过准粒子的增加进行解释。另一方面，在温度增加到8.9K附近时，整个透射率的背景十分迅速地下降了近20个dB，能够确信地得出观察到了器件失去超导性质这一结论。通过测量得到的Nb薄膜的超导临界温度$T_c=8.9$K也与经验相符，略低于实体Nb的超导温度$9.25$K\cite{cardarelli2008materials}。
                         
                   % subsection 温度扫描 (end)
 
                   \subsection{磁场扫描} % (fold)
                   \label{sub:磁场扫描}
+
+                  在自旋与谐振腔耦合的实验中，通过磁场调节自旋系统的能级结构是十分常见的实验操作\cite{kubo2010,PhysRevA.95.022306,Bienfait2016a}。因此我编写了控制PPMS的磁场的程序，并通过测试器件进行了扫描频率与磁场的测试，测量结果如图\ref{fig:PPMSTestFieldSweep}所示。
+
+
+\begin{figure}[h]
+  \centering%
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=3.2in]{figures/meas/Test_FieldSweep_start_3.0280GHz_stop_3.0290GHz_pow_-10.0dBm_minB_0G_maxB_40000G_numB_200_20170517T112932.png}
+    % \caption{第一个小图形}
+  \end{subfigure}%
+  % \hspace{4em}%
+  \hspace*{\fill}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=3.2in]{figures/meas/Test_S_vs_B_20170517T112932.png}
+    % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
+  \end{subfigure}
+  \caption{PPMS磁场与VNA频率扫描}
+  \label{fig:PPMSTestFieldSweep}
+\end{figure}
+
+                  通过扫描磁场可以看出，测试器件的临界磁场在$2。09\times 10^4$Oe，也即约2T。对于谐振腔模式在磁场变化下的变化规律，我也观察到了和文献中类似的频率移动与品质因子变化的现象，并且与磁场扫描的方向有关\cite{Song2009,Bothner2012}。由于现象较为复杂，不在此处进行讨论。
+
+
                         
                   % subsection 磁场扫描 (end)
             % section 测量系统测试 (end)
 
 
 
-            \section{样品托的设计与优化} % (fold)
-            \label{sec:样品托的设计与优化}
+
+
+
+
+
+
+
+            \section{样品托的设计与改进} % (fold)
+            \label{sec:样品托的设计与改进}
 
 
 
@@ -122,7 +242,7 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
     % \caption{第一个小图形}
   \end{subfigure}%
   % \hspace{4em}%
-  \hfill
+  % \hspace*{\fill}
   \begin{subfigure}{0.4\textwidth}
     \includegraphics[width=2.2in,angle=270]{Smallbox2.pdf}
     % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
@@ -150,7 +270,7 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
     % \caption{第一个小图形}
   \end{subfigure}%
   % \hspace{4em}%
-  \hfill
+  % \hspace*{\fill}
   \begin{subfigure}{0.4\textwidth}
     \includegraphics[width=2.2in,angle=270]{SmallboxHolderHori.pdf}
     % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}
@@ -176,7 +296,7 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
     % \caption{第一个小图形}
   \end{subfigure}%
   % \hspace{4em}%
-  \hfill
+  % \hspace*{\fill}
   \begin{subfigure}{0.4\textwidth}
     \includegraphics[width=2.2in,angle=270]{SmallboxHolderVertTotalCover.pdf}
     % \caption{第二个小图形，注意这个图略矮些。subfigure中同一行的子图在顶端对齐。}

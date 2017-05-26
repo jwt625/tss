@@ -246,11 +246,52 @@ Tosi G, Mohiyaddin F~A, Huebl H, et~al.
 \newblock  {\url{http://www.qd-china.com/products2.aspx?id=45}}
 \thudot
 
-\bibitem{Khalil2012}
-Khalil M~S, Stoutimore M~J~A, Wellstood F~C, et~al.
-\newblock An analysis method for asymmetric resonator transmission applied to
-  superconducting devices.
-\newblock Journal of Applied Physics, 2012, 111(5):054510
+\bibitem{Day2003}
+Day P~K, LeDuc H~G, Mazin B~A, et~al.
+\newblock A broadband superconducting detector suitable for use in large
+  arrays.
+\newblock Nature, 2003, 425(6960):817--821.
+\newblock 10.1038/nature02037
+\thudot
+
+\bibitem{Wallraff2004Nature}
+Wallraff A, Schuster D~I, Blais A, et~al.
+\newblock Strong coupling of a single photon to a superconducting qubit using
+  circuit quantum electrodynamics.
+\newblock Nature, 2004, 431(7005):162--167
+\thudot
+
+\bibitem{Gao2008Thesis}
+Gao J.
+\newblock The physics of superconducting microwave resonators[D].
+\newblock 2008
+\thudot
+
+\bibitem{Barends2010APL}
+Barends R, Vercruyssen N, Endo A, et~al.
+\newblock Minimal resonator loss for circuit quantum electrodynamics.
+\newblock Applied Physics Letters, 2010, 97(2):023508
+\thudot
+
+\bibitem{Geerlings2013}
+Geerlings K~L.
+\newblock Improving coherence of superconducting qubits and resonators[D].
+\newblock 2013
+\thudot
+
+\bibitem{Blais2004}
+Blais A, Huang R~S, Wallraff A, et~al.
+\newblock Cavity quantum electrodynamics for superconducting electrical
+  circuits: An architecture for quantum computation.
+\newblock Physical Review A, 2004, 69(6):062320.
+\newblock PRA
+\thudot
+
+\bibitem{Blais2007}
+Blais A, Gambetta J, Wallraff A, et~al.
+\newblock Quantum-information processing with circuit quantum electrodynamics.
+\newblock Physical Review A, 2007, 75(3):032329.
+\newblock PRA
 \thudot
 
 \bibitem{Megrant2012}
@@ -265,6 +306,35 @@ Bruno A, Lange G~d, Asaad S, et~al.
 \newblock Reducing intrinsic loss in superconducting resonators by surface
   treatment and deep etching of silicon substrates.
 \newblock Applied Physics Letters, 2015, 106(18):182601
+\thudot
+
+\bibitem{cardarelli2008materials}
+Cardarelli F.
+\newblock Materials Handbook: A Concise Desktop Reference.
+\newblock Springer London, 2008
+\thudot
+
+\bibitem{Song2009}
+Song C, Heitmann T~W, DeFeo M~P, et~al.
+\newblock Microwave response of vortices in superconducting thin films of re
+  and al.
+\newblock Physical Review B, 2009, 79(17):174512.
+\newblock PRB
+\thudot
+
+\bibitem{Bothner2012}
+Bothner D, Gaber T, Kemmler M, et~al.
+\newblock Magnetic hysteresis effects in superconducting coplanar microwave
+  resonators.
+\newblock Physical Review B, 2012, 86(1):014517.
+\newblock PRB
+\thudot
+
+\bibitem{Khalil2012}
+Khalil M~S, Stoutimore M~J~A, Wellstood F~C, et~al.
+\newblock An analysis method for asymmetric resonator transmission applied to
+  superconducting devices.
+\newblock Journal of Applied Physics, 2012, 111(5):054510
 \thudot
 
 \bibitem{Astner2017}
