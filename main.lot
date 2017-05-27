@@ -4,6 +4,9 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \contentsline {table}{\numberline {4.1}{\ignorespaces 可能用到的介电材料的相对介电常数\cite {cardarelli2008materials}\relax }}{31}{table.caption.36}
+\contentsline {table}{\numberline {4.2}{\ignorespaces 设计的测试所用LC谐振腔器件尺寸\relax }}{32}{table.caption.37}
+\contentsline {table}{\numberline {4.3}{\ignorespaces 根据表\ref {tab:LCGeometries}中器件尺寸估算的谐振频率(GHz)\relax }}{32}{table.caption.38}
+\contentsline {table}{\numberline {4.4}{\ignorespaces 根据$300\mu $m电感系列器件尺寸与SiO$_2$介电常数估算的谐振频率(GHz)\relax }}{39}{table.caption.44}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

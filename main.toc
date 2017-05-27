@@ -21,33 +21,33 @@
 \contentsline {section}{\numberline {3.4}样品托的设计与改进}{26}{section.3.4}
 \contentsline {chapter}{\numberline {第4章}2.5维谐振腔的制备与测量}{30}{chapter.4}
 \contentsline {section}{\numberline {4.1}器件测量与制备工艺概述}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}器件参数设计}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}光刻板的设计与改进}{32}{section.4.3}
-\contentsline {section}{\numberline {4.4}器件制备情况与改进}{33}{section.4.4}
+\contentsline {section}{\numberline {4.2}器件参数设计}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}光刻板的设计}{32}{section.4.3}
+\contentsline {section}{\numberline {4.4}器件制备情况与改进}{34}{section.4.4}
 \contentsline {section}{\numberline {4.5}2.5维谐振腔的测量与讨论}{37}{section.4.5}
-\contentsline {chapter}{插图索引}{39}{chapter*.42}
-\contentsline {chapter}{表格索引}{41}{chapter*.43}
-\contentsline {chapter}{公式索引}{42}{section*.44}
-\contentsline {chapter}{参考文献}{44}{section*.46}
-\contentsline {chapter}{致\hspace {1em}谢}{48}{section*.48}
-\contentsline {chapter}{声\hspace {1em}明}{49}{section*.50}
-\contentsline {chapter}{\numberline {附录 A}超导量子比特的原理}{50}{appendix.A}
-\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{51}{appendix.B}
-\contentsline {section}{\numberline {B.1}光刻}{51}{section.B.1}
-\contentsline {section}{\numberline {B.2}介电层生长与刻蚀}{51}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}刻蚀介电层后去除光刻胶}{51}{subsection.B.2.1}
-\contentsline {section}{\numberline {B.3}光刻胶Lift off}{52}{section.B.3}
-\contentsline {section}{\numberline {B.4}磁控溅射镀膜}{52}{section.B.4}
-\contentsline {section}{\numberline {B.5}Argon milling去除氧化层}{53}{section.B.5}
-\contentsline {section}{\numberline {B.6}点焊}{53}{section.B.6}
-\contentsline {chapter}{\numberline {附录 C}PPMS系统的常用操作}{54}{appendix.C}
-\contentsline {section}{\numberline {C.1}调节温度与磁场}{54}{section.C.1}
-\contentsline {section}{\numberline {C.2}更换样品}{54}{section.C.2}
-\contentsline {chapter}{\numberline {附录 D}测量系统MATLAB代码}{55}{appendix.D}
-\contentsline {section}{\numberline {D.1}VNA控制代码}{55}{section.D.1}
-\contentsline {section}{\numberline {D.2}PPMS控制代码}{70}{section.D.2}
-\contentsline {section}{\numberline {D.3}扫描温度与磁场实验的代码}{76}{section.D.3}
-\contentsline {subsection}{\numberline {D.3.1}扫描温度}{76}{subsection.D.3.1}
-\contentsline {subsection}{\numberline {D.3.2}扫描磁场}{79}{subsection.D.3.2}
-\contentsline {chapter}{\numberline {附录 E}外文资料调研阅读报告}{83}{appendix.E}
-\contentsline {chapter}{在学期间参加课题的研究成果}{84}{section*.52}
+\contentsline {chapter}{插图索引}{42}{chapter*.46}
+\contentsline {chapter}{表格索引}{45}{chapter*.47}
+\contentsline {chapter}{公式索引}{46}{section*.48}
+\contentsline {chapter}{参考文献}{48}{section*.50}
+\contentsline {chapter}{致\hspace {1em}谢}{52}{section*.52}
+\contentsline {chapter}{声\hspace {1em}明}{54}{section*.54}
+\contentsline {chapter}{\numberline {附录 A}超导量子比特的原理}{55}{appendix.A}
+\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{56}{appendix.B}
+\contentsline {section}{\numberline {B.1}光刻}{56}{section.B.1}
+\contentsline {section}{\numberline {B.2}介电层生长与刻蚀}{56}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}刻蚀介电层后去除光刻胶}{56}{subsection.B.2.1}
+\contentsline {section}{\numberline {B.3}光刻胶Lift off}{57}{section.B.3}
+\contentsline {section}{\numberline {B.4}磁控溅射镀膜}{57}{section.B.4}
+\contentsline {section}{\numberline {B.5}Argon milling去除氧化层}{58}{section.B.5}
+\contentsline {section}{\numberline {B.6}点焊}{58}{section.B.6}
+\contentsline {chapter}{\numberline {附录 C}PPMS系统的常用操作}{59}{appendix.C}
+\contentsline {section}{\numberline {C.1}调节温度与磁场}{59}{section.C.1}
+\contentsline {section}{\numberline {C.2}更换样品}{59}{section.C.2}
+\contentsline {chapter}{\numberline {附录 D}测量系统MATLAB代码}{60}{appendix.D}
+\contentsline {section}{\numberline {D.1}VNA控制代码}{60}{section.D.1}
+\contentsline {section}{\numberline {D.2}PPMS控制代码}{75}{section.D.2}
+\contentsline {section}{\numberline {D.3}扫描温度与磁场实验的代码}{81}{section.D.3}
+\contentsline {subsection}{\numberline {D.3.1}扫描温度}{81}{subsection.D.3.1}
+\contentsline {subsection}{\numberline {D.3.2}扫描磁场}{84}{subsection.D.3.2}
+\contentsline {chapter}{\numberline {附录 E}外文资料调研阅读报告}{88}{appendix.E}
+\contentsline {chapter}{在学期间参加课题的研究成果}{89}{section*.56}
