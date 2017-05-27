@@ -18,24 +18,24 @@
 \contentsline {figure}{\numberline {2.13}{\ignorespaces 第二次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，电感部分的电感大小得到了降低。\relax }}{14}{figure.caption.21}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces 第三次改进后的2.5维谐振腔的电感处水平截面上的磁感应强度分布，通过加厚材料并加粗宽度提升了临界电流大小，并在不影响磁场较强区域的强度的基础上改进了设计以提高制备的成功率。\relax }}{15}{figure.caption.22}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces PPMS DynaCool测量设备实物图\cite {QDDynaCool}\relax }}{16}{figure.caption.23}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces PPMS DynaCool腔体内部结构\cite {QDDynaCool}\relax }}{17}{figure.caption.24}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 样品杆与样品盒。其中红色矩形部分为样品杆末端微波信号的输入与输出端，黄色矩形部分为样品盒所处位置，蓝色矩形为样品盒以及拆卸后的样品盒。绿色矩形内为样品盒底座上的PCB板，SMP接头以及器件及其放大图\relax }}{18}{figure.caption.25}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces PPMS测量系统测试器件\relax }}{21}{figure.caption.26}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces VNA频率扫描与拟合\relax }}{23}{figure.caption.27}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces VNA频率与功率扫描扫描\relax }}{24}{figure.caption.28}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces PPMS温度与VNA频率扫描\relax }}{25}{figure.caption.29}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces PPMS磁场与VNA频率扫描\relax }}{25}{figure.caption.30}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces 原有样品盒盖子与底座设计\relax }}{26}{figure.caption.31}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces 改进后样品盒盖子与底座设计\relax }}{26}{figure.caption.32}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 为竖直放样品所所设计的样品盒底座拆分出的盖子与底座设计\relax }}{27}{figure.caption.33}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces 为新的竖直放置样品的样品盒所设计的PCB板\relax }}{27}{figure.caption.34}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces PPMS DynaCool测量设备实物图\cite {QDDynaCool}\relax }}{17}{figure.caption.24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces PPMS DynaCool腔体内部结构\cite {QDDynaCool}\relax }}{18}{figure.caption.25}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 样品杆与样品盒。其中红色矩形部分为样品杆末端微波信号的输入与输出端，黄色矩形部分为样品盒所处位置，蓝色矩形为样品盒以及拆卸后的样品盒。绿色矩形内为样品盒底座上的PCB板，SMP接头以及器件及其放大图\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces PPMS测量系统测试器件\relax }}{22}{figure.caption.27}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces VNA频率扫描与拟合\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces VNA频率与功率扫描扫描\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces PPMS温度与VNA频率扫描\relax }}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces PPMS磁场与VNA频率扫描\relax }}{27}{figure.caption.31}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 原有样品盒盖子与底座设计\relax }}{27}{figure.caption.32}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces 改进后样品盒盖子与底座设计\relax }}{28}{figure.caption.33}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 为竖直放样品所所设计的样品盒底座拆分出的盖子与底座设计\relax }}{29}{figure.caption.34}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces 为新的竖直放置样品的样品盒所设计的PCB板\relax }}{29}{figure.caption.35}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 制备一个器件所需的三个光刻步骤对应的一组三个模板图案\relax }}{29}{figure.caption.35}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 完整的光刻板图案\relax }}{30}{figure.caption.36}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 第一轮器件制备过程\relax }}{31}{figure.caption.37}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 第一批2.5维谐振腔器件的测量结果\relax }}{32}{figure.caption.38}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 第二轮器件制备过程\relax }}{34}{figure.caption.39}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 制备一个器件所需的三个光刻步骤对应的一组三个模板图案\relax }}{32}{figure.caption.37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 完整的光刻板图案\relax }}{33}{figure.caption.38}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 第一轮器件制备过程\relax }}{34}{figure.caption.39}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 第二轮器件制备过程\relax }}{36}{figure.caption.40}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 第一批2.5维谐振腔器件的测量结果\relax }}{37}{figure.caption.41}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

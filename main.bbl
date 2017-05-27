@@ -239,6 +239,12 @@ Tosi G, Mohiyaddin F~A, Huebl H, et~al.
 \newblock AIP Advances, 2014, 4(8):087122
 \thudot
 
+\bibitem{grover2004inductance}
+Grover F.
+\newblock Inductance Calculations: Working Formulas and Tables.
+\newblock Dover phoenix editions, Dover Publications, 2004
+\thudot
+
 \bibitem{QDDynaCool}
 {Quantum Design, Inc}.
 \newblock Ppms dynacool[EB/OL].
@@ -279,6 +285,20 @@ Geerlings K~L.
 \newblock 2013
 \thudot
 
+\bibitem{Megrant2012}
+Megrant A, Neill C, Barends R, et~al.
+\newblock Planar superconducting resonators with internal quality factors above
+  one million.
+\newblock Applied Physics Letters, 2012, 100(11):113510
+\thudot
+
+\bibitem{Bruno2015}
+Bruno A, Lange G~d, Asaad S, et~al.
+\newblock Reducing intrinsic loss in superconducting resonators by surface
+  treatment and deep etching of silicon substrates.
+\newblock Applied Physics Letters, 2015, 106(18):182601
+\thudot
+
 \bibitem{Blais2004}
 Blais A, Huang R~S, Wallraff A, et~al.
 \newblock Cavity quantum electrodynamics for superconducting electrical
@@ -292,20 +312,6 @@ Blais A, Gambetta J, Wallraff A, et~al.
 \newblock Quantum-information processing with circuit quantum electrodynamics.
 \newblock Physical Review A, 2007, 75(3):032329.
 \newblock PRA
-\thudot
-
-\bibitem{Megrant2012}
-Megrant A, Neill C, Barends R, et~al.
-\newblock Planar superconducting resonators with internal quality factors above
-  one million.
-\newblock Applied Physics Letters, 2012, 100(11):113510
-\thudot
-
-\bibitem{Bruno2015}
-Bruno A, Lange G~d, Asaad S, et~al.
-\newblock Reducing intrinsic loss in superconducting resonators by surface
-  treatment and deep etching of silicon substrates.
-\newblock Applied Physics Letters, 2015, 106(18):182601
 \thudot
 
 \bibitem{cardarelli2008materials}
@@ -328,6 +334,19 @@ Bothner D, Gaber T, Kemmler M, et~al.
   resonators.
 \newblock Physical Review B, 2012, 86(1):014517.
 \newblock PRB
+\thudot
+
+\bibitem{Wenner2011}
+Wenner J, Neeley M, Radoslaw C~B, et~al.
+\newblock Wirebond crosstalk and cavity modes in large chip mounts for
+  superconducting qubits.
+\newblock Superconductor Science and Technology, 2011, 24(6):065001
+\thudot
+
+\bibitem{goppl2008coplanar}
+G{\"o}ppl M, Fragner A, Baur M, et~al.
+\newblock Coplanar waveguide resonators for circuit quantum electrodynamics.
+\newblock Journal of Applied Physics, 2008, 104(11):113904
 \thudot
 
 \bibitem{Khalil2012}

@@ -77,11 +77,11 @@
                 H = H_r + H_a + H_{int}
             \end{equation}
             其中$H_r = \hbar \omega_r a^\dagger a $为谐振腔的哈密顿量，$H_a$即由\ref{eqn:NV_hamiltonian}所描述的NV自旋自身的哈密顿量，而$H_{int}$为两个系统相互作用的哈密顿量\cite{grezes2016towards}
-            \begin{eqnarray}
-                H_{int} &=& - \gamma_e \bm S \cdot \bm B\\
-                        &=& - \frac{\gamma_e}{\sqrt 2} [ \sigma_x \delta B_x (\bm r) + \sigma_y \delta B_y (\bm r) ](a + a^\dagger) \\
-                        &=& g^* a \sigma_+ + g a^\dagger \sigma_-
-            \end{eqnarray}
+            \begin{align}
+                H_{int} &= - \gamma_e \bm S \cdot \bm B\\
+                        &= - \frac{\gamma_e}{\sqrt 2} [ \sigma_x \delta B_x (\bm r) + \sigma_y \delta B_y (\bm r) ](a + a^\dagger) \\
+                        &= g^* a \sigma_+ + g a^\dagger \sigma_-
+            \end{align}
             其中自旋-谐振腔耦合系数
             \begin{equation}
             \label{eqn:coupling_coeff}
@@ -114,10 +114,10 @@
 
 
             当自旋系综从谐振腔吸收一个光子时，相应的态为$\ket B = \ket{N/2, -N/2 + 1} \equiv = \mathcal S_+ \ket G/|\mathcal S_+ \ket G| = \sum_k \ket{E_k}/\sqrt N $。其余$N-1$个单激发的激发态可写为$\ket{D_j} = \sum^{N-1}_{k=0} \exp(ijk2\pi/N)\ket{E_k}/\sqrt N $，其中$j=1,...,N-1$，且易验证$\braket{D_j|B} = 0 $。因此由能级图\ref{fig:NV_ensemble_levels}易看出所有$\ket{D_j}$对应的态均为$\mathcal S = N/2-1$，因此不可能通过$H_{TC}$与基态$\ket{G}$耦合起来。综合上述讨论，
-            \begin{eqnarray}
-                \bra{E,0} H_{TC} \ket{G,1} &=&(1/\sqrt N)\sum_i g = g\sqrt N\\
-                \bra{D_j,0} H_{TC}\ket{G,1} &=& 0
-            \end{eqnarray}
+            \begin{align}
+                \bra{E,0} H_{TC} \ket{G,1} &=(1/\sqrt N)\sum_i g = g\sqrt N\\
+                \bra{D_j,0} H_{TC}\ket{G,1} &= 0
+            \end{align}
             
             
            通过上述计算可以看出，对于$N$个自旋构成的自旋系综，系综整体与谐振腔的耦合强度比单个自旋的耦合强度大了系数$\sqrt N$。

@@ -122,7 +122,13 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
                   \label{eqn:simpleLorentzian}
                         |S_{21}|^2 = 1 - \frac{1/Q_r^2 - 1/Q_i^2}{1/Q_r^2 + 4 (f - f_r)^2/f_r^2} 
                   \end{equation}
-                  其中$1/Q_r = 1/Q_c + 1/Q_i$为总品质因子，$Q_c$为耦合的品质因子，耦合越小其值越大，$Q_i$为本质的品质因子。对于更为复杂的情况，在第\ref{sec:谐振腔响应信号的拟合}节中进行了简要综述。
+                  其中$1/Q_r = 1/Q_c + 1/Q_i$为总品质因子，$Q_c$为耦合的品质因子，耦合越小其值越大，$Q_i$为本质的品质因子。对于更为复杂的情况，我们参考了文献\inlinecite{Megrant2012,Bruno2015,Geerlings2013}中使用的方法，拟合公式为\cite{Bruno2015}
+                  \begin{equation}
+                        \label{eqn:complexFitFunction}
+                        S_{21} = A \left ( 1+ \alpha \frac{f-f_r}{f_r} \right ) \left (1- \frac{Q_l e^{i \theta}/|Q_e| }{1 + 2i Q_l \frac{f-f_r}{f_r} } \right )e^{i ( \phi_v f + \phi_0 ) }
+                  \end{equation}
+                  对该公式的推导与意义在参考文献\inlinecite{Bruno2015}中有所介绍。
+                  
 
                   对于实际测量，往往需要进行大范围扫描找到谐振频率后再在谐振频率附近细扫。由于VNA频率采样点数有最大值，因此我编写了测量程序，在给定扫频范围与精确度下自动控制VNA分段扫描，并最后汇总数据，使大范围的精细扫描十分便捷。找到谐振模式后，在模式附近进行了细扫，并基于复杂情况的谐振腔响应公式，对测量所得的信号进行了拟合。测试过程中测得的典型数据如图\ref{fig:PPMSSetupTestFreqSweep}所示。
                   
@@ -134,7 +140,7 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
                 \label{fig:PPMSSetupTestFreqSweep}
             \end{figure}
 
-            通过大范围的扫描能够十分容易地确定谐振频率的位置，并获得测量系统的透射背景。通过根据所估计的器件谐振腔的$Q$值来调整大范围扫描的精度，可以避免因为精度过差而漏掉谐振模式的情况。图\ref{fig:PPMSSetupTestFreqSweep}(b)与(c)为(a)中红色箭头所示的谐振模式的透射曲线的拟合结果图。拟合的具体方法在第\ref{sec:谐振腔响应信号的拟合}节中进行了简述。通过拟合能够得到该模式的$Q_i$，$Q_c$，谐振频率$f_r$等一系列参数。通过曲线可以看出，拟合得到的理论曲线（绿色实现）与实际数据（蓝色数据点）符合很好。对于如图\ref{fig:PPMSSetupTestFreqSweep}(c)中由于阻抗不匹配导致的非对称的响应线型，复杂情况下的通用公式也能拟合得到很好的结果。
+            通过大范围的扫描能够十分容易地确定谐振频率的位置，并获得测量系统的透射背景。通过根据所估计的器件谐振腔的$Q$值来调整大范围扫描的精度，可以避免因为精度过差而漏掉谐振模式的情况。图\ref{fig:PPMSSetupTestFreqSweep}(b)与(c)为(a)中红色箭头所示的谐振模式的透射曲线的拟合结果图。通过拟合能够得到该模式的$Q_i$，$Q_c$，谐振频率$f_r$等一系列参数。通过曲线可以看出，拟合得到的理论曲线（绿色实现）与实际数据（蓝色数据点）符合很好。对于如图\ref{fig:PPMSSetupTestFreqSweep}(c)中由于阻抗不匹配导致的非对称的响应线型，复杂情况下的通用公式也能拟合得到很好的结果。
 
                   % subsection 频率扫描 (end)
 
@@ -233,7 +239,7 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
             \section{样品托的设计与改进} % (fold)
             \label{sec:样品托的设计与改进}
 
-
+            由孙麓岩研究组郭星翰同学设计的样品托如图\ref{fig:oldSampleBox}所示，由盖子与底座组成。在测量系统使用过程中，我发现了一些问题并想出了一些解决方案，对样品托进行了改进。
 
 \begin{figure}[h]
   \centering%
@@ -250,16 +256,9 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
   \caption{原有样品盒盖子与底座设计}
   \label{fig:oldSampleBox}
 \end{figure}
-                  
 
 
-
-
-
-
-
-
-
+            在现有的样品托中，微波信号经同轴传输线通过盖子上的两个圆孔，再经过SMP转PCB的接头垂直转至PCB板上的平面波导上，再通过点焊的连接转入器件上的平面波导中。样品座放置样品的位置下方有方形空洞，一方面为尽可能排除样品盒自身的谐振模式，另一方面为减小样品盒与样品间的电容，从而使得样品上微波出入端的cross talk尽量小\cite{Wenner2011}。现有样品托使用的转接头为Rosenberger~19S102-40ML5。另一个可能可以改进的地方为，样品托的盖子与底座通过螺丝固定，螺丝右下至上穿过底座与盖子固定，不便安装。在实际使用中，四个螺孔往往只会用到两个。因此，在改进的设计中，螺丝改为从上至下安装，且数目减少为两个，如图\ref{fig:newSampleBox}所示。
 
 
 
@@ -280,13 +279,12 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
 \end{figure}
 
 
+            另一个较大的改进为竖直装样。在第\ref{sec:测量系统概述}中已经提到，我们希望样品也能够竖直放置，因此需要设计新的样品托底座。样品托的盖子通过SMP接头固定在样品杆上，拆卸与更换相对不便，因此我希望设计出能够同时供水平放样的底座与竖直放样的底座使用的样品盖。竖直放样的样品座的大致设计思路为，将现有的样品座竖直剖分为两部分，在剖分的竖直面上即可安装新的光刻板与样品。因此，需要更换SMP转接头，并根据新的转接头设计PCB板，并且使转接头的位置与水平放样时一致，以便同时使用相同的样品盖。
 
 
+            具体设计时，考虑到了点焊时器件需能够很好的水平放置，因此采用平行于样品底座两侧平面的方向将原有样品做剖分，这样点焊时器件与新的底座能够平稳放置。而这样剖分底座，将导致微波接头位于剖分面与原有样品底座表面的交线方向上，与原有微波接头排列方向垂直。因此为配合新的底座对应的样品盖，水平放置器件的样品底座也需更改PCB与器件的放置方向，如图\ref{fig:newSampleBox}所示，通过简单旋转原有样品底座的PCB板部分，使得原有的PCB板设计与已经制作出了并焊接上SMP接头的PCB板仍旧能够继续使用。
 
-
-
-
-
+            通过研究SMP转接头型号，我们确认所需的新的转接头为Rosenberger~19S202-40ML5-NM。我根据现有SMP接头与PCB板尺寸，以及将会采用的新SMP接头的尺寸，设计了拆分后的样品底座与盖子设计，如图\ref{fig:newVertiSampleBox}所示。
 
 
 \begin{figure}[h]
@@ -305,6 +303,8 @@ ppms.setField(1000,'fieldRate',100,'fieldApproach','Linear');		% set field
   \label{fig:newVertiSampleBox}
 \end{figure}
 
+
+            其中的底座部分参考了原有水平放羊的底座的设计通过凸台使得盖子能够更好的封闭样品所在的空间。放置样品的部分下方有方形空洞，四角留出空间便于去除样品。新的样品座设计对应的PCB板的设计如图\ref{fig:SmallboxHolderVertTotalHolderPCBV2}所示。PCB板的上边沿左右两侧将各焊接一个SMP接头，将微波信号耦合进PCB板上的平面波导中。另一个改进为在PCB与器件通过点焊连接的部分对传输线的中心线进行了放大，便于进行点焊，可与原有的图\ref{fig:PPMSSetupTestChip}中的PCB设计进行对比。
                   
 
 

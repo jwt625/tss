@@ -68,12 +68,12 @@
             \lambda_{skin} = \sqrt{\frac{2}{\sigma \omega \mu}}
         \end{equation}
         通过使趋肤效应的深度等于超导电流的穿透深度，我们估计得仿真所需采用的电流频率为$ \omega \approx 660 $GHz。这个频率并不对应实际物理系统中的任何频率，仅为仿真所采用的一个参数。零场涨落下的电磁场分布直接通过使总电流的大小为零场电流涨落的大小来得到。零场电流的大小通过计算可得\cite{PhysRevA.95.022306,Mark2013,Tosi2014}
-        \begin{eqnarray}
+        \begin{align}
             \label{eqn:ZPF_estimation}
-            \frac{\hbar \omega }{2} &=& 2\times \frac{1}{2}L (\delta i_{rms})^2\\
-            L&=& \frac{2Z_0}{\pi \omega}\\
-            \delta i_{rms } &=& \omega \sqrt{ \frac{\hbar \pi}{4Z_0} }\approx 50 \mathrm{nA}
-        \end{eqnarray}
+            \frac{\hbar \omega }{2} &= 2\times \frac{1}{2}L (\delta i_{rms})^2\\
+            L&= \frac{2Z_0}{\pi \omega}\\
+            \delta i_{rms } &= \omega \sqrt{ \frac{\hbar \pi}{4Z_0} }\approx 50 \mathrm{nA}
+        \end{align}
         
         通过上述方法，我采用了与两篇文章中相同的器件几何尺寸对磁场进行了仿真，如图所示。
 
@@ -146,17 +146,17 @@
                     \delta I = \sqrt{ \frac{\hbar \omega}{2 L} }
                 \end{equation}
                 而对于选定的自旋种类以及基于选定自旋的能级系统定义出的二能级量子比特，其能级间能量差大致固定，因此谐振腔的谐振频率也大致固定在该能量所对应的频率。而谐振腔的频率由$ \omega = 1/\sqrt{LC} $确定。通过上述讨论可以看到，通过增大零场电流涨落可以增大磁场，进而增大单个自旋与谐振腔模式的耦合常数，增大零场电流涨落可由减小谐振腔的电感$L$实现，而对于固定频率的谐振腔，减小$L$意味着增大电容$C$。如果我们想要达到的耦合强度$ g/2 \pi \sim 1 \mathrm{MHz} $，并且利用如基于金刚石色心的能量差对应频率在$3 \mathrm{GHz} $左右的自旋系统，可以估计出相应的零场电流涨落，对应的谐振腔电感与电容的数量级为
-                \begin{eqnarray}
-                    \delta I & \sim & 1 \mathrm{\mu A}\\
-                    L & \sim & 1 \mathrm{pH}\\
-                    C & \sim & 1 \mathrm{nF}
-                \end{eqnarray}
+                \begin{align}
+                    \delta I & \sim  1 \mathrm{\mu A}\\
+                    L & \sim  1 \mathrm{pH}\\
+                    C & \sim  1 \mathrm{nF}
+                \end{align}
                 对于nF数量级的电容，无法通过如齿状二维电容等二维设计实现，而可使用三维平板电容实现。因此，我把这种电感为二维结构而电容为三维结构的谐振腔称为2.5维谐振腔。已有研究人员提出基于这种思路设计的2.5维谐振腔\cite{sarabi2017prospective}，我基于他们的谐振腔设计进行了仿真与优化。
                 
 
                 
-            \subsection{设计与优化} % (fold)
-            \label{sub:设计与优化}
+            \subsection{电感设计与优化} % (fold)
+            \label{sub:电感设计与优化}
 
                 Sarabi等人提出的设计如图\ref{fig:spiral_proposal_1}所示
 
@@ -217,7 +217,32 @@
             通过进一步讨论并考虑到测量系统的温度下限对应的噪声大小，我们希望谐振腔中能有远多于100个光子的信号。通过简单估计我们发现对于图\ref{fig:res_UIndV3_normB_20170321}以及其之前的结构，达到理想的光子数会使电流密度超过所用材料的超导临界电流密度，这样极有可能使器件损耗大大增加，并且因非超导态的电阻发热使电感部分的细导线烧断，导致器件损毁，因此需要进一步改进设计使同样临界电流密度的材料能够承载更多的电流。另一方面，图\ref{fig:res_UIndV3_normB_20170321}的设计由于电感环状结构的前后为尽可能增大导线宽度使输入与输出导线中部距离十分靠近，为$\sim 10 \mathrm{nm} $的数量级，在微纳加工过程中极易连接起来，在实际测试中也出现输入与输出两部分连接起来的现象。考虑上述两个因素后，我进一步改进了电感的设计，通过加厚材料并加宽导线圆弧部分，提高了可承载总电流的大小，并使导线的输入与输出部分分离更远距离，提高了制备的成功率。最终的电感设计如图\ref{fig:res_UIndV4_50nm_normB_20170406}所示。
 
             
+            对于COMSOL仿真所得电感的准确度，我通过变化求解空间区域大小与网格致密程度，以及与经验公式相比较这两种方法进行了探究。对于矩形截面的直导线，其自感的计算公式为\cite{grover2004inductance}
+
+            \begin{equation}
+                \label{eqn:SelfInductance}
+                L = 0.002l \left [ \ln \frac{2l}{B+C} + \frac{1}{2} - \ln(e) \right ]
+            \end{equation}
+            其中$B$，$C$为导线矩形横截面的边长，$l$为导线的长度，以厘米为单位，这样计算出的电感的单位为$ \mu  $H。最后一项$\ln(e)$并不等于一，需查表得知，但其值基本为$0.001$，对于当前的估计的精度而言可以忽略。
+            
+
+            通过仿真几何结构为20nm~x~20nm~x~250nm的直导线的自感，不同求解区域大小下COMSOL计算所得的电感值以及经验公式估计所得的电感值如表\ref{tab:InductanceComparison}所示。
 
 
+\begin{table}[htb]
+  \centering
+  \caption{不同大小求解区域下COMSOL仿真所得电感值与经验公式估计的电感值}
+  \label{tab:InductanceComparison}
+    \begin{tabular}{c|cccc} %{\linewidth}{lX}
+      \toprule %[1.5pt]
+      计算方法 & $250^2\times 250$nm$^3$ & $500^2\times 250$nm$^3$ & $1000^2\times 250$nm$^3$ & 经验公式 \\
+      \midrule %[1pt]
+      电感值(H) & $1.378\times 10^{-13} $ & $1.705\times 10^{-13} $ & $2.019\times 10^{-13} $ & $1.512\times 10^{-13} $  \\
+      \bottomrule %[1.5pt]
+    \end{tabular}
+\end{table}
+
+        
+        从表\ref{tab:InductanceComparison}中可以看出，COMSOL仿真的电感值随求解区域有较明显变化，但能够得到与经验公式数量级相符的结果。实际使用的电感也较为复杂，通过COMSOL的仿真与经验公式的估算也仅能给出一个参考值，具体还需通过实际制备出的器件积累数据与经验。
 
     
