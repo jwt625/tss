@@ -378,4 +378,66 @@ Wu H, George R~E, Wesenberg J~H, et~al.
 \newblock PRL
 \thudot
 
+\bibitem{Wendin2016}
+Wendin G.
+\newblock Quantum information processing with supercond circuit: a review.
+\newblock ArXiv preprint arXiv:1610.02208, 2016.
+\thudot
+
+\bibitem{Raab2015}
+Raab R~P.
+\newblock Single-gate error for superconducting qubits imposed by sideband
+  products of iq mixing[D].
+\newblock 2015
+\thudot
+
+\bibitem{Martinis2014Report}
+Martinis J~M, Megrant A.
+\newblock Ucsb final report for the csq program: Review of decoherence and
+  materials physics for superconducting qubits.
+\newblock arXiv:1410.5793, 2014.
+\thudot
+
+\bibitem{Nakamura1997}
+Nakamura Y, Chen C~D, Tsai J~S.
+\newblock Spectroscopy of energy-level splitting between two macroscopic
+  quantum states of charge coherently superposed by josephson coupling.
+\newblock Phys. Rev. Lett., 1997, 79:2328--2331
+\thudot
+
+\bibitem{Collin2004}
+Collin E, Ithier G, Aassime A, et~al.
+\newblock Nmr-like control of a quantum bit superconducting circuit.
+\newblock Physical Review Letters, 2004, 93(15):157005.
+\newblock PRL
+\thudot
+
+\bibitem{walls2007quantum}
+Walls D~F, Milburn G~J.
+\newblock Quantum optics.
+\newblock Springer Science \& Business Media, 2007
+\thudot
+
+\bibitem{Barends2013Coherent}
+Barends R, Kelly J, Megrant A, et~al.
+\newblock Coherent josephson qubit suitable for scalable quantum integrated
+  circuits.
+\newblock Physical Review Letters, 2013, 111(8):080502.
+\newblock PRL
+\thudot
+
+\bibitem{Mallet2009}
+Mallet F, Ong F~R, Palacios-Laloy A, et~al.
+\newblock Single-shot qubit readout in circuit quantum electrodynamics.
+\newblock Nat Phys, 2009, 5(11):791--795.
+\newblock 10.1038/nphys1400
+\thudot
+
+\bibitem{Sliwa2016}
+Sliwa K.
+\newblock Improving the quality of heisenberg back-action of qubit measurements
+  made with parametric ampliers[D].
+\newblock 2016
+\thudot
+
 \end{thebibliography}

@@ -3,11 +3,12 @@ A level-1 auxiliary file: data/chap01.aux
 A level-1 auxiliary file: data/chap02.aux
 A level-1 auxiliary file: data/chap03.aux
 A level-1 auxiliary file: data/chap04.aux
+A level-1 auxiliary file: data/chap05.aux
 The style file: thuthesis.bst
 A level-1 auxiliary file: data/ack.aux
-A level-1 auxiliary file: data/resume.aux
 Database file #1: ref/refs.bib
 Warning--there's a publisher but no address in krantz2010investigation
 Warning--there's a publisher but no address in grover2004inductance
 Warning--there's a publisher but no address in cardarelli2008materials
-(There were 3 warnings)
+Warning--there's a publisher but no address in walls2007quantum
+(There were 4 warnings)

@@ -25,29 +25,34 @@
 \contentsline {section}{\numberline {4.3}光刻板的设计}{32}{section.4.3}
 \contentsline {section}{\numberline {4.4}器件制备情况与改进}{34}{section.4.4}
 \contentsline {section}{\numberline {4.5}2.5维谐振腔的测量与讨论}{37}{section.4.5}
-\contentsline {chapter}{插图索引}{42}{chapter*.46}
-\contentsline {chapter}{表格索引}{45}{chapter*.47}
-\contentsline {chapter}{公式索引}{46}{section*.48}
-\contentsline {chapter}{参考文献}{48}{section*.50}
-\contentsline {chapter}{致\hspace {1em}谢}{52}{section*.52}
-\contentsline {chapter}{声\hspace {1em}明}{54}{section*.54}
-\contentsline {chapter}{\numberline {附录 A}超导量子比特的原理}{55}{appendix.A}
-\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{56}{appendix.B}
-\contentsline {section}{\numberline {B.1}光刻}{56}{section.B.1}
-\contentsline {section}{\numberline {B.2}介电层生长与刻蚀}{56}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}刻蚀介电层后去除光刻胶}{56}{subsection.B.2.1}
-\contentsline {section}{\numberline {B.3}光刻胶Lift off}{57}{section.B.3}
-\contentsline {section}{\numberline {B.4}磁控溅射镀膜}{57}{section.B.4}
-\contentsline {section}{\numberline {B.5}Argon milling去除氧化层}{58}{section.B.5}
-\contentsline {section}{\numberline {B.6}点焊}{58}{section.B.6}
-\contentsline {chapter}{\numberline {附录 C}PPMS系统的常用操作}{59}{appendix.C}
-\contentsline {section}{\numberline {C.1}调节温度与磁场}{59}{section.C.1}
-\contentsline {section}{\numberline {C.2}更换样品}{59}{section.C.2}
-\contentsline {chapter}{\numberline {附录 D}测量系统MATLAB代码}{60}{appendix.D}
-\contentsline {section}{\numberline {D.1}VNA控制代码}{60}{section.D.1}
-\contentsline {section}{\numberline {D.2}PPMS控制代码}{75}{section.D.2}
-\contentsline {section}{\numberline {D.3}扫描温度与磁场实验的代码}{81}{section.D.3}
-\contentsline {subsection}{\numberline {D.3.1}扫描温度}{81}{subsection.D.3.1}
-\contentsline {subsection}{\numberline {D.3.2}扫描磁场}{84}{subsection.D.3.2}
-\contentsline {chapter}{\numberline {附录 E}外文资料调研阅读报告}{88}{appendix.E}
-\contentsline {chapter}{在学期间参加课题的研究成果}{89}{section*.56}
+\contentsline {chapter}{\numberline {第5章}结论与改进}{42}{chapter.5}
+\contentsline {chapter}{插图索引}{43}{chapter*.46}
+\contentsline {chapter}{表格索引}{46}{chapter*.47}
+\contentsline {chapter}{公式索引}{47}{section*.48}
+\contentsline {chapter}{参考文献}{50}{section*.50}
+\contentsline {chapter}{致\hspace {1em}谢}{54}{section*.52}
+\contentsline {chapter}{声\hspace {1em}明}{56}{section*.54}
+\contentsline {chapter}{\numberline {附录 A}A brief introduction to superconducting qubits}{57}{appendix.A}
+\contentsline {section}{\numberline {A.1}Principle of superconducting qubits}{57}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Hamiltonian of Transmon}{58}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Control and readout of transmon qubits}{60}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Decay and dephasing in transmon qubits}{62}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}A brief history of the development of transmon qubits}{63}{section.A.2}
+\contentsline {section}{\numberline {A.3}Technical improvements}{63}{section.A.3}
+\contentsline {chapter}{\numberline {附录 B}微纳加工工艺}{64}{appendix.B}
+\contentsline {section}{\numberline {B.1}光刻}{64}{section.B.1}
+\contentsline {section}{\numberline {B.2}介电层生长与刻蚀}{64}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}刻蚀介电层后去除光刻胶}{64}{subsection.B.2.1}
+\contentsline {section}{\numberline {B.3}光刻胶Lift off}{65}{section.B.3}
+\contentsline {section}{\numberline {B.4}磁控溅射镀膜}{65}{section.B.4}
+\contentsline {section}{\numberline {B.5}Argon milling去除氧化层}{66}{section.B.5}
+\contentsline {section}{\numberline {B.6}点焊}{66}{section.B.6}
+\contentsline {chapter}{\numberline {附录 C}PPMS系统的常用操作}{67}{appendix.C}
+\contentsline {section}{\numberline {C.1}调节温度与磁场}{67}{section.C.1}
+\contentsline {section}{\numberline {C.2}更换样品}{67}{section.C.2}
+\contentsline {chapter}{\numberline {附录 D}测量系统MATLAB代码}{68}{appendix.D}
+\contentsline {section}{\numberline {D.1}VNA控制代码}{68}{section.D.1}
+\contentsline {section}{\numberline {D.2}PPMS控制代码}{83}{section.D.2}
+\contentsline {section}{\numberline {D.3}扫描温度与磁场实验的代码}{89}{section.D.3}
+\contentsline {subsection}{\numberline {D.3.1}扫描温度}{89}{subsection.D.3.1}
+\contentsline {subsection}{\numberline {D.3.2}扫描磁场}{92}{subsection.D.3.2}
