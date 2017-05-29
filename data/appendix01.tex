@@ -5,7 +5,7 @@
   
 % chapter SCQubitPrinciple (end)
 
-This appendix is designed to be a concise introduction to superconducting qubits with a focus on transmon qubits, including the theoretic derivation of its Hamiltonian and properties, a brief history of the development of transmon qubits and crucial technical improvements. See, for example, Ref.~\inlinecite{Wendin2016} for a more detailed review about superconducting qubits.
+This appendix is designed to be a concise introduction to superconducting qubits with a focus on transmon qubits, including the theoretic derivation of its Hamiltonian and properties, a brief history of the development of transmon qubits and crucial technical improvements. See, for example, Ref.~\inlinecite{Clarke2008,devoret2013superconducting,Wendin2016} for a more detailed review about superconducting qubits.
 
 This appendix is written as a `router' for more detailed literature on topics included, with the most important results and conclusions explicitly presented here.
 
@@ -116,8 +116,10 @@ This appendix is written as a `router' for more detailed literature on topics in
 
             When the state space is further restricted to the ground and first excite state, the Hamiltonian (\ref{eqn:simplifiedTransmonWithCavityDrive}) reduce to the Jaynes-Cummings Hamiltonian\cite{walls2007quantum,schuster2007circuit}
             \begin{equation}
+            \label{eqn:JCHamiltonian}
                 H = \hbar \frac{\omega_{01}}{2} \hat \sigma_z + \hbar \omega_r \hat a^\dagger \hat a  + \hbar (g_{01}\hat a^\dagger \hat \sigma^- + h.c. )
             \end{equation}
+            where $ \hbar \omega_{01} = \sqrt{8E_JE_C} - E_C $ is the qubit energy separation.
             
             If we start from eqn.~(\ref{eqn:simplifiedTransmonWithCavityDrive}) but without the RWA, switch back to classical drive field $V_d = V_{d0}\cos(\omega_d t + \phi) $ without the cavity and keep only the lowest two levels, the Hamiltonian turns to
             \begin{align}
@@ -131,9 +133,9 @@ This appendix is written as a `router' for more detailed literature on topics in
             \end{align}
             where the terms rotating at $ 2 \omega_d t $ is thrown away by RWA. The resulting Hamiltonian shows that the drive effectively rotate the qubit state along the axis $B_{\text{eff}} = ((\omega_{01} - \omega_d)/2,\Omega \cos \phi /2,\Omega \sin \phi /2)$, like a spin-1/2 particle in the effective magnetic field $B_{\text{eff}}$, realizing the X and Y drive.
 
-            In most circumstances, a transmon qubit is coupled to a microwave resonator for readout. When the resonator and transmon are detuned from each other, the J-C Hamoltonian goes to the dispersive limit\cite{Blais2004,schuster2007circuit}
+            In most circumstances, a transmon qubit is coupled to a microwave resonator for readout, and the corresponded Hamiltonian is identical to eqn.~(\ref{eqn:JCHamiltonian}). When the resonator and transmon are detuned from each other, the J-C Hamoltonian goes to the dispersive limit\cite{Blais2004,schuster2007circuit}
             \begin{equation}
-                H \approx \hbar \left (\omega_r + \frac{g_{01}^2}{\Delta} \hat \sigma_z \right )(\hat a^\dagger \hat a+1/2)+\hbar \omega_{01} \hat \sigma_z/2
+                H \approx \hbar \left (\omega_r + \frac{g_{01}^2}{\Delta} \hat \sigma_z \right )\hat a^\dagger \hat a+ \frac{1}{2} \hbar \left(\omega_{01} + \frac{g_{01}^2}{\Delta}\right) \hat \sigma_z
             \end{equation}
             where $ \Delta = \omega_{01} - \omega_r \gg g_{01}$ is the transmon-cavity detuning. Explicitly, the cavity resonant frequency depends on the state of the transmon, hence by probing the cavity response, the state of the transmon can be extracted. Single-shot readout can be achieved by proper amplification process\cite{Mallet2009,Sliwa2016}.
 
@@ -159,6 +161,55 @@ This appendix is written as a `router' for more detailed literature on topics in
 \section{A brief history of the development of transmon qubits} % (fold)
 \label{sec:history_of_the_development_of_transmon_qubit}
 
+The superconducting qubits evolves from Cooper pair box (CPB), which is basically a charge island separated from a charge reservoir by a J-J. Early research about CBP (originally called superconducting single-electron box\cite{Nakamura1997}) mainly concerned about its transport properties and charging effects. In 1999, pulse modulation of quantum states were realized by Nakamura \etal\cite{Nakamura1999}. A gate voltage pulse brought two levels of the CPB into resonance and coherent oscillations in state population was observed by varying the pulse length. The coherence time was $\sim 1$ns. To obtain better coherence, the same group used spin-echo-type technique on the same system and identified the dominant dephasing source was the $1/f$ charge noise\cite{Nakamura2002}. More works quickly followed on similar system, with microwave pulses manipulating the qubit state\cite{Vion2002,Collin2004} and also with more complex device such as two coupled charge qubit\cite{Pashkin2003}. Ref.~\inlinecite{Makhlin2001} is a review about early but also fundamental superconducting qubit design.
+
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=4in]{review/strongCoupling2004.png}
+                \caption{Strong coupling between superconducting qubit and single photon, adapted from Ref.~\inlinecite{Wallraff2004Nature}.}
+                \label{fig:strongCoupling2004}
+            \end{figure}
+
+In 2004, Yale group proposed circuit quantum electrodynamics (cQED) as an architecture for quantum computation, where superconducting qubits are coupled to CPW resonator for control and readout\cite{Blais2004}. In the same year, strong coupling between superconducting charge qubit and CPW resonator was achieved\cite{Wallraff2004Nature}. By probing the cavity transmission while manipulating the qubit level structure via gate voltage and flux bias, level structure and vacuum Rabi splitting were clearly observed. In their following experiments, effect of the ac Stark shift from the cavity on the qubit and hence the dephase from the photon shot noise is experimentally explored\cite{Schuster2005} and theoretically explained\cite{Gambetta2006}. The qubit line shape fits better to a Lorentzian (Gaussian) for low (high) intra-cavity photon number, which agrees with their theory of measurement-induced dephasing. The dephasing time exceeded 200ns in this work.
+
+
+In 2007, The same group at Yale proposed more detailed single and two qubit(s) gate design for quantum information processing based on cQED\cite{Blais2007}. At the same time, coupling between remote qubits were realized with both phase qubits\cite{Sillanpaa2007} and charge qubits\cite{Majer2007} via a cavity bus. While probing the cavity resonance can be used for qubit readout, Schuster \etal{} showed that the qubit spectroscopy can be used to resolve photon number states of the cavity\cite{Schuster2007Resolving}.
+
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=4in]{review/transmon2007.png}
+                \caption{Energy levels of superconducting qubit versus gate charge, with different $E_J/E_C$ value. Adapted from Ref.~\inlinecite{koch2007charge}.}
+                \label{fig:transmon2007}
+            \end{figure}
+
+
+The charge qubits suffer from $1/f$ charge noise, since the energy levels depends on the gate induced charge $n_g$. Degrees of control always correspond to channels of dephasing. In order to suppress the sensitivity to charge noise, Koch \etal{} proposed transmon qubits\cite{koch2007charge}. The ratio between $E_J$ and $E_C$ is increased to suppress the dependence of energy levels with respect to $n_g$, while the anharmonicity still remains sufficient for defining qubits. Their proposal was quickly implemented approximately one year later\cite{Schreier2008}, where the various decay and dephasing times are all above 1$\mu$s.
+
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=5in]{review/twoQubit2009.png}
+                \caption{Device for demonstration of two-qubit algorithms. Adapted from Ref.~\inlinecite{DiCarlo2009}.}
+                \label{fig:twoQubit2009}
+            \end{figure}
+
+With the new transmon design and multiple qubit coupling, the Yale group soon proceeded to multi-qubit manipulations and readout. Two-qubit state tomography using a joint disppersive readout was proposed in Ref.~\cite{Filipp2009}, where the cavity frequency shift depends on both states of the two qubits coupling to the cavity. With two transmons coupled to a cavity bus, DiCarlo \etal{} showed two-qubit algorithm in superconducting system\cite{DiCarlo2009}. Two qubit controlled phase gate was implemented utilizing level pulling from a non-computational state by adiabatic flux pulse. They soon went to coupling four transmons in one cavity and succesfully prepared and measured a three-qubit entanglement\cite{DiCarlo2010}. The flux-pulse C-Phase gate was 12ns in their case and the qubit coherence time is on the level of $\sim 1 \mu$s.
+
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=4in]{review/3D_transmon2011.png}
+                \caption{3D transmon design. Adapted from Ref.~\inlinecite{DiCarlo2009}.}
+                \label{fig:Paik2011}
+            \end{figure}
+
+While the coherence time of superconducting qubits has been steadily improved from $\sim 1$ns in CPB to $\sim 1 \mu$s for transmons, the Yale group made another drastic improvement by the 3D transmon design\cite{Paik2011}. The measured $T_1$ was up to $60\mu$s and $T_2 \sim 10\mu$s. The long coherence time benefitted from the avoidance of $1/f$ charge noise, single junction design and also material optimizations, and was soon further increased to $\sim 0.1$ms\cite{Rigetti2012}.
+
+
+
+
 % section history_of_the_development_of_transmon_qubit (end)
 
 
@@ -168,6 +219,11 @@ This appendix is written as a `router' for more detailed literature on topics in
 In summary, small junction is prefered to avoid defects. Removing loss from trapped vortices and quasiparticles by infrared and magnetic shielding is required for reliable resonator $Q$ measurement and for higher qubit coherence.
 
 % section technical_improvements (end)
+
+
+
+
+
 
 
 

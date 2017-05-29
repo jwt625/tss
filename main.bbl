@@ -440,4 +440,138 @@ Sliwa K.
 \newblock 2016
 \thudot
 
+\bibitem{IBM16Qubits}
+{IBM Research}.
+\newblock Ibm builds its most powerful universal quantum computing
+  processors[EB/OL].
+\newblock [2017-5-29].
+\newblock
+  {\url{https://phys.org/news/2017-05-ibm-powerful-universal-quantum-processors.html}}
+\thudot
+
+\bibitem{Nakamura1999}
+Nakamura Y, Pashkin Y~A, Tsai J~S.
+\newblock Coherent control of macroscopic quantum states in a
+  single-cooper-pair box.
+\newblock Nature, 1999, 398(6730):786--788.
+\newblock 10.1038/19718
+\thudot
+
+\bibitem{Nakamura2002}
+Nakamura Y, Pashkin Y~A, Yamamoto T, et~al.
+\newblock Charge echo in a cooper-pair box.
+\newblock Physical Review Letters, 2002, 88(4):047901.
+\newblock PRL
+\thudot
+
+\bibitem{Vion2002}
+Vion D, Aassime A, Cottet A, et~al.
+\newblock Manipulating the quantum state of an electrical circuit.
+\newblock Science, 2002, 296(5569):886--889
+\thudot
+
+\bibitem{Pashkin2003}
+Pashkin Y~A, Yamamoto T, Astafiev O, et~al.
+\newblock Quantum oscillations in two coupled charge qubits.
+\newblock Nature, 2003, 421(6925):823--826.
+\newblock 10.1038/nature01365
+\thudot
+
+\bibitem{Gambetta2006}
+Gambetta J, Blais A, Schuster D~I, et~al.
+\newblock Qubit-photon interactions in a cavity: Measurement-induced dephasing
+  and number splitting.
+\newblock Physical Review A, 2006, 74(4):042318.
+\newblock PRA
+\thudot
+
+\bibitem{Schuster2005}
+Schuster D, Wallraff A, Blais A, et~al.
+\newblock ac stark shift and dephasing of a superconducting qubit strongly
+  coupled to a cavity field.
+\newblock Physical Review Letters, 2005, 94(12):123602
+\thudot
+
+\bibitem{Makhlin2001}
+Makhlin Y, Sch\"on G, Shnirman A.
+\newblock Quantum-state engineering with josephson-junction devices.
+\newblock Reviews of Modern Physics, 2001, 73(2):357--400.
+\newblock RMP
+\thudot
+
+\bibitem{Schreier2008}
+Schreier J~A, Houck A~A, Koch J, et~al.
+\newblock Suppressing charge noise decoherence in superconducting charge
+  qubits.
+\newblock Physical Review B, 2008, 77(18):180502.
+\newblock PRB
+\thudot
+
+\bibitem{Clarke2008}
+Clarke J, Wilhelm F~K.
+\newblock Superconducting quantum bits.
+\newblock Nature, 2008, 453(7198):1031--1042
+\thudot
+
+\bibitem{Majer2007}
+Majer J, Chow J~M, Gambetta J~M, et~al.
+\newblock Coupling superconducting qubits via a cavity bus.
+\newblock Nature, 2007, 449(7161):443--447.
+\newblock 10.1038/nature06184
+\thudot
+
+\bibitem{Sillanpaa2007}
+Sillanpaa M~A, Park J~I, Simmonds R~W.
+\newblock Coherent quantum state storage and transfer between two phase qubits
+  via a resonant cavity.
+\newblock Nature, 2007, 449(7161):438--442.
+\newblock 10.1038/nature06124
+\thudot
+
+\bibitem{Filipp2009}
+Filipp S, Maurer P, Leek P~J, et~al.
+\newblock Two-qubit state tomography using a joint dispersive readout.
+\newblock Physical Review Letters, 2009, 102(20):200402.
+\newblock PRL
+\thudot
+
+\bibitem{Schuster2007Resolving}
+Schuster D~I, Houck A~A, Schreier J~A, et~al.
+\newblock Resolving photon number states in a superconducting circuit.
+\newblock Nature, 2007, 445(7127):515--518.
+\newblock 10.1038/nature05461
+\thudot
+
+\bibitem{DiCarlo2009}
+DiCarlo L, Chow J~M, Gambetta J~M, et~al.
+\newblock Demonstration of two-qubit algorithms with a superconducting quantum
+  processor.
+\newblock Nature, 2009, 460(7252):240--244.
+\newblock 10.1038/nature08121
+\thudot
+
+\bibitem{DiCarlo2010}
+DiCarlo L, Reed M~D, Sun L, et~al.
+\newblock Preparation and measurement of three-qubit entanglement in a
+  superconducting circuit.
+\newblock Nature, 2010, 467(7315):574--578.
+\newblock 10.1038/nature09416
+\thudot
+
+\bibitem{Paik2011}
+Paik H, Schuster D~I, Bishop L~S, et~al.
+\newblock Observation of high coherence in josephson junction qubits measured
+  in a three-dimensional circuit qed architecture.
+\newblock Physical Review Letters, 2011, 107(24):240501.
+\newblock PRL
+\thudot
+
+\bibitem{Rigetti2012}
+Rigetti C, Gambetta J~M, Poletto S, et~al.
+\newblock Superconducting qubit in a waveguide cavity with a coherence time
+  approaching 0.1 ms.
+\newblock Physical Review B, 2012, 86(10):100506.
+\newblock PRB
+\thudot
+
 \end{thebibliography}
