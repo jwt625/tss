@@ -195,7 +195,7 @@ The charge qubits suffer from $1/f$ charge noise, since the energy levels depend
                 \label{fig:twoQubit2009}
             \end{figure}
 
-With the new transmon design and multiple qubit coupling, the Yale group soon proceeded to multi-qubit manipulations and readout. Two-qubit state tomography using a joint disppersive readout was proposed in Ref.~\cite{Filipp2009}, where the cavity frequency shift depends on both states of the two qubits coupling to the cavity. With two transmons coupled to a cavity bus, DiCarlo \etal{} showed two-qubit algorithm in superconducting system\cite{DiCarlo2009}. Two qubit controlled phase gate was implemented utilizing level pulling from a non-computational state by adiabatic flux pulse. They soon went to coupling four transmons in one cavity and succesfully prepared and measured a three-qubit entanglement\cite{DiCarlo2010}. The flux-pulse C-Phase gate was 12ns in their case and the qubit coherence time is on the level of $\sim 1 \mu$s.
+With the new transmon design and multiple qubit coupling, the Yale group soon proceeded to multi-qubit manipulations and readout. Two-qubit state tomography using a joint disppersive readout was proposed in Ref.~\inlinecite{Filipp2009}, where the cavity frequency shift depends on both states of the two qubits coupling to the cavity. With two transmons coupled to a cavity bus, DiCarlo \etal{} showed two-qubit algorithm in superconducting system\cite{DiCarlo2009}. Two qubit controlled phase gate was implemented utilizing level pulling from a non-computational state by adiabatic flux pulse. They soon went to couple four transmons in one cavity and succesfully prepared and measured a three-qubit entanglement\cite{DiCarlo2010}. The flux-pulse C-Phase gate was 12ns in their case and the qubit coherence time is on the level of $\sim 1 \mu$s.
 
 
             \begin{figure}[h]
@@ -205,9 +205,44 @@ With the new transmon design and multiple qubit coupling, the Yale group soon pr
                 \label{fig:Paik2011}
             \end{figure}
 
-While the coherence time of superconducting qubits has been steadily improved from $\sim 1$ns in CPB to $\sim 1 \mu$s for transmons, the Yale group made another drastic improvement by the 3D transmon design\cite{Paik2011}. The measured $T_1$ was up to $60\mu$s and $T_2 \sim 10\mu$s. The long coherence time benefitted from the avoidance of $1/f$ charge noise, single junction design and also material optimizations, and was soon further increased to $\sim 0.1$ms\cite{Rigetti2012}.
+While the coherence time of superconducting qubits has been steadily improved from $\sim 1$ns in original CPB to $\sim 1 \mu$s for transmons, the Yale group made another drastic improvement by the 3D transmon design\cite{Paik2011}. The measured $T_1$ was up to $60\mu$s and $T_2 \sim 10\mu$s. The long coherence time benefitted from the avoidance of $1/f$ charge noise, single junction design and also material optimizations. The record and was soon further increased to $\sim 0.1$ms\cite{Rigetti2012} by reducing dephasing rate per residual cavity photon, minimize coupling to higher cavity mode and lowering the thermal photon temperature of the cavity.
 
 
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=4in]{review/XmonDesign2013.png}
+                \caption{Xmon design. Adapted from Ref.~\inlinecite{Barends2013Coherent}.}
+                \label{fig:XmonDesign2013}
+            \end{figure}
+
+
+
+
+Besides the Yale group, there are also many other groups working on superconducting qubits, in which Prof. Martinis' group at UCSB stands out. Beyond their previous interests in phase qubits, the UCSB group proposed a variation of transmon named Xmon\cite{Barends2013Coherent}, which was designed for scalability with surface code\cite{Fowler2012}. In the Xmon design, the resonator for qubit readout is modified from in-line reflection type to hanger type, allowing one transmission line to couple with many hanger resonators. The `X' shape of the qubit capacitor offers coupling to readout resonator, quantum bus, XY drive and Z control respectively. With a lot of technical improvements (see Sec.~\ref{sec:technical_improvements}), the Xmon qubit showed coherence time $\sim 15\mu$s. Based on the Xmon design, the same group at UCSB increased the number of coupled Xmon qubits to five\cite{Barends2014} and nine\cite{Kelly2015} in 2014 and 2015 respectively. These qubits have coherence time $\sim 30\mu$s, single qubit gates fidelity all above 0.999 and two-qubit gate fidelity above 0.99 between all coupled qubits.
+
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=4in]{review/IBMTransmon2014.png}
+                \caption{The IBM transmon design. Adapted from Ref.~\inlinecite{Chow2014}.}
+                \label{fig:IBMTransmon2014}
+            \end{figure}
+
+
+Another group at IBM adopted the 3D transmon design on 2D\cite{Chow2014,Takita2017} and was followed by other groups\cite{Mlynek2014,Pechal2016,Walter2017}. Based on their design, IBM initiated IBM Q in 2015 and provided a 5-qubit processor to public access\cite{IBMQ}. Recently they announced that they've successfully built and tested a 16-qubit processor for developers, researchers, and programmers via the IBM Cloud, and a 17-qubit prototype commercial processor\cite{IBM16QubitsOriginal}. Also recently a group in China showed a 10-qubit processor based on Xmon design\cite{Song2017}. D-Wave System Inc. announced quantum processors with hundreds of qubits\cite{Shin2014}, but those qubits have poor coherence properties and were not considered as a general quantum processor\cite{devoret2013superconducting}.
+
+
+
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=4in]{review/ibmbuildsits.jpg}
+                \caption{The IBM 16-qubit processor. Adapted from Ref.~\inlinecite{IBM16QubitsOriginal}.}
+                \label{fig:ibmbuildsits}
+            \end{figure}
+
+
+After the increase in coherence time and the demonstration of basic algorithms and scalability, proposals and experiments turns to focus more on new architecture. One problem encountered when trying to scale up the superconducting qubit system is crossing of control, coupling and readout lines. Possible solutions require to go beyond the 2D structure, such as air bridge crossovers\cite{Versluis2016}, flip-chip\cite{Yorozu2006}, employing waveguide package resonance modes\cite{Minev2016} and using connected 3D cylindrical cavities\cite{Axline2016}. There are groups working on coupling superconducting qubits to flying qubits and mechanical resonators\cite{Palomaki2013,Reed2017,Keller2017}, aiming for the 6th and 7th DiVincenzo criteria.
 
 
 % section history_of_the_development_of_transmon_qubit (end)
@@ -215,6 +250,12 @@ While the coherence time of superconducting qubits has been steadily improved fr
 
 \section{Technical improvements} % (fold)
 \label{sec:technical_improvements}
+
+Much of the progress in the development of superconducting qubits came from clever design optimizations and technical improvements. The technical improvements can be roughly divided to several aspects including improving resonator quality factors, improving qubit control and measurement fidelity, and protecting qubits from decoherence.
+
+
+Superconducting resonators were modeled and characterized in Ref.~\inlinecite{goppl2008coplanar}.
+
 
 In summary, small junction is prefered to avoid defects. Removing loss from trapped vortices and quasiparticles by infrared and magnetic shielding is required for reliable resonator $Q$ measurement and for higher qubit coherence.
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{feynman1982simulating}
 Feynman R~P.
@@ -449,6 +449,21 @@ Sliwa K.
   {\url{https://phys.org/news/2017-05-ibm-powerful-universal-quantum-processors.html}}
 \thudot
 
+\bibitem{IBM16QubitsOriginal}
+{IBM Research}.
+\newblock Ibm builds its most powerful universal quantum computing
+  processors[EB/OL].
+\newblock [2017-5-30].
+\newblock  {\url{http://www-03.ibm.com/press/us/en/pressrelease/52403.wss}}
+\thudot
+
+\bibitem{IBMQ}
+{IBM Research}.
+\newblock Ibm q[EB/OL].
+\newblock [2017-5-30].
+\newblock  {\url{http://research.ibm.com/ibm-q/}}
+\thudot
+
 \bibitem{Nakamura1999}
 Nakamura Y, Pashkin Y~A, Tsai J~S.
 \newblock Coherent control of macroscopic quantum states in a
@@ -572,6 +587,126 @@ Rigetti C, Gambetta J~M, Poletto S, et~al.
   approaching 0.1 ms.
 \newblock Physical Review B, 2012, 86(10):100506.
 \newblock PRB
+\thudot
+
+\bibitem{Fowler2012}
+Fowler A~G, Mariantoni M, Martinis J~M, et~al.
+\newblock Surface codes: Towards practical large-scale quantum computation.
+\newblock Physical Review A, 2012, 86(3):032324.
+\newblock PRA
+\thudot
+
+\bibitem{Barends2014}
+Barends R, Kelly J, Megrant A, et~al.
+\newblock Superconducting quantum circuits at the surface code threshold for
+  fault tolerance.
+\newblock Nature, 2014, 508(7497):500--503
+\thudot
+
+\bibitem{Kelly2015}
+Kelly J, Barends R, Fowler A~G, et~al.
+\newblock State preservation by repetitive error detection in a superconducting
+  quantum circuit.
+\newblock Nature, 2015, 519(7541):66--69
+\thudot
+
+\bibitem{Mlynek2014}
+Mlynek J~A, Abdumalikov A~A, Eichler C, et~al.
+\newblock Observation of dicke superradiance for two artificial atoms in a
+  cavity with high decay rate.
+\newblock Nature Communications, 2014, 5:5186
+\thudot
+
+\bibitem{Pechal2016}
+Pechal M, Besse J~C, Mondal M, et~al.
+\newblock Superconducting switch for fast on-chip routing of quantum microwave
+  fields.
+\newblock Physical Review Applied, 2016, 6(2):024009.
+\newblock PRAPPLIED
+\thudot
+
+\bibitem{Walter2017}
+Walter T, Kurpiers P, Gasparinetti S, et~al.
+\newblock Rapid high-fidelity single-shot dispersive readout of superconducting
+  qubits.
+\newblock Physical Review Applied, 2017, 7(5):054020.
+\newblock PRAPPLIED
+\thudot
+
+\bibitem{Chow2014}
+Chow J~M, Gambetta J~M, Magesan E, et~al.
+\newblock Implementing a strand of a scalable fault-tolerant quantum computing
+  fabric.
+\newblock Nature Communications, 2014, 5:4015
+\thudot
+
+\bibitem{Takita2017}
+Takita M, Cross A~W, Córcoles A~D, et~al.
+\newblock Experimental demonstration of fault-tolerant state preparation with
+  superconducting qubits.
+\newblock arXiv:1705.09259, 2017.
+\thudot
+
+\bibitem{Versluis2016}
+Versluis R, Poletto S, Khammassi N, et~al.
+\newblock Scalable quantum circuit and control for a superconducting surface
+  code.
+\newblock arXiv:1612.08208, 2016.
+\thudot
+
+\bibitem{Song2017}
+Song C, Xu K, Liu W, et~al.
+\newblock 10-qubit entanglement and parallel logic operations with a
+  superconducting circuit.
+\newblock arXiv:1703.10302, 2017.
+\thudot
+
+\bibitem{Minev2016}
+Minev Z~K, Serniak K, Pop I~M, et~al.
+\newblock Planar multilayer circuit quantum electrodynamics.
+\newblock Physical Review Applied, 2016, 5(4):044021.
+\newblock PRAPPLIED
+\thudot
+
+\bibitem{Axline2016}
+Axline C, Reagor M, Heeres R, et~al.
+\newblock An architecture for integrating planar and 3d cqed devices.
+\newblock Applied Physics Letters, 2016, 109(4):042601
+\thudot
+
+\bibitem{Yorozu2006}
+Yorozu S, Miyazaki T, Semenov V, et~al.
+\newblock Sub-kelvin single flux quantum control circuits and multi-chip
+  packaging for supporting superconducting qubit.
+\newblock Journal of Physics: Conference Series, 2006, 43(1):1417
+\thudot
+
+\bibitem{Palomaki2013}
+Palomaki T~A, Harlow J~W, Teufel J~D, et~al.
+\newblock Coherent state transfer between itinerant microwave fields and a
+  mechanical oscillator.
+\newblock Nature, 2013, 495(7440):210--214.
+\newblock 10.1038/nature11915
+\thudot
+
+\bibitem{Reed2017}
+Reed A~P, Mayer K~H, Teufel J~D, et~al.
+\newblock Faithful conversion of propagating quantum information to mechanical
+  motion.
+\newblock arXiv:1703.02548, 2017.
+\thudot
+
+\bibitem{Keller2017}
+Keller A~J, Dieterle P~B, Fang M, et~al.
+\newblock Superconducting qubits on silicon substrates for quantum device
+  integration.
+\newblock arXiv:1703.10195, 2017.
+\thudot
+
+\bibitem{Shin2014}
+Shin S~W, Smith G, Smolin J~A, et~al.
+\newblock How "quantum" is the d-wave machine?
+\newblock arXiv:1401.7087, 2014.
 \thudot
 
 \end{thebibliography}
