@@ -709,4 +709,121 @@ Shin S~W, Smith G, Smolin J~A, et~al.
 \newblock arXiv:1401.7087, 2014.
 \thudot
 
+\bibitem{Wang2009}
+Wang H, Hofheinz M, Wenner J, et~al.
+\newblock Improving the coherence time of superconducting coplanar resonators.
+\newblock Applied Physics Letters, 2009, 95(23):233508
+\thudot
+
+\bibitem{Gao2008Exp}
+Gao J, Daal M, Vayonakis A, et~al.
+\newblock Experimental evidence for a surface distribution of two-level systems
+  in superconducting lithographed microwave resonators.
+\newblock Applied Physics Letters, 2008, 92(15):152505
+\thudot
+
+\bibitem{Wenner2011Surface}
+Wenner J, Barends R, Bialczak R~C, et~al.
+\newblock Surface loss simulations of superconducting coplanar waveguide
+  resonators.
+\newblock Applied Physics Letters, 2011, 99(11):113513
+\thudot
+
+\bibitem{Reagor2013}
+Reagor M, Paik H, Catelani G, et~al.
+\newblock Reaching 10 ms single photon lifetimes for superconducting aluminum
+  cavities.
+\newblock Applied Physics Letters, 2013, 102(19):192604
+\thudot
+
+\bibitem{Reagor2015thesis}
+Reagor M~J.
+\newblock Superconducting cavities for circuit quantum electrodynamics[D].
+\newblock 2015
+\thudot
+
+\bibitem{Motzoi2009}
+Motzoi F, Gambetta J~M, Rebentrost P, et~al.
+\newblock Simple pulses for elimination of leakage in weakly nonlinear qubits.
+\newblock Physical Review Letters, 2009, 103(11):110501.
+\newblock PRL
+\thudot
+
+\bibitem{Rigetti2010}
+Rigetti C, Devoret M.
+\newblock Fully microwave-tunable universal gates in superconducting qubits
+  with linear couplings and fixed transition frequencies.
+\newblock Physical Review B, 2010, 81(13):134507.
+\newblock PRB
+\thudot
+
+\bibitem{Cross2015}
+Cross A~W, Gambetta J~M.
+\newblock Optimized pulse shapes for a resonator-induced phase gate.
+\newblock Physical Review A, 2015, 91(3):032325.
+\newblock PRA
+\thudot
+
+\bibitem{Paik2016}
+Paik H, Mezzacapo A, Sandberg M, et~al.
+\newblock Experimental demonstration of a resonator-induced phase gate in a
+  multiqubit circuit-qed system.
+\newblock Physical Review Letters, 2016, 117(25):250502.
+\newblock PRL
+\thudot
+
+\bibitem{Bergeal2010}
+Bergeal N, Schackert F, Metcalfe M, et~al.
+\newblock Phase-preserving amplification near the quantum limit with a
+  josephson ring modulator.
+\newblock Nature, 2010, 465(7294):64--68.
+\newblock 10.1038/nature09035
+\thudot
+
+\bibitem{Siddiqi2004}
+Siddiqi I, Vijay R, Pierre F, et~al.
+\newblock Rf-driven josephson bifurcation amplifier for quantum measurement.
+\newblock Phys. Rev. Lett., 2004, 93:207002
+\thudot
+
+\bibitem{SteffenViewpoint}
+Steffen M.
+\newblock Viewpoint: Superconducting qubits are getting serious[EB/OL].
+\newblock [2017-5-30].
+\newblock  {\url{https://physics.aps.org/articles/v4/103}}
+\thudot
+
+\bibitem{Barends2011}
+Barends R, Wenner J, Lenander M, et~al.
+\newblock Minimizing quasiparticle generation from stray infrared light in
+  superconducting quantum circuits.
+\newblock Applied Physics Letters, 2011, 99(11):113507
+\thudot
+
+\bibitem{Corcoles2011}
+C\'orcoles A~D, Chow J~M, Gambetta J~M, et~al.
+\newblock Protecting superconducting qubits from radiation.
+\newblock Applied Physics Letters, 2011, 99(18):181906
+\thudot
+
+\bibitem{Chen2014}
+Chen Z, Megrant A, Kelly J, et~al.
+\newblock Fabrication and characterization of aluminum airbridges for
+  superconducting microwave circuits.
+\newblock Applied Physics Letters, 2014, 104(5):052602
+\thudot
+
+\bibitem{Kerckhoff2015}
+Kerckhoff J, Lalumière K, Chapman B~J, et~al.
+\newblock On-chip superconducting microwave circulator from synthetic rotation.
+\newblock Physical Review Applied, 2015, 4(3):034002.
+\newblock PRAPPLIED
+\thudot
+
+\bibitem{Mooij1999}
+Mooij J~E, Orlando T~P, Levitov L, et~al.
+\newblock Josephson persistent-current qubit.
+\newblock Science, 1999, 285(5430):1036--1039
+\thudot
+
 \end{thebibliography}
