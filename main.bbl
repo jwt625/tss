@@ -826,4 +826,11 @@ Mooij J~E, Orlando T~P, Levitov L, et~al.
 \newblock Science, 1999, 285(5430):1036--1039
 \thudot
 
+\bibitem{Kelly2014}
+Kelly J, Barends R, Campbell B, et~al.
+\newblock Optimal quantum control using randomized benchmarking.
+\newblock Physical Review Letters, 2014, 112(24):240504.
+\newblock PRL
+\thudot
+
 \end{thebibliography}
