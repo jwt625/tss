@@ -516,7 +516,12 @@
       \vskip0.45cm
       {\includegraphics{tsinghua}}
       \par\vskip1.5cm
-      {\xiaochu\heiti\ziju{0.5}\thu@bachelor@subtitle}
+      {\xiaochu
+      %\heiti
+      %\msyh\textbf
+      \htbd
+      \ziju{0.5}
+      \thu@bachelor@subtitle}
       \vskip2.2cm
       \noindent\heiti\xiaoer\thu@bachelor@title@pre\thu@title@sep
       \parbox[t]{12cm}{%
